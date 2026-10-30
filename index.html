@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Zain Jaffar">
+<meta property="og:title" content="Every Shade">
+<meta property="og:description" content="Free skin cancer talks for New Jersey senior centers and communities, focused on how skin conditions look on every skin tone. Founded by Zain Jaffar at Rutgers University–New Brunswick.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="zain-jaffar.jpg">
+<style>html,body{margin:0}img{max-width:100%}*{box-sizing:border-box}</style>
+<title>Every Shade | Free Skin Cancer Talks for Every Skin Tone</title>
+<meta name="description" content="Every Shade is a Rutgers student group founded by Zain Jaffar that gives free skin cancer talks to New Jersey senior centers and communities, focused on how skin conditions look on every skin tone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Every Shade","description":"Student-run skin health education for every skin tone in New Jersey.","email":"everyshadescreening@gmail.com","areaServed":"New Jersey","founder":{"@type":"Person","name":"Zain Jaffar","jobTitle":"Founder","affiliation":"Honors College, Rutgers University–New Brunswick"}}
+</script>
+<style>
+/* Layout: one calm column (max 1080px), hero with the swatch-fan mark, alternating plain/tinted bands, tone strip as the recurring divider. Large type for older readers. */
+:root{
+  --ground:#FFFFFF;
+  --band:#F7F1EC;
+  --ink:#2B1A12;
+  --muted:#6B5446;
+  --rule:#E6D9CF;
+  --accent:#8E5632;
+  --t1:#EFCBB0;--t2:#DDAA84;--t3:#C28559;--t4:#9C623A;--t5:#6B4127;--t6:#3D2416;
+  --rivet:#FFFFFF;
+  --display:'Manrope',system-ui,sans-serif;
+  --body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#1A110C;--band:#24180F;--ink:#F6ECE4;--muted:#CDB8A8;--rule:#3B2A1F;--accent:#E3A877;--rivet:#1A110C;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#1A110C;--band:#24180F;--ink:#F6ECE4;--muted:#CDB8A8;--rule:#3B2A1F;--accent:#E3A877;--rivet:#1A110C;color-scheme:dark}
+
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;letter-spacing:-0.015em}
+h3{font-size:1.25rem;font-weight:800}
+p{margin:0;max-width:65ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
+
+/* nav */
+header.top{border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand span{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:-0.02em}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:1rem}
+nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:72px 64px}
+.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero-copy p{font-size:1.2rem;color:var(--muted)}
+.hero-mark{display:flex;justify-content:center}
+.hero-mark svg{width:100%;max-width:340px;height:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--ink);color:var(--ground);font-family:var(--display);font-weight:800;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;align-self:flex-start}
+.btn:hover{background:var(--accent)}
+
+/* tone strip divider */
+.strip{display:grid;grid-template-columns:repeat(6,1fr);height:10px}
+.strip i:nth-child(1){background:var(--t1)}.strip i:nth-child(2){background:var(--t2)}.strip i:nth-child(3){background:var(--t3)}
+.strip i:nth-child(4){background:var(--t4)}.strip i:nth-child(5){background:var(--t5)}.strip i:nth-child(6){background:var(--t6)}
+
+section{padding-block:72px}
+section.tint{background:var(--band)}
+.section-head{display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+.section-head p{color:var(--muted)}
+
+/* why: facts */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.fact{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:4px solid var(--t4);min-width:0}
+.fact b{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.fact p{color:var(--muted);font-size:1rem}
+.cite{margin-top:28px;font-size:0.85rem;color:var(--muted)}
+
+/* what */
+.programs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.program{display:flex;flex-direction:column;gap:10px;min-width:0}
+.program .sw{width:44px;height:14px;border-radius:7px}
+
+/* talk */
+.talk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.talk ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+.ways{display:flex;flex-direction:column;gap:18px}
+.way{padding:20px 22px;border:1px solid var(--rule);border-radius:14px;background:var(--ground);display:flex;flex-direction:column;gap:6px}
+
+/* founder */
+.founder{display:grid;grid-template-columns:260px minmax(0,1fr);gap:44px;align-items:start}
+.founder img{width:100%;max-width:260px;aspect-ratio:1;object-fit:cover;border-radius:50%;border:6px solid var(--t2)}
+.founder-copy{display:flex;flex-direction:column;gap:14px;min-width:0}
+.founder-copy .role{font-family:var(--display);font-weight:600;color:var(--accent)}
+
+/* book */
+.book{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.mail code{font-family:var(--body);font-weight:700;font-size:1.25rem;user-select:all;padding:10px 16px;border:1px solid var(--rule);border-radius:10px;background:var(--ground);word-break:break-all}
+.copy{min-height:48px;padding:0 20px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1rem;cursor:pointer}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+.note{font-size:0.95rem;color:var(--muted)}
+
+footer{border-top:1px solid var(--rule)}
+footer .wrap{padding-block:32px;display:flex;flex-direction:column;gap:10px;font-size:0.9rem;color:var(--muted)}
+
+@media (max-width:820px){
+  .hero .wrap,.talk,.founder{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap{padding-block:48px}
+  .hero-mark{order:-1;justify-content:flex-start}
+  .hero-mark svg{max-width:180px}
+  .facts,.programs{grid-template-columns:minmax(0,1fr)}
+  .founder img{max-width:200px}
+  section{padding-block:56px}
+}
+@media (prefers-reduced-motion:no-preference){.btn,.copy,nav a{transition:background .15s,color .15s,border-color .15s}}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Every Shade home">
+      <svg width="40" height="30" viewBox="-12 8 224 140" aria-hidden="true">
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t1)" transform="rotate(-44 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t2)" transform="rotate(-22 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t3)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t4)" transform="rotate(22 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t5)" transform="rotate(44 100 132)"/>
+        <circle cx="100" cy="132" r="7" fill="var(--rivet)"/>
+      </svg>
+      <span>every shade</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#why">Why</a></li>
+        <li><a href="#talk">Our talk</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#book">Book a talk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Skin health for every skin tone · New Jersey</span>
+        <h1>Skin cancer doesn't look the same on everyone.</h1>
+        <p>Every Shade is a student group at Rutgers University–New Brunswick. We give free talks to senior centers, libraries, and community groups on how to spot skin cancer on every skin tone, and how to get checked.</p>
+        <a class="btn" href="#book">Book a free talk</a>
+      </div>
+      <div class="hero-mark">
+        <svg viewBox="-12 8 224 140" role="img" aria-label="Every Shade logo: five skin-tone swatches fanned out">
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t1)" transform="rotate(-44 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t2)" transform="rotate(-22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t3)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t4)" transform="rotate(22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t5)" transform="rotate(44 100 132)"/>
+          <circle cx="100" cy="132" r="6" fill="var(--rivet)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <section id="why" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why we started</span>
+        <h2>Most of the pictures doctors learn from show light skin.</h2>
+        <p>On darker skin, a rash can look purple or brown instead of red, and melanoma often shows up in places people don't think to check. When it's missed, it's caught later.</p>
+      </div>
+      <div class="facts">
+        <div class="fact">
+          <b>15%</b>
+          <p>of images in six common medical student study resources showed skin of color.</p>
+        </div>
+        <div class="fact">
+          <b>66% vs 90%</b>
+          <p>five-year melanoma survival for Black patients compared with white patients, largely because it's found at a later stage.</p>
+        </div>
+        <div class="fact">
+          <b>46%</b>
+          <p>of melanomas in Black patients were on the palms, the soles of the feet, or under the nails.</p>
+        </div>
+      </div>
+      <p class="cite">Sources: Perlman et al., Int J Womens Dermatol, 2021. Culp and Lunsford, Preventing Chronic Disease (CDC), 2019.</p>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Teach, check, and connect people to care.</h2>
+      </div>
+      <div class="programs">
+        <div class="program">
+          <span class="sw" style="background:var(--t2)"></span>
+          <h3>Free talks</h3>
+          <p>45-minute talks on melanoma and other skin cancers, given over Zoom or in person, with time for questions.</p>
+        </div>
+        <div class="program">
+          <span class="sw" style="background:var(--t4)"></span>
+          <h3>Self-check training</h3>
+          <p>A simple head-to-toe skin check you can do at home once a month, with a printable guide to keep.</p>
+        </div>
+        <div class="program">
+          <span class="sw" style="background:var(--t6)"></span>
+          <h3>Finding care</h3>
+          <p>A list of free and low-cost places in New Jersey to get a spot looked at, kept up to date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="talk" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">For senior centers and community groups</span>
+        <h2>What our talk covers</h2>
+      </div>
+      <div class="talk">
+        <ul>
+          <li>What melanoma and other common skin cancers are</li>
+          <li>Things that raise your risk, like sun exposure, a history of sunburns, family history, and age</li>
+          <li>What warning signs look like on light, medium, and dark skin</li>
+          <li>The spots people miss: palms, soles of the feet, between the toes, and under the nails</li>
+          <li>How to do a skin check at home, step by step</li>
+          <li>When to see a doctor, and where to go if you don't have insurance</li>
+        </ul>
+        <div class="ways">
+          <div class="way">
+            <h3>Watch together</h3>
+            <p>Your members gather in one room and watch on a TV or projector while we present over Zoom.</p>
+          </div>
+          <div class="way">
+            <h3>Join from home</h3>
+            <p>Members get a Zoom link and join from their own computer, tablet, or phone.</p>
+          </div>
+          <p class="note">It's free. We handle the setup and send a printable handout ahead of time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder">
+    <div class="wrap founder">
+      <img src="zain-jaffar.jpg" alt="Portrait of Zain Jaffar, founder of Every Shade" width="260" height="260">
+      <div class="founder-copy">
+        <span class="eyebrow">Founder</span>
+        <h2>Zain Jaffar</h2>
+        <span class="role">Founder, Every Shade · Honors College, Rutgers University–New Brunswick</span>
+        <p>Zain is a pre-med student in the Honors College at Rutgers University–New Brunswick, studying Cell Biology and Neuroscience with a minor in Data Science. He works as a dermatology and Mohs surgery medical assistant, does melanoma research at Mass General Brigham and Harvard Medical School, and does teledermatology research with Stanford Dermatology.</p>
+        <p>He started Every Shade after seeing how often skin problems on darker skin get missed, both in clinic and in the photos that doctors and AI tools learn from.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="tint">
+    <div class="wrap book">
+      <span class="eyebrow">Book a talk</span>
+      <h2>Bring a free talk to your center.</h2>
+      <p>Email us with your organization's name and a few dates that work for you. We'll take care of the rest.</p>
+      <div class="mail">
+        <code id="email">everyshadescreening@gmail.com</code>
+        <button class="copy" id="copyBtn" type="button">Copy email</button>
+      </div>
+      <p class="note" id="copyNote" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="wrap">
+    <p>Every Shade provides general health education only. Nothing on this site or in our talks is medical advice or a diagnosis. Our members are students, not medical professionals. If a spot is new, changing, or bleeding, please see a doctor.</p>
+    <p>© 2026 Every Shade · New Brunswick, New Jersey</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function () {
+  var text = document.getElementById('email').textContent;
+  var note = document.getElementById('copyNote');
+  function fallback() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    note.textContent = 'Selected. Press Ctrl+C or Cmd+C to copy.';
+  }
+  try {
+    navigator.clipboard.writeText(text).then(function () { note.textContent = 'Copied.'; }, fallback);
+  } catch (e) { fallback(); }
+});
+</script>
+
+</body>
+</html>
