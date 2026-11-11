@@ -16,9 +16,10 @@ Every Shade is a Rutgers University–New Brunswick student group that gives fre
 | Nov 14 | Decide on clinical photos: the deck now uses teaching drawings on slides 7, 8, and 10; licensed photo options are in "Image sources" (folder 01) | To do |
 | Nov 16 | Set up the two Zoom polls from "Zoom polls setup" (Anonymous on), turn on captions | To do |
 | Nov 18 | Email the large-print handout to registered attendees | To do |
+| Nov 19 | Pre-register the talk evaluation on OSF (text in 07 Growth, "Pre-registration on OSF") so the results count as research | To do |
 | Nov 19 | One full rehearsal with the speaker notes | To do |
 | Nov 20 | Give the talk; download the poll report afterward | To do |
-| Nov 21 | Enter quiz results in "Quiz scoring"; record the result line | To do |
+| Nov 21 | Run the results script on the Zoom poll export ("After the talk: results in 5 minutes"); it writes the result line and updates the Impact page | To do |
 | Dec 20 | 30-day follow-up email: "Did you do a skin check this month?" | To do |
 
 ## What is in each folder
