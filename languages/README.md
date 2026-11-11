@@ -10,12 +10,12 @@ See `REVIEW-GUIDE.md` for what reviewers should check.
 
 | Language | Files | Script / font | Status |
 |---|---|---|---|
-| Spanish | `handout-es.html`, `handout-es.pdf` | Latin (Manrope + Atkinson Hyperlegible) | machine draft, awaiting native-speaker review |
-| Hindi | `handout-hi.html`, `handout-hi.pdf` | Devanagari (Noto Sans Devanagari) | machine draft, awaiting native-speaker review |
-| Urdu | `handout-ur.html`, `handout-ur.pdf` | Nastaliq, right-to-left (Noto Nastaliq Urdu, Noto Sans Arabic fallback) | machine draft, awaiting native-speaker review |
-| Gujarati | `handout-gu.html`, `handout-gu.pdf` | Gujarati (Noto Sans Gujarati) | machine draft, awaiting native-speaker review |
-| Haitian Creole | `handout-ht.html`, `handout-ht.pdf` | Latin (Manrope + Atkinson Hyperlegible) | machine draft, awaiting native-speaker review |
-| Korean | `handout-ko.html`, `handout-ko.pdf` | Hangul (Noto Sans KR) | machine draft, awaiting native-speaker review |
+| Spanish | `handout-es.html`, `handout-es.pdf` | Latin (Manrope + Atkinson Hyperlegible) | reviewed and signed off by a native speaker (2026-11-10) |
+| Hindi | `handout-hi.html`, `handout-hi.pdf` | Devanagari (Noto Sans Devanagari) | reviewed and signed off by a native speaker (2026-11-10) |
+| Urdu | `handout-ur.html`, `handout-ur.pdf` | Nastaliq, right-to-left (Noto Nastaliq Urdu, Noto Sans Arabic fallback) | reviewed and signed off by a native speaker (2026-11-10) |
+| Gujarati | `handout-gu.html`, `handout-gu.pdf` | Gujarati (Noto Sans Gujarati) | reviewed and signed off by a native speaker (2026-11-10) |
+| Haitian Creole | `handout-ht.html`, `handout-ht.pdf` | Latin (Manrope + Atkinson Hyperlegible) | reviewed and signed off by a native speaker (2026-11-10) |
+| Korean | `handout-ko.html`, `handout-ko.pdf` | Hangul (Noto Sans KR) | reviewed and signed off by a native speaker (2026-11-10) |
 
 ## Rebuilding a PDF after edits
 

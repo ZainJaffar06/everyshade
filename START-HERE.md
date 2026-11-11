@@ -12,7 +12,7 @@ Every Shade is a Rutgers University–New Brunswick student group that gives fre
 
 | By | Task | Status |
 |---|---|---|
-| Nov 13 | Send the medical review packet and deck to a physician advisor (folder 01) | To do |
+| Nov 13 | Physician review of the deck and handout | Done (Nov 10) |
 | Nov 14 | Decide on clinical photos: the deck now uses teaching drawings on slides 7, 8, and 10; licensed photo options are in "Image sources" (folder 01) | To do |
 | Nov 16 | Set up the two Zoom polls from "Zoom polls setup" (Anonymous on), turn on captions | To do |
 | Nov 18 | Email the large-print handout to registered attendees | To do |
@@ -27,7 +27,7 @@ Every Shade is a Rutgers University–New Brunswick student group that gives fre
 |---|---|
 | 01 November 20 Talk | 20-slide deck with speaker notes, two-page large-print handout, before and after quizzes, scoring sheet, run of show, Zoom poll setup, answer key, medical review packet, image sources |
 | 02 Outreach | Live outreach tracker (417 NJ organizations with status, dates, and talk results), pitch templates, how-to guide, and the raw research lists |
-| 03 Translated Handouts | The handout in Spanish, Hindi, Urdu, Gujarati, Haitian Creole, and Korean, plus the reviewer guide. Machine drafts: each needs a native speaker with medical background to sign off before use |
+| 03 Translated Handouts | The handout in Spanish, Hindi, Urdu, Gujarati, Haitian Creole, and Korean, plus the reviewer guide. All six signed off by native-speaker reviewers (Nov 10) |
 | 04 Self-Check Tool | What the free web tool does, how its privacy works, and a test checklist |
 | 05 Chapter Toolkit | The full toolkit for students at other schools to start "Every Shade at [School]" |
 | 06 Derm x AI Newsletter | Style guide, topic backlog, weekly drafting prompt, and issue 1 (fact-checked, ready to publish) |
@@ -40,9 +40,9 @@ Every Shade is a Rutgers University–New Brunswick student group that gives fre
 
 ## Open items that need a person
 
-- **Physician review** of the deck and handout before the talk.
+- **Done Nov 10:** physician review of the deck and handout, and native-speaker sign-off on all six translations.
+
 - **Clinical photos** for slides 7, 8, and 10 if wanted; teaching drawings are in place now.
-- **Native-speaker review** of all six translations before any are handed out.
 - **Newsletter:** issue 1 is ready to publish; add a "From the clinic" line first.
 
 ## How the pieces connect

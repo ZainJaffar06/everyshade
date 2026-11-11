@@ -13,12 +13,12 @@ Everything needed to give the 45-minute senior talk and measure whether it worke
 | `quiz/answer-key.md` | Answers and which slide covers each question | Done |
 | `quiz/scoring.xlsx` | Paste responses; Summary tab computes pre/post % and knowledge gain overall and per question | Done |
 | `quiz/quiz-content.json` + `build_quiz.py` | Edit questions here; `python3 -I build_quiz.py` regenerates everything above | |
-| `../languages/` | Translated handouts (es, hi, ur, gu, ht, ko): machine drafts awaiting native-speaker review | Draft |
+| `../languages/` | Translated handouts (es, hi, ur, gu, ht, ko): reviewed and signed off by native speakers (Nov 10) | Done |
 
 ## Before November 20
 
 1. **Images (optional).** Slides 7, 8, and 10 now use simple teaching drawings, so the deck is usable as is. To use clinical photos instead, pick from `IMAGE-SOURCES.md` (openly licensed, authoritative sources, with the exact credit line) and swap them in with `imageBox` in `build_deck.js`. Never use images scraped from the web or from clinic.
-2. **Physician review.** Send `MEDICAL-REVIEW-PACKET.md` (a claim-by-claim checklist with sources), the deck, and the handout to a dermatologist or the Every Shade advisor for a 15-minute review. Every claim is drawn from AAD / Skin Cancer Foundation public guidance and the two cited papers, but a clinician must sign off before it is shown.
+2. **Physician review (done Nov 10).** Send `MEDICAL-REVIEW-PACKET.md` (a claim-by-claim checklist with sources), the deck, and the handout to a dermatologist or the Every Shade advisor for a 15-minute review. Every claim is drawn from AAD / Skin Cancer Foundation public guidance and the two cited papers, but a clinician must sign off before it is shown.
 3. **Zoom.** Create the two polls from `quiz/zoom-polls.md` (Anonymous on). Turn on live captions. Set "share screen" so slides fill the window. Have a co-host watch chat.
 4. **Send the handout** to each registered attendee or center two days ahead (email the PDF; centers that print should use letter paper, single-sided, 100%).
 5. **Run-through.** Rehearse once with the notes. Target 30 minutes of slides, 10 of questions, 5 of quiz.
