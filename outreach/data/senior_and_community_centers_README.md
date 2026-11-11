@@ -1,0 +1,80 @@
+# senior_and_community_centers.csv — README
+
+Research-only contact dataset for Every Shade outreach (free skin-cancer talks for NJ seniors). Built 2026-11-10. **Nobody has been contacted.**
+
+- **Rows:** 166 (target was 100–160; a 239-row draft was trimmed by dropping phone-only small-borough centers in oversupplied counties — the dropped names are listed at the bottom so they can be restored).
+- **Rows with an email:** 70 (42.2%). Rows with a phone: 163 (98%).
+- **Columns:** `name,type,county,town,address,phone,email,website,contact_name,contact_title,best_channel,languages_served,source_url,notes` (UTF-8, comma-quoted).
+- **Rule followed:** emails, phones and contact names were only recorded when they appeared on a fetched page or in a search-result excerpt that quoted a specific page (that page is the `source_url`). Nothing was constructed from a domain pattern. Rows whose email came from a search excerpt rather than a direct fetch say "verify" or "search result" in `notes`. Obfuscated/JavaScript-protected emails (Perth Amboy, Bridgewater, Interfaith Neighbors, JCC MetroWest decode) were either left blank or flagged.
+- `languages_served` is only filled when a source stated it (e.g., Bergen County publishes Korean/Spanish brochures; West Windsor lists Cantonese/Mandarin). Entries like "Spanish likely (town) - not stated" are my inference from the town's demographics, not a source claim.
+
+## Directories mined
+
+| Source | What it gave |
+|---|---|
+| **UnitedHealthcare Community Plan "NJ Senior Centers Directory" (PDF, 11 pp)** — `uhc-gpd-green.uhc.com/.../NJ-Senior-Centers-Directory.pdf` | ~200 senior centers statewide, all 21 counties, with address + phone. The single best starting list; no emails. |
+| **NJ DoAS "County Offices on Aging" page** — `nj.gov/humanservices/doas/assistance/county-offices` | All 21 Area Agencies on Aging with address, phone, **email** (20 of 21), website. |
+| **Bergen County Senior Activity Centers** — `bergencountynj.gov/?p=1078` | 10 county-run centers, each with a center email and named Center Director. Best email yield of any page. |
+| **Essex County Senior Centers** — `wecare.essexcountynj.org/.../essex-county-senior-centers` | 18 Essex centers, address + phone, no emails. |
+| **Union County Resource Directory for Older Adults (3/2026 PDF), p.23** | 25 Union senior centers; also Senior Citizens Advocacy orgs (PROCEED, Urban League, AARP). |
+| **Morris County Human Services Directory (PDF, pp.27-29) + Midday Friendship Centers 2026 flyer** | 15 municipal senior centers + county nutrition sites and MorrisNutrition email. |
+| **Camden County Seniors Directory 2024 (PDF, 126 pp)** | 15 senior centers, congregate sites, SCUCS and AARP NJ emails. |
+| **Bergen County Key Services Guide 2024 (Old Tappan-hosted PDF)** | Municipal Bergen centers, Korean Community Center, JFCS, Catholic Charities, Urban League Bergen. |
+| **Woodbridge Township 2025 Senior Services Directory (PDF, 127 pp)** | Six Woodbridge centers + Dept. of Senior Services director. |
+| **Cumberland County Nutrition Program 2026 (PDF)** | 10 nutrition/senior sites with site-manager names. |
+| **NJ DoAS Project Healthy Bones site list (PDF)** | Confirmed Millburn Bauer CC, Livingston, Montclair, West Orange and other sites as senior-program hosts. |
+| **Monmouth County departments directory PDF** | Middletown senior center email. |
+| Municipal pages fetched directly for emails/contacts | Montclair, South Orange, Hillside, Rahway, Plainfield, Metuchen, South Brunswick, Lawrence, West Windsor, East Windsor, Secaucus, East Newark, North Bergen, Jersey City Senior Affairs, Paterson, Bayonne, Tenafly, Fort Lee, Paramus, Elmwood Park, Washington Twp (Morris), Deptford, Bridgewater, Livingston. |
+| Nonprofit pages fetched | JFS MetroWest (older adults page), JFS Central NJ, JFS Middlesex, Catholic Charities Newark adult services, Urban League Hudson, PACCAL, AARP NJ about-us, Summit Area YMCA, Hackensack MLK Senior Center, PROCEED. |
+
+## Row counts by county and type
+
+| County | Rows | With email | senior_center | community_center | aging_office | nonprofit_senior_program |
+|---|---|---|---|---|---|---|
+| Atlantic | 3 | 1 | 2 | 0 | 1 | 0 |
+| Bergen | 20 | 15 | 15 | 0 | 1 | 4 |
+| Burlington | 4 | 1 | 3 | 0 | 1 | 0 |
+| Camden | 8 | 3 | 4 | 0 | 2 | 2 |
+| Cape May | 3 | 1 | 2 | 0 | 1 | 0 |
+| Cumberland | 4 | 1 | 3 | 0 | 1 | 0 |
+| Essex | 20 | 4 | 8 | 4 | 3 | 5 |
+| Gloucester | 4 | 2 | 3 | 0 | 1 | 0 |
+| Hudson | 14 | 5 | 7 | 0 | 3 | 4 |
+| Hunterdon | 2 | 2 | 1 | 0 | 1 | 0 |
+| Mercer | 9 | 5 | 6 | 0 | 2 | 1 |
+| Middlesex | 17 | 4 | 12 | 0 | 2 | 3 |
+| Monmouth | 6 | 2 | 4 | 0 | 1 | 1 |
+| Morris | 7 | 3 | 6 | 0 | 1 | 0 |
+| Ocean | 4 | 2 | 3 | 0 | 1 | 0 |
+| Passaic | 8 | 1 | 6 | 0 | 1 | 1 |
+| Salem | 1 | 1 | 0 | 0 | 1 | 0 |
+| Somerset | 9 | 7 | 7 | 1 | 1 | 0 |
+| Statewide | 1 | 0 | 0 | 0 | 1 | 0 |
+| Sussex | 3 | 1 | 2 | 0 | 1 | 0 |
+| Union | 16 | 6 | 6 | 3 | 2 | 5 |
+| Warren | 3 | 3 | 2 | 0 | 1 | 0 |
+| **Total** | **166** | **70 (42.2%)** | 102 | 8 | 30 | 26 |
+
+## Thin counties and why
+
+- **Salem (1), Hunterdon (2), Warren (3), Sussex (3), Cape May (3), Atlantic (3):** these counties run most senior programming through the county office itself (one county senior center or county-run nutrition sites), so there are few distinct municipal centers to list. Warren and Hunterdon rows carry the county inbox as their email because the county operates the centers.
+- **Cumberland (4), Gloucester (4), Burlington (4), Ocean (4):** more centers exist (UHC lists 9 for Cumberland, 7 for Burlington) but I kept only 3–4 per county to stay in the row target; the dropped names are in the UHC PDF.
+- **Monmouth (6):** the county's own "Listing of Senior Centers" (p.41 of its directory) was not retrievable; rows come from the UHC list. The county says it funds 8 centers.
+- **Passaic (8) and Essex (20) have low email yield** (1 and 4 emails). Passaic County's site (CivicPlus) returned HTTP 403 to every fetch, and Essex County publishes no division email at all (director listed as "TBD"). Newark's five ward centers list contact *names* but no emails. For these, `best_channel` is phone.
+- **Middlesex (17, 4 emails):** the county senior-centers page (which has a map and per-center detail) is also CivicPlus-blocked; municipal sites mostly publish phone only. Edison, New Brunswick, Piscataway (web form), Perth Amboy (obfuscated) have no recordable email.
+
+## Email coverage and how to raise it
+
+- 70/166 rows (42%) have an email. Best-covered: Bergen (15/20), Somerset (7/9), Warren (3/3), Hunterdon (2/2).
+- All 21 county Offices on Aging except Essex have an email; Bergen's outreach page explicitly says speaker requests go to seniors@bergencountynj.gov, and Somerset's county-run wellness centers all route through officeaging@co.somerset.nj.us. For phone-only municipal centers, the county office is the realistic email door.
+- Sites that blocked automated fetching (worth opening in a browser): middlesexcountynj.gov senior-centers page, somersetcountynj.gov senior-centers page, passaiccountynj.org nutrition-services page, mercercounty.org nutrition page, hamiltonnj.com directory, cityoforange.org senior services, maplewoodnj.gov contact directory, newarknj.gov/community, lakewoodnj.gov, atlanticcountynj.gov senior-centers page, ulec.org, kccus.org.
+
+## Priority notes for Every Shade
+
+- **Closest to Millburn:** Millburn Bauer Community Center (973-564-7091, PHB site), Livingston Senior/Community Center, Montclair Senior Services (4 named staff with emails incl. Outreach Coordinator), South Orange Baird Center (lherring@southorange.org), JCC MetroWest Margulies Center, Maplewood DeHart CC, Union Township Senior Center, SAGE Eldercare (Summit).
+- **Closest to New Brunswick:** New Brunswick Senior Resource Center (phone only), Metuchen (seniorcenter@metuchen.com), South Brunswick (dneglia@sbtnj.net), Franklin Twp (phone only, township won't share email), Somerset County Quail Brook center (county email), AARP NJ state office on George St (NJAARP@aarp.org; outreach director named).
+- **Communities of color / immigrant-serving rows:** Bergen United Center (Americas Unidas, Hackensack), Palisades Park center (Korean), Korean Community Center Tenafly, KASCA (Leonia), Indo-American Senior Center and Indo-American Senior Citizens Assn (Jersey City), Indo-American Seniors Org of NJ (Iselin), PACO (Jersey City, Spanish), PACCAL (Filipino, Jersey City), FOCUS Hispanic Center (Newark), La Casa de Don Pedro, PROCEED (Elizabeth), Catholic Charities Hispanic Older Adult Services (Cranford), PRUP (Camden), Urban Leagues of Essex/Hudson, Hackensack MLK Senior Center, Newark ward centers, Paterson, East Orange, Irvington, Plainfield, Trenton. **Haitian:** no Haitian-specific senior program with published contact info was found; leads are Lanbi Center (Orange), Jefferson Park Ministries (Elizabeth), and parish Haitian ministries (St. Leo Irvington; Holy Spirit / OLHC East Orange; OL Mt Carmel Orange) — not added as rows because no contact details were verified. **NAACP:** only the NJ State Conference email (president@njnaacp.org) surfaced; no branch contacts verified, so no rows.
+
+## Rows dropped in the trim (all are in the UHC PDF or county directories if needed)
+
+Essex: Belleville Senior Citizens Clubs; Fairfield Golden Age Club; Jewish Senior Citizens of Irvington; Weequahic Park CC; Branch Brook Senior Club; Nutley Senior Center; Newark South Ward Senior Center. Union: Casano CC; Clark Rec; Liberty Square; O'Donnell-Dempsey; Elizabethport Presbyterian; Kenilworth; New Providence; Springfield Chisholm; Buckle Center (Winfield); Mountainside; Garwood; JCC Central NJ; Westfield CC Assn; Scotch Plains Rec; Urban League of Union County. Morris: Denville; East Hanover; Jefferson; Montville; Mt. Olive; Pequannock; Rockaway; Roxbury; Florham Park; Madison; Chathams; Morris Twp Senior Club. Middlesex: Dunellen; Middlesex Boro; Milltown; South Amboy; South River; Spotswood; Plainsboro; Carteret Deverin CC; Five Branches; Highland Park; Sayreville; South Plainfield. Hudson: Grace Van Vorst; Harrison; Weehawken; Bayonne Senior Center; Kearny. Mercer: Sam Naples; Reading; South Ward CC; Robbinsville; Ewing; Interfaith Caregivers. Passaic: Ringwood; Hawthorne. Monmouth: Freehold Twp; Neptune. Camden: Collingswood. Atlantic: Hammonton; Egg Harbor Twp. Cumberland: Holly City. Cape May: Upper Twp. Sussex: Hopatcong. Ocean: LBI. Burlington: Bordentown. Bergen: Urban League Bergen; Catholic Charities Bergen; Fair Lawn; Elmwood Park Borough office.

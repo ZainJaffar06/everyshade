@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Every Shade Chapter Toolkit">
+<meta property="og:description" content="How to start and run an Every Shade chapter at your college: free skin cancer talks for every skin tone, a monthly self-check, and connecting people to care.">
+<meta property="og:type" content="website">
+<style>html,body{margin:0}img{max-width:100%}*{box-sizing:border-box}</style>
+<title>Every Shade | Chapter Toolkit</title>
+<meta name="description" content="A practical toolkit for students at other colleges to start an Every Shade chapter: an 8-week plan, roles, booking talks, running the talk, measuring outcomes, content standards, languages, brand, and the chapter agreement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: one calm column (max 1080px), same tokens as the main site, tone strip as divider. Large type for older readers. */
+:root{
+  --ground:#FFFFFF;
+  --band:#F7F1EC;
+  --ink:#2B1A12;
+  --muted:#6B5446;
+  --rule:#E6D9CF;
+  --accent:#8E5632;
+  --t1:#EFCBB0;--t2:#DDAA84;--t3:#C28559;--t4:#9C623A;--t5:#6B4127;--t6:#3D2416;
+  --rivet:#FFFFFF;
+  --display:'Manrope',system-ui,sans-serif;
+  --body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#1A110C;--band:#24180F;--ink:#F6ECE4;--muted:#CDB8A8;--rule:#3B2A1F;--accent:#E3A877;--rivet:#1A110C;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#1A110C;--band:#24180F;--ink:#F6ECE4;--muted:#CDB8A8;--rule:#3B2A1F;--accent:#E3A877;--rivet:#1A110C;color-scheme:dark}
+
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;letter-spacing:-0.015em}
+h3{font-size:1.35rem;font-weight:800}
+h4{font-size:1.1rem;font-weight:800;color:var(--muted)}
+p{margin:0;max-width:65ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
+.eyebrow a{color:var(--muted);text-transform:none;letter-spacing:0;font-family:var(--body);font-weight:400}
+
+/* nav */
+header.top{border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand span{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:-0.02em}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:1rem}
+nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:72px 64px}
+.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero-copy p{font-size:1.2rem;color:var(--muted)}
+.hero-mark{display:flex;justify-content:center}
+.hero-mark svg{width:100%;max-width:340px;height:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--ink);color:var(--ground);font-family:var(--display);font-weight:800;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;align-self:flex-start}
+.btn:hover{background:var(--accent)}
+
+/* tone strip divider */
+.strip{display:grid;grid-template-columns:repeat(6,1fr);height:10px}
+.strip i:nth-child(1){background:var(--t1)}.strip i:nth-child(2){background:var(--t2)}.strip i:nth-child(3){background:var(--t3)}
+.strip i:nth-child(4){background:var(--t4)}.strip i:nth-child(5){background:var(--t5)}.strip i:nth-child(6){background:var(--t6)}
+
+section{padding-block:64px;scroll-margin-top:16px}
+section.tint{background:var(--band)}
+.section-head{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+.section-head p{color:var(--muted)}
+
+/* contents */
+.contents ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 36px;counter-reset:none}
+.contents li a{display:flex;gap:14px;align-items:baseline;text-decoration:none;color:var(--ink);font-weight:700;font-size:1.1rem;padding:12px 0;border-top:1px solid var(--rule)}
+.contents li a b{font-family:var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.contents li a:hover{color:var(--accent)}
+.subnav{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.subnav a{font-size:0.95rem;font-weight:700;text-decoration:none;color:var(--muted)}
+.subnav a:hover{color:var(--accent)}
+
+/* prose */
+.prose{display:flex;flex-direction:column;gap:18px;min-width:0}
+.prose>*{min-width:0;max-width:100%}
+.prose p,.prose li,.prose td,.prose th{overflow-wrap:anywhere}
+.prose a{word-break:break-word}
+.prose h3{margin-top:22px;padding-top:18px;border-top:4px solid var(--t4);max-width:65ch;scroll-margin-top:16px}
+.prose h4{margin-top:6px}
+.prose ul,.prose ol{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px;max-width:65ch}
+.prose li{padding-left:0.2em}
+.prose blockquote{margin:0;padding:18px 22px;border-left:6px solid var(--t3);background:var(--ground);border-radius:0 14px 14px 0;max-width:65ch}
+section.tint .prose blockquote{background:var(--ground)}
+section:not(.tint) .prose blockquote{background:var(--band)}
+.prose blockquote p{font-weight:700}
+.prose pre{margin:0;padding:18px 20px;border:1px solid var(--rule);border-radius:14px;background:var(--band);overflow-x:auto;font-size:0.95rem;line-height:1.5;max-width:100%}
+section.tint .prose pre{background:var(--ground)}
+.prose pre code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.92em;background:var(--band);padding:1px 5px;border-radius:5px}
+section.tint .prose code{background:var(--ground)}
+.prose pre code{background:transparent;padding:0}
+.tablewrap{overflow-x:auto;max-width:100%;min-width:0;width:100%}
+.prose table{border-collapse:collapse;width:100%;min-width:480px;font-size:1rem}
+.prose th,.prose td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+.prose th{font-family:var(--display);font-weight:800;border-bottom:3px solid var(--t4)}
+.totop{margin-top:36px;font-size:0.95rem}
+.totop a{font-weight:700}
+
+footer{border-top:1px solid var(--rule)}
+footer .wrap{padding-block:32px;display:flex;flex-direction:column;gap:10px;font-size:0.9rem;color:var(--muted)}
+
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:48px}
+  .hero-mark{order:-1;justify-content:flex-start}
+  .hero-mark svg{max-width:180px}
+  .contents ol{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:48px}
+  .prose pre{font-size:0.85rem}
+}
+@media (prefers-reduced-motion:no-preference){.btn,nav a{transition:background .15s,color .15s,border-color .15s}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header.top nav,.totop,.subnav{display:none}section{padding-block:24px;break-inside:auto}.prose h3{break-after:avoid}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Every Shade home">
+      <svg width="40" height="30" viewBox="-12 8 224 140" aria-hidden="true">
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t1)" transform="rotate(-44 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t2)" transform="rotate(-22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t3)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t4)" transform="rotate(22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t5)" transform="rotate(44 100 132)"/>
+          <circle cx="100" cy="132" r="6" fill="var(--rivet)"/>
+        </svg>
+      <span>every shade</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="#contents">Contents</a></li>
+        <li><a href="#s02">Start a chapter</a></li>
+        <li><a href="#s10">Agreement</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Chapter toolkit · For students at other colleges</span>
+        <h1>Start an Every Shade chapter at your school.</h1>
+        <p>Every Shade gives free 45-minute talks on how skin cancer looks on every skin tone, teaches a monthly at-home skin check, and connects people to free and low-cost care. This toolkit is everything you need to run the same program in your community: a plan, the scripts, the standards, and the agreement.</p>
+        <a class="btn" href="#s02">See the 8-week plan</a>
+      </div>
+      <div class="hero-mark">
+        <svg viewBox="-12 8 224 140" role="img" aria-label="Every Shade logo: five skin-tone swatches fanned out">
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t1)" transform="rotate(-44 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t2)" transform="rotate(-22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t3)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t4)" transform="rotate(22 100 132)"/>
+          <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t5)" transform="rotate(44 100 132)"/>
+          <circle cx="100" cy="132" r="6" fill="var(--rivet)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <section id="contents" class="contents">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Contents</span>
+        <h2>Ten sections. Read 01 and 02 first.</h2>
+        <p>Each section is also a Markdown file in the repository, linked from its heading. Questions: <a href="mailto:everyshadescreening@gmail.com">everyshadescreening@gmail.com</a>.</p>
+      </div>
+      <ol>
+        <li><a href="#s01"><b>01</b> Why Every Shade exists and what a chapter commits to</a></li><li><a href="#s02"><b>02</b> Starting a chapter in 8 weeks</a></li><li><a href="#s03"><b>03</b> Roles and the minimum viable team</a></li><li><a href="#s04"><b>04</b> Booking talks</a></li><li><a href="#s05"><b>05</b> Running the talk</a></li><li><a href="#s06"><b>06</b> Measuring outcomes</a></li><li><a href="#s07"><b>07</b> Content standards and medical review</a></li><li><a href="#s08"><b>08</b> Languages</a></li><li><a href="#s09"><b>09</b> Brand and communications</a></li><li><a href="#s10"><b>10</b> Chapter agreement and FAQ</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <section id="s01">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 01 of 10 · <a href="01-why-every-shade-exists.md">01-why-every-shade-exists.md</a></span>
+        <h2>Why Every Shade exists and what a chapter commits to</h2>
+        <ul class="subnav"><li><a href="#s01-the-mission-in-one-paragraph">The mission in one paragraph</a></li><li><a href="#s01-the-three-facts-we-cite-with-sources">The three facts we cite, with sources</a></li><li><a href="#s01-what-we-mean-by-equity-concretely">What we mean by equity, concretely</a></li><li><a href="#s01-educational-not-diagnostic">&quot;Educational, not diagnostic&quot;</a></li><li><a href="#s01-precedent-stated-accurately">Precedent, stated accurately</a></li><li><a href="#s01-what-a-chapter-commits-to">What a chapter commits to</a></li></ul>
+      </div>
+      <div class="prose">
+<p>Every Shade is a student group at Rutgers University–New Brunswick, co-founded by Zain Jaffar. We give free 45-minute talks, over Zoom or in person, to senior centers, libraries, faith communities, and community groups in New Jersey. The talk covers how skin cancer looks on every skin tone, teaches a monthly at-home skin check, and connects people to free or low-cost care. Site: <a href="https://zainjaffar06.github.io/everyshade/">https://zainjaffar06.github.io/everyshade/</a>. Email: everyshadescreening@gmail.com.</p>
+<p>This toolkit is for students at other colleges who want to run the same program in their own community. It tells you what the program is, what it is not, and exactly how to start.</p>
+<h3 id="s01-the-mission-in-one-paragraph">The mission in one paragraph</h3>
+<p>Most of the pictures doctors learn from show light skin. On darker skin, a rash can look purple or brown instead of red, and melanoma often shows up in places people do not think to check: the palms, the soles of the feet, between the toes, and under the nails. When it is missed, it is caught later, and later means harder to treat. Every Shade teaches people what to look for on their own skin, how to check once a month, and where to go if they find something. That is the whole program. It is small on purpose so that three students can run it well.</p>
+<h3 id="s01-the-three-facts-we-cite-with-sources">The three facts we cite, with sources</h3>
+<p>Use these in every talk, say them as written here, and keep the sources on the slide.</p>
+<p><strong>1. About 15% of images in six common medical student study resources showed skin of color.</strong> The study examined 1,123 images across the AAD Basic Dermatology Curriculum, Amboss, Boards and Beyond, Firecracker, First Aid 2020, and Pathoma; 167 (14.9%) were classified as skin of color. Source: Perlman KL, Klein EJ, Hochman J, et al. Skin of color lacks representation in medical student resources: A cross-sectional study. International Journal of Women's Dermatology. 2021;7(2):195-196. DOI 10.1016/j.ijwd.2020.12.018. Free at <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8072497/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8072497/</a>.</p>
+<p><strong>2. Five-year melanoma survival is about 66% for Black patients compared with about 90% for white patients.</strong> The exact figures are 66.2% versus 90.1% relative five-year survival for non-Hispanic Black and non-Hispanic white Americans. The same paper reports that 16% of Black patients were diagnosed after the melanoma had spread to distant sites, versus 5% of white patients. That stage gap is the main reason for the survival gap. Source: Culp MB, Lunsford NB. Melanoma Among Non-Hispanic Black Americans. Preventing Chronic Disease (CDC). 2019;16:180640. DOI 10.5888/pcd16.180640. Free at <a href="https://www.cdc.gov/pcd/issues/2019/18_0640.htm">https://www.cdc.gov/pcd/issues/2019/18_0640.htm</a>.</p>
+<p><strong>3. 46% of melanomas with a known type in Black patients were acral lentiginous melanoma, the type that arises on the palms, soles, and under the nails. In white patients it was 2%.</strong> Same source as fact 2. One nuance: most melanomas in Black patients in that dataset had no specific type recorded, so when every case is counted, acral lentiginous melanoma is 16.7% of the total. The 46% compares cases where the type was known. Either way, the message holds: in Black patients, the places you are least likely to look are where melanoma most often appears. The paper also reports that the legs and feet were the most common site (48% of melanomas in Black patients).</p>
+<p>If someone challenges a number, show them the paper, not the slide.</p>
+<h3 id="s01-what-we-mean-by-equity-concretely">What we mean by equity, concretely</h3>
+<p>Equity in this program is four specific things we teach differently from a generic skin cancer talk.</p>
+<p><strong>Acral sites first.</strong> Palms, soles, between the toes, fingernails, toenails. We show them early and return to them in the self-check. Sun-safety talks rarely mention these places because sun exposure does not drive acral melanoma. For a Black or South Asian audience, these are the most important slides in the deck.</p>
+<p><strong>Melanoma on brown and Black skin.</strong> A dark spot on the sole or palm that is growing, has several colors, or has a ragged edge. A brown or black line or band in a nail, especially one nail, especially if it is widening or the color reaches the skin at the base. A spot that looks different from every other spot on that person. We teach the AAD's ABCDEs (asymmetry, border, color, diameter, evolving) and add the "ugly duckling": the one spot that does not match the others.</p>
+<p><strong>Basal cell and squamous cell carcinoma on brown and Black skin.</strong> On light skin, basal cell carcinoma is usually described as a pearly pink bump. On darker skin, the AAD describes it as a firm, dome-shaped growth that is brown or black, a shiny bump that looks black, brown, or blue, or a sore or pimple that will not heal. Squamous cell carcinoma on darker skin can look like a round or oval spot darker than the surrounding skin, a rough scaly patch, or a sore that bleeds and scabs. It tends to appear in old scars, burns, and areas of long-standing inflammation, and the AAD notes it is the most common skin cancer in Black and Asian Indian patients. Source: AAD, "Finding skin cancer in darker skin tones," <a href="https://www.aad.org/public/diseases/skin-cancer/darker-skin-tones">https://www.aad.org/public/diseases/skin-cancer/darker-skin-tones</a>.</p>
+<p><strong>Rashes and inflammation.</strong> Redness is hard to see on dark skin. Eczema, psoriasis, and drug reactions can look purple, gray, or dark brown. We mention this because people in the audience have been told "it isn't red, so it isn't inflamed." We do not diagnose rashes. We tell people that color is not the only sign, and to describe itch, warmth, swelling, and change when they see a clinician.</p>
+<h3 id="s01-educational-not-diagnostic">"Educational, not diagnostic"</h3>
+<p>This sentence keeps the program safe and keeps it running. Every member of every chapter can say it from memory:</p>
+<blockquote><p>Every Shade provides general health education only. Nothing in our talks is medical advice or a diagnosis. Our members are students, not medical professionals. If a spot is new, changing, or bleeding, please see a doctor.</p></blockquote>
+<p>It goes on the footer of the site, the second and last slide, the handout, and your email signature. Section 05 covers what to say when someone asks you to look at a spot. The short version: you do not look, you do not guess, and you help them get to someone who can.</p>
+<h3 id="s01-precedent-stated-accurately">Precedent, stated accurately</h3>
+<p>Two national programs do related work. Name them when you talk to an advisor or a partner, and describe them correctly.</p>
+<p><strong>Skin of Color Society: SOCS Serves.</strong> The Skin of Color Society is a professional society of dermatologists founded in 2004. SOCS Serves is its volunteer program: it gives members ready-made toolkits (slide decks, handouts, resource lists) so they can run outreach without building a program from scratch. One arm brings exposure to dermatology to learners from kindergarten through medical school; the other brings dermatology education to communities that rarely see a dermatologist, with community decks on topics including skin cancer and sun protection, some in Spanish. Any SOCS member can volunteer; medical students must volunteer alongside a dermatology resident, fellow, or attending. It is a program for dermatology professionals and their trainees, not one undergraduates can join on their own. Source: SOCS leadership interview summarized by HCPLive, September 22, 2026; <a href="https://skinofcolorsociety.org/">https://skinofcolorsociety.org/</a>.</p>
+<p><strong>American Academy of Dermatology: free skin cancer checks.</strong> The AAD runs a free skin cancer check program under its SPOT Skin Cancer initiative (promoted for years as SPOTme). Volunteer board-certified dermatologists give free visual skin checks to the public, mostly at spring events. The AAD reports 2.8 million people screened and more than 33,000 suspected melanomas found. Anyone can search for a check at <a href="https://www.aad.org/skin-cancer-screenings/find-a-screening">https://www.aad.org/skin-cancer-screenings/find-a-screening</a>. That program does what we cannot: it looks at skin. We point people to it.</p>
+<p>The honest description of Every Shade relative to these programs: we are the student-run education layer. We do not screen. We teach what to look for, teach a monthly self-check, and tell people where free screenings and low-cost clinics are. If a dermatologist in your area wants to run a screening after one of your talks, that is the best possible outcome.</p>
+<h3 id="s01-what-a-chapter-commits-to">What a chapter commits to</h3>
+<p>Seven things. Section 10 turns them into a one-page agreement.</p>
+<ol><li>Give the talk as written in the kit, with the three facts and the disclaimer, and add no medical claims that are not traceable to the AAD, the Skin Cancer Foundation, the CDC, or a peer-reviewed paper.</li><li>Never diagnose, examine, or give individual medical advice, in person, on Zoom, or by email.</li><li>Have a physician or faculty advisor who has read the deck and agreed to be named.</li><li>Run the pre/post quiz at every talk and report numbers honestly, including the unflattering ones.</li><li>Serve the communities that need this most. If your first three talks are all on your own campus, you have not started yet.</li><li>Report to Every Shade (Rutgers) twice a year using the template in section 06.</li><li>Use the name "Every Shade at [School]" and the materials under the terms in section 10, and do not fundraise in Every Shade's name without approval.</li></ol>
+<p>Everything else in this toolkit exists to make those seven things easy.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s02" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 02 of 10 · <a href="02-starting-a-chapter-in-8-weeks.md">02-starting-a-chapter-in-8-weeks.md</a></span>
+        <h2>Starting a chapter in 8 weeks</h2>
+        <ul class="subnav"><li><a href="#s02-week-1-find-two-or-three-co-founders">Week 1: Find two or three co-founders</a></li><li><a href="#s02-week-2-find-a-faculty-or-physician-advisor">Week 2: Find a faculty or physician advisor</a></li><li><a href="#s02-week-3-register-and-set-up-accounts">Week 3: Register and set up accounts</a></li><li><a href="#s02-week-4-learn-the-talk">Week 4: Learn the talk</a></li><li><a href="#s02-week-5-run-a-practice-talk">Week 5: Run a practice talk</a></li><li><a href="#s02-week-6-build-the-target-list-and-start-outreach">Week 6: Build the target list and start outreach</a></li><li><a href="#s02-week-7-follow-up-and-call">Week 7: Follow up and call</a></li><li><a href="#s02-week-8-book-your-first-three-talks">Week 8: Book your first three talks</a></li><li><a href="#s02-after-week-8">After week 8</a></li><li><a href="#s02-chapter-application-one-page">Chapter application (one page)</a></li></ul>
+      </div>
+      <div class="prose">
+<p>You can go from "I want to do this" to your first booked talk in eight weeks if you do the steps in order. Do not design a logo, build a website, or open an Instagram account until week 6. What gets a talk booked is an advisor, an email address, a practiced speaker, and a list of phone numbers.</p>
+<h3 id="s02-week-1-find-two-or-three-co-founders">Week 1: Find two or three co-founders</h3>
+<p>You need at least three people; four is better. Ask two questions: "Who do I know who shows up on time?" and "Who do I know who is comfortable calling a stranger on the phone?" The second is rarer and matters more than any pre-med credential.</p>
+<p>Look in your pre-health society, public health and nursing majors, students who already volunteer at a senior center or clinic, and students who speak Spanish, Hindi, Urdu, Gujarati, Haitian Creole, or Korean at home (section 08 explains why). Nobody needs to have taken a dermatology course.</p>
+<p>Meet once, in person, for one hour. Assign the roles in section 03, pick a weekly meeting time, and send the chapter application (below) to everyshadescreening@gmail.com by the end of the week.</p>
+<h3 id="s02-week-2-find-a-faculty-or-physician-advisor">Week 2: Find a faculty or physician advisor</h3>
+<p>Your advisor reads the slide deck once a year and signs off on it, is named as the chapter's medical reviewer, and is the person a community partner can call to confirm the program is real. The advisor does not attend talks or meet with you weekly.</p>
+<p>Who to ask, in order: a dermatologist affiliated with your medical school or a nearby practice; any physician on faculty (family medicine, internal medicine, oncology); a nurse practitioner or physician assistant with dermatology experience; a public health faculty member, if a physician will still do the annual content review.</p>
+<p>How to ask: a two-paragraph email. First paragraph: who you are, what Every Shade is in one sentence with the site link, and that you will use the Rutgers physician-reviewed deck as-is. Second paragraph: the exact ask, "read a 30-slide deck once a year, suggest edits, and let us list you as our advisor." No attachments. Offer a 15-minute meeting. Follow up once at day 5. If silence at day 10, ask someone else. Ask three people at once if you need to.</p>
+<p>Also this week: find out what your school requires to register a student organization. Usually it is an online form, a constitution (we have a template; ask), a minimum member count, and an advisor. Some schools allow a provisional period before you have an advisor. Start the form now.</p>
+<h3 id="s02-week-3-register-and-set-up-accounts">Week 3: Register and set up accounts</h3>
+<p>Submit the registration using the constitution template; change the school name and nothing else unless your school requires a clause.</p>
+<p>Create a chapter Gmail account in the form everyshade.[schoolshortname]@gmail.com. Do not use a personal email for outreach. Two people hold the password. Put the disclaimer sentence from section 01 in the signature.</p>
+<p>Create a shared Drive folder with four subfolders: Outreach (a copy of outreach/tracker.xlsx from the repo), Talks (the talk-kit/ download), Data (quiz results), and Admin (registration, advisor sign-off).</p>
+<h3 id="s02-week-4-learn-the-talk">Week 4: Learn the talk</h3>
+<p>Everyone who will present reads the deck, the speaker notes, and the large-print handout, then watches a recorded Rutgers talk (we send it with the kit). Then each presenter gives the talk alone, aloud, with a timer. It should take 32 to 35 minutes without questions. If it takes 45, you are reading the slides.</p>
+<p>The speaker lead and the president take the pre/post quiz cold, before reading the deck. That shows you what a smart person who has never heard the talk gets wrong, which is what your audience will get wrong.</p>
+<h3 id="s02-week-5-run-a-practice-talk">Week 5: Run a practice talk</h3>
+<p>Give the full talk, with the quiz, to at least eight people who are not in your chapter: your advisor's office staff, a campus staff group, a residence hall floor, your grandparents and their friends on Zoom. Run it exactly as you would at a senior center, including the pre-quiz, the disclaimer, and the Q&amp;A rules. Have one chapter member in the audience ask "Can you look at this spot on my arm?" so the presenter practices the redirect in section 05.</p>
+<p>Afterward, compute knowledge gain as in section 06. A question with zero or negative gain means that slide's delivery is not working. Fix the delivery; content changes go through section 07.</p>
+<h3 id="s02-week-6-build-the-target-list-and-start-outreach">Week 6: Build the target list and start outreach</h3>
+<p>The outreach lead builds a list of 30 organizations using section 04: ten senior centers, ten libraries, ten faith or community organizations, each with a named contact, phone, and email. This takes about four hours and is the most important four hours in this plan.</p>
+<p>Send the first ten emails on a Tuesday using the templates in section 04. Log each in the tracker. Now you may make a flyer and a social account (section 09); you have something to announce.</p>
+<h3 id="s02-week-7-follow-up-and-call">Week 7: Follow up and call</h3>
+<p>Day-5 follow-ups go out for week 6's emails. Day-10 calls begin. Send the second batch of ten emails. You will probably book your first talk this week, and it will probably be a library, because libraries book quickly and have calendars to fill.</p>
+<h3 id="s02-week-8-book-your-first-three-talks">Week 8: Book your first three talks</h3>
+<p>By the end of week 8 you want three talks on the calendar within six weeks. If you have one, keep calling. If you have zero, it is almost always one of three things: emails are going to a generic inbox instead of a named activities director, you are not calling, or you are only emailing campus-adjacent organizations. Section 04 fixes all three.</p>
+<p>Send Every Shade (Rutgers) a two-line update: organizations contacted, talks booked. That is your first report.</p>
+<h3 id="s02-after-week-8">After week 8</h3>
+<p>A healthy chapter gives two to four talks a month during the semester, runs the quiz at every one, sends the 30-day follow-up, and reports twice a year. A chapter that gives one talk a semester is still one room of people who now check their feet. Do not grow faster than your speakers can handle.</p>
+<h3 id="s02-chapter-application-one-page">Chapter application (one page)</h3>
+<p>Paste this into an email to everyshadescreening@gmail.com with the subject "Chapter application: [School]". We reply within a week with the kit, the constitution template, a recorded talk, and a 30-minute call. Once your advisor has signed off on the deck and you have given a practice talk, we list your chapter on the site.</p>
+<pre><code>EVERY SHADE CHAPTER APPLICATION
+
+School and campus:
+City and state:
+
+Founders (name, year, major, email, phone), at least two:
+1.
+2.
+3.
+Primary contact:
+
+Advisor (name, title, department, email), or &quot;not yet; asking X, Y, Z&quot;:
+
+Student organization status: registered / in progress / not started
+Chapter email (everyshade.[school]@gmail.com):
+
+First target communities (three to five specific organizations, with town):
+1.
+2.
+3.
+
+Languages spoken at home by your founders:
+
+Why this community, in two or three sentences:
+
+Commitment: We have read the chapter toolkit. We agree to use the talk
+kit as written, to never diagnose or give individual medical advice,
+to run the pre/post quiz at every talk, to report twice a year, and to
+the terms in section 10 of the toolkit.
+
+Signed (typed names of all founders):
+Date:</code></pre>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s03">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 03 of 10 · <a href="03-roles-and-minimum-team.md">03-roles-and-minimum-team.md</a></span>
+        <h2>Roles and the minimum viable team</h2>
+        <ul class="subnav"><li><a href="#s03-president-2-to-3-hours-a-week">President (2 to 3 hours a week)</a></li><li><a href="#s03-outreach-lead-3-to-4-hours-a-week">Outreach lead (3 to 4 hours a week)</a></li><li><a href="#s03-speaker-lead-2-to-3-hours-a-week-plus-talks">Speaker lead (2 to 3 hours a week, plus talks)</a></li><li><a href="#s03-measurement-lead-1-to-2-hours-a-week">Measurement lead (1 to 2 hours a week)</a></li><li><a href="#s03-language-lead-1-to-2-hours-a-week-more-when-translating">Language lead (1 to 2 hours a week, more when translating)</a></li><li><a href="#s03-minimum-viable-team">Minimum viable team</a></li><li><a href="#s03-second-presenters">Second presenters</a></li><li><a href="#s03-advisor-about-3-hours-a-year">Advisor (about 3 hours a year)</a></li><li><a href="#s03-weekly-meeting-agenda-30-minutes">Weekly meeting agenda (30 minutes)</a></li></ul>
+      </div>
+      <div class="prose">
+<p>Five roles, three people minimum. One person can hold two roles; nobody holds three. Time estimates assume two to four talks a month during the semester.</p>
+<h3 id="s03-president-2-to-3-hours-a-week">President (2 to 3 hours a week)</h3>
+<p>Owns the relationship with the advisor and with Every Shade (Rutgers). Runs the weekly 30-minute meeting. Keeps the student organization registration current. Signs the chapter agreement. Makes sure the twice-yearly report goes out and that the chapter email is answered within 48 hours.</p>
+<p>The week: 30-minute meeting, 30 minutes of email, 30 minutes checking the tracker and data folder, an hour on whatever is falling behind. In a three-person chapter the president is also the speaker lead or the outreach lead.</p>
+<p>What goes wrong: the president does everything, burns out by week 10, and the chapter stops. Give away roles in week 1 and hold people to them.</p>
+<h3 id="s03-outreach-lead-3-to-4-hours-a-week">Outreach lead (3 to 4 hours a week)</h3>
+<p>Owns the target list and the tracker. Sends the emails and follow-ups, makes the calls, confirms logistics one week and one day before each talk. This role produces talks; without it nothing else matters.</p>
+<p>The week: an hour building or refreshing the list, an hour on first emails and day-5 follow-ups, an hour on the phone, 30 minutes updating the tracker. Double it during a booking push.</p>
+<p>Who is good at this: someone unafraid of the phone who writes short emails and keeps a tidy list. The outreach lead often never presents.</p>
+<p>What goes wrong: emails go out, nobody follows up, and the chapter concludes "senior centers aren't interested." They are interested. They did not get a call.</p>
+<h3 id="s03-speaker-lead-2-to-3-hours-a-week-plus-talks">Speaker lead (2 to 3 hours a week, plus talks)</h3>
+<p>Owns the talk. Knows the deck cold, trains every other presenter, and is the default presenter. Runs the Zoom setup (section 05). Keeps the kit synced with the latest version in the Rutgers repo. Makes sure the disclaimer slide and the Q&amp;A rules are never skipped.</p>
+<p>Each talk costs about 2.5 hours: 30 minutes of prep and tech check, 45 minutes of talk, 15 minutes of Q&amp;A and packing up, plus travel. Training a new presenter costs about three hours across two sessions.</p>
+<p>What goes wrong: a presenter improvises a medical claim or answers a "look at my spot" question. Prevent it by making every presenter practice the redirect script aloud before their first talk.</p>
+<h3 id="s03-measurement-lead-1-to-2-hours-a-week">Measurement lead (1 to 2 hours a week)</h3>
+<p>Owns the pre/post quiz, the attendance log, the 30-day follow-up, and the report. Prints quiz sheets, sets up Zoom polls, collects sheets, enters numbers within 48 hours, computes knowledge gain (section 06), sends follow-ups, and writes the semester report with the president.</p>
+<p>Who is good at this: someone who likes spreadsheets and is comfortable saying "that number is lower than we hoped."</p>
+<h3 id="s03-language-lead-1-to-2-hours-a-week-more-when-translating">Language lead (1 to 2 hours a week, more when translating)</h3>
+<p>Owns the translated handouts in languages/, knows which have been reviewed by a native speaker with a medical background, recruits reviewers (section 08), and decides when a talk needs an interpreter. Also keeps the local free and low-cost clinic list current, because it changes and often needs to exist in more than one language.</p>
+<p>If nobody on your team speaks a second language, you still need this role. The job is to find reviewers, not to translate.</p>
+<h3 id="s03-minimum-viable-team">Minimum viable team</h3>
+<div class="tablewrap"><table><thead><tr><th>Person</th><th>Roles</th></tr></thead><tbody><tr><td>A</td><td>President and speaker lead</td></tr><tr><td>B</td><td>Outreach lead</td></tr><tr><td>C</td><td>Measurement lead and language lead</td></tr></tbody></table></div>
+<p>About 7 to 9 hours a week across three people. With four, split speaker lead from president. With five, everyone holds one role and four talks a month is comfortable.</p>
+<h3 id="s03-second-presenters">Second presenters</h3>
+<p>Keep at least two trained presenters so a talk is never cancelled for one person's exam. A trained presenter has given the full talk to a real audience with the speaker lead watching. Keep the list in the Admin folder.</p>
+<h3 id="s03-advisor-about-3-hours-a-year">Advisor (about 3 hours a year)</h3>
+<p>Reads the deck once a year, suggests edits, replies to the annual sign-off email, and agrees to be named. Send one email in September with the deck, one in January with the report, and a thank-you in May. Do not send the advisor your tracker, social posts, or meeting notes.</p>
+<h3 id="s03-weekly-meeting-agenda-30-minutes">Weekly meeting agenda (30 minutes)</h3>
+<ol><li>Talks in the next two weeks: presenter, tech, quizzes. (5 min)</li><li>Tracker: emails out, follow-ups due, calls due, talks booked. (10 min)</li><li>Last talk's numbers: attendance, knowledge gain, anything that went wrong. (5 min)</li><li>Blockers. (5 min)</li><li>One thing each person will do before next week. (5 min)</li></ol>
+<p>A chapter that meets for two hours a week and gives no talks is a club, not a chapter.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s04" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 04 of 10 · <a href="04-booking-talks.md">04-booking-talks.md</a></span>
+        <h2>Booking talks</h2>
+        <ul class="subnav"><li><a href="#s04-where-to-find-organizations">Where to find organizations</a></li><li><a href="#s04-the-4-touch-cadence">The 4-touch cadence</a></li><li><a href="#s04-pitch-emails">Pitch emails</a></li><li><a href="#s04-phone-script-day-10">Phone script (day 10)</a></li><li><a href="#s04-when-they-ask-are-you-doctors">When they ask &quot;Are you doctors?&quot;</a></li><li><a href="#s04-confirmation-and-logistics">Confirmation and logistics</a></li><li><a href="#s04-tracking">Tracking</a></li><li><a href="#s04-after-a-good-talk-ask-for-two-things">After a good talk, ask for two things</a></li></ul>
+      </div>
+      <div class="prose">
+<p>Booking is a numbers game with a short script. Contact 30 organizations and follow up on all of them, and you will book three to five talks. Contact five and wait, and you will book zero.</p>
+<h3 id="s04-where-to-find-organizations">Where to find organizations</h3>
+<p><strong>Senior centers.</strong> Every county in the United States has an Area Agency on Aging (AAA) funded under the Older Americans Act. In New Jersey these are the 21 county offices on aging, also called Aging and Disability Resource Connections, listed at <a href="https://www.nj.gov/humanservices/doas/assistance/county-offices">https://www.nj.gov/humanservices/doas/assistance/county-offices</a> (statewide line 1-877-222-3737). In any other state, use the federal Eldercare Locator at <a href="https://eldercare.acl.gov">https://eldercare.acl.gov</a> or 1-800-677-1116, run by the Administration for Community Living, to find your county's AAA. Call the AAA and ask for the list of senior centers and congregate meal sites in the county, and the name of the person who coordinates health programming. Many AAAs will forward your email to every center director at once; that one call can replace twenty.</p>
+<p>Also search county and town websites for "senior center," "office on aging," "senior services," and "adult day program." Municipal senior centers usually list an activities coordinator with an email.</p>
+<p><strong>Libraries.</strong> Most state libraries keep a directory of every public library in the state. New Jersey's, organized by county with phone numbers and director emails, is at <a href="https://www.njstatelib.org/services_for_libraries/library-development/new-jersey-public-libraries-directory/">https://www.njstatelib.org/services_for_libraries/library-development/new-jersey-public-libraries-directory/</a>. For other states, search "[state] state library public library directory." Within a library, the person you want is the adult programming or adult services librarian, not the director. Libraries plan one to three months out and like a free health program with a handout.</p>
+<p><strong>Faith communities.</strong> Use denominational directories rather than a map search. Catholic dioceses publish parish finders. Most Protestant denominations (United Methodist, AME, AME Zion, National Baptist, Presbyterian, Episcopal, Lutheran) have conference, district, or presbytery directories online. Local Islamic councils list member mosques. Hindu temples, gurdwaras, and Buddhist temples are listed on regional umbrella sites. Synagogues are listed by the local Jewish federation. Within a congregation, ask for the health ministry, the seniors ministry, the women's ministry, or the parish nurse. Black churches with a health ministry are often the best partners you will find: a health leader, a room, a Sunday audience, and a tradition of health talks.</p>
+<p><strong>Community centers and others.</strong> YMCAs, NAACP branches, Urban League affiliates, ethnic community associations (Indian, Pakistani, Bangladeshi, Haitian, Korean, Filipino, Nigerian, Ghanaian), housing authority community rooms, federally qualified health centers that run patient education events, and adult education or ESL programs. On your own campus, the student-run free clinic, the public health department's community partners, and the office of community engagement all keep lists.</p>
+<p>Build the list in outreach/tracker.xlsx from the repo. Thirty organizations with a named contact is the target before you send anything.</p>
+<h3 id="s04-the-4-touch-cadence">The 4-touch cadence</h3>
+<p>Every organization gets four touches over 20 days. Log each one the day it happens.</p>
+<div class="tablewrap"><table><thead><tr><th>Day</th><th>Touch</th><th>What</th></tr></thead><tbody><tr><td>0</td><td>Email 1</td><td>The pitch email for their organization type (below).</td></tr><tr><td>5</td><td>Email 2</td><td>A three-line reply to your own email: "Following up in case this got buried. Happy to do any date in [month]. Would a quick call help?"</td></tr><tr><td>10</td><td>Phone call</td><td>Use the phone script. Leave a voicemail if no answer, and send a one-line email saying you called.</td></tr><tr><td>20</td><td>Close or park</td><td>Yes: book it. No: thank them and mark "no." Silence: mark "parked" and send a fresh email 1 next semester.</td></tr></tbody></table></div>
+<p>No fifth email, and never two calls in one week. Silence after four touches usually means overload, not disinterest, and a fresh approach in three months works better than a sixth message now. Send emails Tuesday to Thursday, 9 to 11 a.m. Call Tuesday to Thursday, 10 to noon or 2 to 4; senior centers are busiest at lunch.</p>
+<h3 id="s04-pitch-emails">Pitch emails</h3>
+<p>Replace everything in brackets. No attachments on the first email; link to the site. Sign with your name, role, "Every Shade at [School]," the chapter email, and the disclaimer sentence.</p>
+<h4>Senior center</h4>
+<pre><code>Subject: Free 45-minute skin cancer talk for [Center name] members
+
+Dear [Name],
+
+I&#x27;m a student at [School] with Every Shade, a student group that gives
+free talks on skin cancer to senior centers. The talk is 45 minutes,
+over Zoom on your TV or in person, and covers how skin cancer looks on
+every skin tone, the spots people miss (palms, soles, under the
+nails), a simple skin check to do at home once a month, and where to
+get a spot looked at for free or low cost nearby.
+
+We bring a large-print handout for everyone to keep. There&#x27;s no cost
+and nothing to sell. Our slides are reviewed by a physician advisor,
+and we&#x27;re clear with members that we&#x27;re students giving health
+education, not doctors giving diagnoses.
+
+Would any morning in [month] work for your members? I&#x27;m happy to call
+at a time that suits you.
+
+More about us: https://zainjaffar06.github.io/everyshade/
+
+Thank you,
+[Name], [Role], Every Shade at [School]
+[chapter email] · [phone]</code></pre>
+<h4>Library</h4>
+<pre><code>Subject: Free adult program: skin cancer on every skin tone (45 min)
+
+Dear [Name],
+
+I&#x27;d like to offer [Library name] a free adult health program. Every
+Shade is a student group at [School] that gives 45-minute talks on how
+skin cancer looks on every skin tone, with a simple monthly self-check
+and a list of free and low-cost places to get a spot checked.
+
+It works in your meeting room or over Zoom, includes a large-print
+handout (also in Spanish, Hindi, Urdu, Gujarati, Haitian Creole, and
+Korean), and fits a weekday afternoon or evening slot. We can send a
+flyer and a calendar blurb.
+
+Would you have a slot in [month] or [next month]?
+
+More about us: https://zainjaffar06.github.io/everyshade/
+
+Thank you,
+[Name], [Role], Every Shade at [School]
+[chapter email] · [phone]</code></pre>
+<h4>Faith community</h4>
+<pre><code>Subject: Free skin health talk for [Congregation]&#x27;s [health ministry / seniors]
+
+Dear [Pastor / Imam / Rabbi / Health ministry leader],
+
+I&#x27;m a student at [School] with Every Shade, a student group that gives
+free talks on skin cancer in communities where it&#x27;s often found late.
+In Black patients, melanoma most often appears on the palms, soles,
+and under the nails, places most people never check, and five-year
+survival is about 66% compared with about 90% for white patients,
+mostly because it&#x27;s caught later.
+
+Our 45-minute talk shows what to look for on brown and Black skin,
+teaches a monthly at-home skin check, and shares where to get a spot
+looked at for free or low cost. It works after a service, at a
+seniors&#x27; lunch, or over Zoom, and everyone takes home a large-print
+handout.
+
+Would your congregation have a time in [month]? I&#x27;d be glad to speak
+with your health ministry leader first.
+
+More about us: https://zainjaffar06.github.io/everyshade/
+
+With thanks,
+[Name], [Role], Every Shade at [School]
+[chapter email] · [phone]</code></pre>
+<h4>Community center or cultural association</h4>
+<pre><code>Subject: Free skin cancer talk in [language] and English for [Organization]
+
+Dear [Name],
+
+Every Shade is a student group at [School]. We give free 45-minute
+talks on how skin cancer looks on every skin tone, how to check your
+own skin once a month, and where to get a spot checked for free or low
+cost. Our handout is available in [language], and [one of our
+presenters speaks [language] / we can arrange an interpreter].
+
+The talk works in your space or over Zoom and is written in plain
+language for people who have never heard of melanoma. There&#x27;s no cost.
+
+Could we find a time in [month]? I&#x27;m happy to call.
+
+More about us: https://zainjaffar06.github.io/everyshade/
+
+Thank you,
+[Name], [Role], Every Shade at [School]
+[chapter email] · [phone]</code></pre>
+<h3 id="s04-phone-script-day-10">Phone script (day 10)</h3>
+<p>Stand up. Have the tracker open.</p>
+<p>"Hi, my name is [Name], I'm a student at [School]. I'm calling for [contact name], or whoever plans programs for members."</p>
+<p>When you reach them: "Thanks for taking the call. I emailed last week about a free 45-minute talk on skin cancer and how it looks on every skin tone. It's a student group called Every Shade. We bring a large-print handout, teach a simple monthly skin check, and share where to get a spot looked at for free. There's nothing to buy. I wanted to see if a morning in [month] might work for your members."</p>
+<p>If yes: "Great. Does [date] or [date] work? Is it easier if we come in person or present over Zoom on your TV? About how many people usually come?" Write down date, time, format, headcount, room, and who confirms. Say you will send a confirmation email today.</p>
+<p>If "send me more information": "Of course. I'll resend the email with a flyer today. Is it okay if I call back next week?" Then do exactly that.</p>
+<p>If no: "Understood, thank you for your time. Our email is [chapter email] if it's useful later." Mark "no."</p>
+<p>Voicemail, under 20 seconds: "Hi, this is [Name] from Every Shade at [School]. I emailed about a free skin cancer talk for your members and wanted to see if a date in [month] works. You can reach me at [phone] or [chapter email]. Thank you."</p>
+<h3 id="s04-when-they-ask-are-you-doctors">When they ask "Are you doctors?"</h3>
+<p>They will ask. Answer plainly and do not oversell.</p>
+<p>"No, we're students. We're not doctors and we don't examine anyone. What we do is health education: what skin cancer can look like on different skin tones, how to check your own skin at home, and where to go to get checked. Our slides are reviewed by [advisor name and title] at [institution], and we use material from the American Academy of Dermatology and the CDC. If someone has a spot they're worried about, we help them find a clinic; we never look at it ourselves."</p>
+<p>If they want a doctor instead: "That's fair. The American Academy of Dermatology lists free skin cancer checks by dermatologists at aad.org, and I'm happy to send the link. Our talk works well before a screening, so people know what the doctor is looking for."</p>
+<h3 id="s04-confirmation-and-logistics">Confirmation and logistics</h3>
+<p>Send a confirmation email the day you book: date, time, format, who is presenting, what you need (a TV or projector with HDMI and sound, a table for handouts, a headcount estimate), the flyer and calendar blurb from section 09, and the disclaimer sentence. One week before: confirm, ask for the final headcount, and send the handout PDF. One day before: confirm the room and tech. For "watch together" Zoom talks, get the cell number of whoever will run the laptop in the room.</p>
+<h3 id="s04-tracking">Tracking</h3>
+<p>Use outreach/tracker.xlsx. One row per organization: organization, type, town, contact name, role, email, phone, source, date of email 1, email 2, call, outcome (booked / no / parked), talk date, format, headcount, notes. Update it the day something happens. At the weekly meeting the outreach lead reads off emails due, calls due, talks booked. A tracker that is not updated is worse than none, because it says a follow-up happened when it did not. Each semester the tracker's totals go into the report in section 06.</p>
+<h3 id="s04-after-a-good-talk-ask-for-two-things">After a good talk, ask for two things</h3>
+<p>Before you leave, ask for a repeat date next year and for one introduction: "Is there another center or congregation that would want this?" A warm introduction books at three to four times the rate of a cold email. Log it with the referrer's name.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s05">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 05 of 10 · <a href="05-running-the-talk.md">05-running-the-talk.md</a></span>
+        <h2>Running the talk</h2>
+        <ul class="subnav"><li><a href="#s05-the-kit">The kit</a></li><li><a href="#s05-45-minute-run-of-show">45-minute run-of-show</a></li><li><a href="#s05-zoom-setup-for-seniors">Zoom setup for seniors</a></li><li><a href="#s05-accessibility">Accessibility</a></li><li><a href="#s05-q-a-rules">Q&amp;A rules</a></li><li><a href="#s05-the-redirect-script">The redirect script</a></li><li><a href="#s05-if-someone-describes-an-urgent-symptom">If someone describes an urgent symptom</a></li><li><a href="#s05-after-the-talk">After the talk</a></li></ul>
+      </div>
+      <div class="prose">
+<p>The talk is 45 minutes including questions, and it is the same talk every time. You do not need to be a gifted speaker. You need to know the deck, speak slowly, keep the lights on, and follow the Q&amp;A rules.</p>
+<h3 id="s05-the-kit">The kit</h3>
+<p>Everything is in talk-kit/ in the repo. Do not edit the slides. If you think a slide is wrong, email everyshadescreening@gmail.com with the slide number and the source you think it should cite; it goes through the review process in section 07.</p>
+<ul><li><strong>Slides</strong> (PDF and editable deck), about 30 slides. The only slides you change are the title slide (chapter name, your names) and the local resources slide (your area's free and low-cost clinics).</li><li><strong>Speaker notes</strong>, one paragraph per slide. New presenters read them aloud at first.</li><li><strong>Large-print handout</strong>, two sides, 16-point minimum. Side one: what to look for, including the acral sites. Side two: the monthly skin check and where to get care. Print one per attendee plus five. Translations are in languages/ (section 08).</li><li><strong>Pre/post quiz</strong>, ten questions, paper and Zoom-poll versions (section 06).</li><li><strong>Attendance log</strong>, one sheet per talk.</li><li><strong>Disclaimer slide and tabletop sign.</strong> The disclaimer is the second and the last slide.</li></ul>
+<h3 id="s05-45-minute-run-of-show">45-minute run-of-show</h3>
+<div class="tablewrap"><table><thead><tr><th>Time</th><th>Segment</th><th>Notes</th></tr></thead><tbody><tr><td>Before</td><td>Set up</td><td>Arrive 30 minutes early in person, 15 for Zoom. Test sound from the back of the room. Quizzes and handouts on chairs or at the door.</td></tr><tr><td>0:00 to 0:03</td><td>Welcome</td><td>Names, school, "we're students, not doctors," disclaimer slide read aloud.</td></tr><tr><td>0:03 to 0:07</td><td>Pre-quiz</td><td>Read each question aloud; launch polls for Zoom. Collect sheets before continuing.</td></tr><tr><td>0:07 to 0:12</td><td>Why this talk</td><td>The three facts from section 01. Slow down here.</td></tr><tr><td>0:12 to 0:22</td><td>What skin cancer looks like on every skin tone</td><td>Melanoma, basal cell, squamous cell, side by side across tones. ABCDEs and the ugly duckling. Acral sites and nails get their own slides.</td></tr><tr><td>0:22 to 0:30</td><td>The monthly skin check</td><td>Step by step from the handout. Full-length mirror, hand mirror, a partner for the back, a phone photo to compare next month. Have people find the spaces between the toes on the diagram.</td></tr><tr><td>0:30 to 0:34</td><td>Where to go</td><td>Free AAD checks, your local clinics, what to say when you call ("I have a spot that is new and changing and I'd like it looked at"), what to expect at the visit.</td></tr><tr><td>0:34 to 0:38</td><td>Post-quiz</td><td>Same ten questions. Collect sheets.</td></tr><tr><td>0:38 to 0:45</td><td>Questions</td><td>Rules below. End on time; stay after for individual conversations within the rules.</td></tr></tbody></table></div>
+<p>If you run long, cut from the "why" section, never from the skin check or "where to go." If asked for 30 minutes, shorten Q&amp;A and the "why," but never drop the quiz.</p>
+<h3 id="s05-zoom-setup-for-seniors">Zoom setup for seniors</h3>
+<p>Ask which format the organization wants when you book.</p>
+<p><strong>Watch together.</strong> Members gather in one room and watch you on a TV or projector. This is the most common senior center format and the easiest. You need one person in the room with a laptop connected by HDMI, the Zoom link, and your cell number; ask them to join 10 minutes early. Share your screen with presenter view off. Keep your camera on as a small thumbnail so they see a face. Use a headset microphone. Ask the room host to repeat questions into the laptop mic, because you will not hear the back of the room.</p>
+<p><strong>Join from home.</strong> Each member joins from their own device. Send the link and the handout PDF to the coordinator four days ahead and ask for a reminder the morning of. Enable the waiting room, mute on entry, and load the quiz polls in advance. A second chapter member co-hosts: admits latecomers, runs polls, watches the chat, and helps people who cannot connect by phone. Expect a quarter of registrants to have trouble joining.</p>
+<p>Both formats: captions on, slides at 100%, no animations or videos. Record only with the organization's written agreement, and never record "join from home" talks.</p>
+<h3 id="s05-accessibility">Accessibility</h3>
+<p>Your audience is mostly over 65. Many have low vision, hearing loss, or both, and some have limited English.</p>
+<ul><li><strong>Large print.</strong> Handout 16-point minimum; slide body text 28-point minimum; never more than four lines on a slide.</li><li><strong>Speaking pace.</strong> About 120 words per minute. Pause after each slide. Repeat every question before answering.</li><li><strong>Captions on</strong>, for every Zoom talk. Ask the room host to turn on TV captions for watch-together talks.</li><li><strong>Plain language.</strong> "Skin cancer," not "cutaneous malignancy." "Spot," not "lesion." "Under the nail," not "subungual." The only medical words in the talk are melanoma, basal cell carcinoma, and squamous cell carcinoma, each defined in one sentence.</li><li><strong>No acronyms.</strong> Say "the American Academy of Dermatology," not "the AAD." ABCDE is the one exception, and you explain each letter.</li><li><strong>Lights on.</strong> People need to see the handout and each other.</li><li><strong>In person, stand still</strong> and face the room so people can read your lips. Do not talk to the screen.</li><li><strong>Interpreters.</strong> Section 08. Book one whenever the coordinator says more than a few members prefer another language.</li></ul>
+<h3 id="s05-q-a-rules">Q&amp;A rules</h3>
+<ol><li><strong>Never diagnose a spot.</strong> Not in the room, not after, not from a photo, not by email, not "just as a friend." One wrong "that looks fine" can cost someone a year.</li><li><strong>Redirect "Can you look at this?" kindly and the same way every time.</strong> Script below.</li><li><strong>Answer general questions from the deck.</strong> If the answer is not on a slide or in the notes: "I don't know, and I don't want to guess. The handout has the Academy's page on that, and your doctor can answer it."</li><li><strong>No product advice.</strong> No sunscreen brands, creams, or supplements.</li><li><strong>No comments on someone's doctor or care.</strong> If someone says they were dismissed: "You're allowed to ask for a second opinion and to ask specifically for a dermatologist. Here's how to find a free check."</li><li><strong>Keep personal stories short.</strong> Thank the person and move on in one sentence.</li><li><strong>End on time.</strong> "We have time for two more" at 0:42.</li></ol>
+<h3 id="s05-the-redirect-script">The redirect script</h3>
+<p>Someone rolls up a sleeve or holds a foot to the camera: "Can you look at this one?" You say, warmly:</p>
+<p>"I appreciate you asking, and I want to be straight with you: I'm a student, not a doctor, so I can't tell you what that is, and I don't want to guess and be wrong. What I can do is help you get it looked at by someone who can. Where would you normally go for care?"</p>
+<p>Then one of three paths:</p>
+<ul><li>They have a doctor: "Call this week and say exactly: 'I have a spot that's new and changing and I'd like it looked at.' Those words get you an appointment."</li><li>No doctor or no insurance: "The back of the handout lists places near here that see people for free or on a sliding scale. The first one is [name]. I'll circle it for you."</li><li>They want a dermatologist: "The American Academy of Dermatology runs free skin checks. The website is on the handout. If there isn't one scheduled near you, you can sign up to be told when there is."</li></ul>
+<p>Then: "Would you like me to write that down?" Do it, and move to the next question. Never add "but it's probably nothing" or "that does look a little concerning." You do not know, and both can do harm.</p>
+<p>If they press: "I know it's frustrating to hear 'see a doctor' when you're asking me. I'd be doing you a disservice if I pretended to know. Let's make sure you can get in to see someone." Then stop.</p>
+<h3 id="s05-if-someone-describes-an-urgent-symptom">If someone describes an urgent symptom</h3>
+<p>Occasionally someone describes something that should not wait: bleeding that will not stop, a sore open for weeks, a nail band that has spread into the skin, a fast-growing lump, or something unrelated to skin (chest pain, trouble breathing, confusion) that comes up because you are the health person in the room.</p>
+<ul><li>Anything that sounds like an emergency right now (trouble breathing, chest pain, sudden weakness, severe bleeding): stop the talk, tell the room host, and call 911 or have staff do so. You are not diagnosing; you are responding to what the person said. Stay with them until staff take over.</li><li>A skin symptom that needs care soon but is not an emergency: "What you're describing is the kind of thing doctors want to see soon, this week if you can. I can't tell you what it is, but I don't want you to wait." Give the resource list and, with their agreement, give their name to the site coordinator so staff can help them make the call. Do not take their phone number yourself.</li><li>Write what happened (no names) on the attendance log under "incidents" and tell the president the same day. Include it in the semester report.</li></ul>
+<p>You will do this rarely. Practice it anyway.</p>
+<h3 id="s05-after-the-talk">After the talk</h3>
+<p>Within 48 hours: quiz sheets entered, attendance log filed, thank-you email to the coordinator with the handout PDF and a request for a repeat date, and anything that went wrong noted for the weekly meeting. At 30 days: the follow-up in section 06.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s06" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 06 of 10 · <a href="06-measuring-outcomes.md">06-measuring-outcomes.md</a></span>
+        <h2>Measuring outcomes</h2>
+        <ul class="subnav"><li><a href="#s06-the-pre-post-quiz-protocol">The pre/post quiz protocol</a></li><li><a href="#s06-computing-knowledge-gain">Computing knowledge gain</a></li><li><a href="#s06-attendance-log">Attendance log</a></li><li><a href="#s06-30-day-follow-up">30-day follow-up</a></li><li><a href="#s06-reporting-numbers-honestly">Reporting numbers honestly</a></li><li><a href="#s06-semester-report-template">Semester report template</a></li></ul>
+      </div>
+      <div class="prose">
+<p>You measure three things: did people learn (pre/post quiz), how many people (attendance log), and did they do a skin check afterward (30-day follow-up). Everything is anonymous. The point is not to prove the program works. The point is to find out whether it does, and to fix the parts that do not.</p>
+<h3 id="s06-the-pre-post-quiz-protocol">The pre/post quiz protocol</h3>
+<p>Ten questions, the same ten before and after, in talk-kit/ as a paper sheet and a Zoom poll file. Do not change the questions; send suggestions to Every Shade (Rutgers) so every chapter changes at once and the numbers stay comparable.</p>
+<p>The ten questions cover: whether people with dark skin can get skin cancer; where melanoma most often appears in Black patients; what a nail band can mean; the ABCDEs; what basal cell carcinoma can look like on dark skin; how often to check your skin; what to do about a spot that is new or changing; whether sunscreen prevents melanoma on the palms and soles; where to get a free check; and whether the presenters can diagnose a spot. The last one checks that "we are students, not doctors" landed.</p>
+<p><strong>In person (paper).</strong> Hand out the pre-quiz as people sit down. Read every question aloud, slowly, 20 seconds each. Collect the sheets before the "why" section. At minute 34, hand out the post-quiz on a different-colored sheet, read it the same way, collect it. Pencils on every chair. Large print, one question per line.</p>
+<p><strong>Virtual (Zoom polls).</strong> The co-host creates polls "Pre 1" to "Pre 10" and "Post 1" to "Post 10" from the kit file in advance. Launch each pre poll for 30 seconds while reading the question aloud, close it, move on. Do not share results on screen during the pre-quiz. Repeat with the post polls at minute 34. Afterward, download the poll report from Zoom.</p>
+<p><strong>Watch together.</strong> The room is in person, so use paper. The room host scans or mails the sheets. Arrange this when you book.</p>
+<p><strong>Anonymous.</strong> No names, initials, or birthdays. The only optional extras are an age range and whether the person has ever had a skin check. Collected this way, it is program evaluation, not human subjects research; if you ever want to publish, talk to your advisor about IRB first, and ask us, because the Rutgers chapter has been through it.</p>
+<h3 id="s06-computing-knowledge-gain">Computing knowledge gain</h3>
+<p>Enter each talk in the data sheet in talk-kit/: one tab per talk, one row per sheet, one column per question, 1 for correct and 0 for wrong or blank.</p>
+<p><strong>Per question:</strong> percent correct before = correct pre answers divided by pre sheets. Percent correct after = correct post answers divided by post sheets. Gain = after minus before, in percentage points.</p>
+<p><strong>Overall:</strong> mean score before = average of the ten pre percentages; mean score after likewise; overall gain = the difference.</p>
+<p>Example, 22 pre sheets and 20 post sheets: question 2 (where melanoma most often appears in Black patients) went from 5 of 22 (23%) to 18 of 20 (90%), a 67-point gain. Question 6 (how often to check) went from 15 of 22 (68%) to 17 of 20 (85%), a 17-point gain. Overall mean: 54% to 86%.</p>
+<p>Because sheets are anonymous, you are comparing the group before with the group after, not each person with themselves. That is fine for program evaluation; do not describe it as "each person improved by X." Report the number of sheets, not the number in the room. Under eight post sheets, report the numbers and say the group was small.</p>
+<h3 id="s06-attendance-log">Attendance log</h3>
+<p>One line per talk: date, organization, town, type (senior center / library / faith / community / other), format (in person / watch together / join from home), headcount (count the room at minute 10, or the Zoom participant count), pre sheets, post sheets, presenters, interpreter and language, handout languages given out, incidents (yes/no, with a no-names note), and whether the organization asked for a repeat. Headcount is a count, not an estimate.</p>
+<h3 id="s06-30-day-follow-up">30-day follow-up</h3>
+<p>The coordinator has the members' contact information; you do not. When you book, ask: "Thirty days after the talk, would you forward a two-question message to the people who attended? It helps us know whether the talk changes anything." Send them this text at day 28 and ask them to forward it at day 30 by email, text, or paper at the front desk.</p>
+<pre><code>Hello from Every Shade at [School]. About a month ago you came to our
+talk on skin cancer and the monthly skin check. Two quick questions,
+no name needed:
+
+1. Since the talk, have you done a skin check at home?
+   (Yes / No / Not yet but I plan to)
+2. Since the talk, have you made an appointment or gone to get a spot
+   looked at? (Yes / No / I didn&#x27;t need to)
+
+Reply to this message or drop the paper at the front desk. Thank you,
+and please keep checking once a month.</code></pre>
+<p>Report replies as "of N attendees, R replied; of those, X said they had done a skin check." Low reply rates are normal. Do not report only the yeses. Do not collect names or numbers. If the coordinator prefers to ask in person and tell you the counts, note "counts reported by coordinator."</p>
+<h3 id="s06-reporting-numbers-honestly">Reporting numbers honestly</h3>
+<p>Say exactly what you measured, with the n, and nothing more.</p>
+<ul><li>Good: "Knowledge improved from 54% to 86% correct (n = 22 before, 20 after), a 32-point gain."</li><li>Good: "On where melanoma appears in Black patients, 23% answered correctly before and 90% after."</li><li>Good: "Of 31 attendees, 9 replied to the 30-day follow-up and 6 said they had done a skin check."</li><li>Bad: "Our talk improved knowledge by 60%." (Sixty percent of what?)</li><li>Bad: "Attendees were 4x more likely to do a skin check." (You have no comparison group.)</li><li>Bad: "We've reached hundreds of seniors." (Say the number.)</li><li>Bad: "Our program saves lives." (You have no evidence of that.)</li></ul>
+<p>Never drop a talk because the gain was small. A 4-point gain usually means the pre-quiz was already high (a repeat audience) or the room could not hear. Report it and look at why.</p>
+<h3 id="s06-semester-report-template">Semester report template</h3>
+<p>Send to everyshadescreening@gmail.com by January 31 for fall and June 30 for spring, copying your advisor. One page, data sheet attached.</p>
+<pre><code>EVERY SHADE AT [SCHOOL]: SEMESTER REPORT, [FALL/SPRING YEAR]
+
+Chapter contacts: [president, email]; [outreach lead]; [measurement lead]
+Advisor: [name, title]; deck sign-off date: [date]
+
+Outreach
+  Organizations contacted: [n]
+  Talks booked: [n]   Given: [n]   Cancelled: [n]
+  By type: senior centers [n], libraries [n], faith [n], community [n], other [n]
+  By format: in person [n], watch together [n], join from home [n]
+
+Attendance
+  Total attendees (counted): [n]   Mean per talk: [n]
+  Talks with an interpreter: [n] (languages)
+  Handouts by language: English [n], Spanish [n], ...
+
+Knowledge gain (all talks pooled)
+  Pre sheets: [n]   Post sheets: [n]
+  Mean before: [x]%   Mean after: [y]%   Gain: [y-x] points
+  Lowest-gain question: Q[n], [before]% to [after]%
+  Highest-gain question: Q[n], [before]% to [after]%
+
+30-day follow-up
+  Sent for [n] of [n] talks. Replies: [n]. Did a skin check: [n].
+  Made or went to an appointment: [n].
+
+Incidents (no names): [none / what happened and what you did]
+
+Questions you could not answer from the deck (these feed the annual review):
+
+What you need from Every Shade (Rutgers):
+
+Attached: data sheet, attendance log</code></pre>
+<p>We compile every chapter's report for the advisors and post pooled numbers on the site, with chapter names unless you ask otherwise.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s07">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 07 of 10 · <a href="07-content-standards-and-medical-review.md">07-content-standards-and-medical-review.md</a></span>
+        <h2>Content standards and medical review</h2>
+        <ul class="subnav"><li><a href="#s07-every-claim-is-traceable">Every claim is traceable</a></li><li><a href="#s07-what-the-talk-does-not-say">What the talk does not say</a></li><li><a href="#s07-annual-physician-review">Annual physician review</a></li><li><a href="#s07-never-diagnose-in-writing-either">Never diagnose, in writing either</a></li><li><a href="#s07-disclaimer-wording">Disclaimer wording</a></li><li><a href="#s07-images">Images</a></li><li><a href="#s07-translation-quality">Translation quality</a></li><li><a href="#s07-if-you-find-an-error">If you find an error</a></li></ul>
+      </div>
+      <div class="prose">
+<p>The talk is only as safe as its weakest claim. These standards exist so that any slide, handout line, or translated sentence can be traced to a source a physician would accept, and so that a mistake found by one chapter gets fixed for all of them.</p>
+<h3 id="s07-every-claim-is-traceable">Every claim is traceable</h3>
+<p>Every factual statement on a slide or handout traces to one of four kinds of sources:</p>
+<ol><li>The American Academy of Dermatology (aad.org), its public pages or Basic Dermatology Curriculum.</li><li>The Skin Cancer Foundation (skincancer.org).</li><li>The Centers for Disease Control and Prevention (cdc.gov), including Preventing Chronic Disease and U.S. Cancer Statistics.</li><li>A peer-reviewed paper, cited with authors, journal, year, and DOI.</li></ol>
+<p>The speaker notes list the source for each slide. If you want to add a sentence and cannot point to one of these four, you do not add it. "My professor said" is not a source. A news article about a study is not a source; the study is.</p>
+<p>The three headline facts and their sources are in section 01. The appearance descriptions come from the AAD page "Finding skin cancer in darker skin tones" (https://www.aad.org/public/diseases/skin-cancer/darker-skin-tones). The self-check steps come from the AAD's "How to check your skin" (https://www.aad.org/public/diseases/skin-cancer/find/check-skin). The ABCDEs come from <a href="https://www.aad.org/public/diseases/skin-cancer/find/at-risk/abcdes">https://www.aad.org/public/diseases/skin-cancer/find/at-risk/abcdes</a>.</p>
+<h3 id="s07-what-the-talk-does-not-say">What the talk does not say</h3>
+<ul><li>That sunscreen prevents acral melanoma. It does not; acral melanoma is not driven by sun exposure. The talk recommends sun protection for the sun-related cancers and says plainly that palms, soles, and nails need checking regardless.</li><li>Individual risk numbers ("your risk is X%").</li><li>Product, brand, or clinic recommendations. The local resource list is a list of places that offer free or sliding-scale care, stated as fact, not an endorsement.</li><li>Treatment, beyond "the doctor may take a small sample to test" and "found early, most skin cancers are very treatable."</li><li>Anything about skin lightening, cosmetics, or hair products, except to redirect a question.</li><li>The words "screening" or "exam" for what we do. We give talks. Dermatologists screen.</li></ul>
+<h3 id="s07-annual-physician-review">Annual physician review</h3>
+<p>Each September, the speaker lead sends the advisor the current deck, the handout, and the list of "questions we could not answer from the deck" collected in the semester reports. The ask: mark anything wrong, outdated, or overstated, and reply "approved as is" or "approved with these changes." Save the dated reply in the Admin folder and put the date in the semester report.</p>
+<p>The Rutgers chapter does the same, and its approved deck is the master. If your advisor requests a change, send it to everyshadescreening@gmail.com with the reasoning and source; we fold it into the master so every chapter benefits and the decks stay identical. Do not maintain a diverging local version. If your advisor insists on a change we decline, talk to us before presenting it. The only slides a chapter changes alone are the title slide and the local resources slide.</p>
+<p>If a source changes (a statistic updated, a page moved), email us the new link. We re-verify and push a new kit version. Check the kit's version number against the repo before each semester.</p>
+<h3 id="s07-never-diagnose-in-writing-either">Never diagnose, in writing either</h3>
+<p>If someone emails the chapter a photo of a spot, reply with the redirect script, do not comment on the photo, delete it, and do not forward it to anyone, including your advisor. The chapter email is not a clinical channel, and a photo of someone's skin is personal health information you have no business storing.</p>
+<h3 id="s07-disclaimer-wording">Disclaimer wording</h3>
+<p>Use this exact wording on the footer of any web page, the second and last slide, the handout, the flyer, the chapter email signature, and any social post that describes what we do in more than a sentence:</p>
+<blockquote><p>Every Shade provides general health education only. Nothing on this site or in our talks is medical advice or a diagnosis. Our members are students, not medical professionals. If a spot is new, changing, or bleeding, please see a doctor.</p></blockquote>
+<p>Change "this site" to "this handout" or "this flyer" as appropriate. Do not shorten it, reword it, or set it smaller than the surrounding text.</p>
+<h3 id="s07-images">Images</h3>
+<p>The images are the most sensitive part of the kit. They make the talk work for an audience with brown and Black skin, and they are the easiest place to break copyright or mislead.</p>
+<p><strong>Rules.</strong></p>
+<ol><li>Never scrape images. No Google Images, no textbook screenshots, no figures copied from journal articles, no social media, and no photos of patients from any clinic you work at, ever, even with the face cropped. "For education" does not make an image yours to use.</li><li>Use only images whose license permits non-commercial educational use, with the source written in the slide notes.</li><li>Show each condition on at least two skin tones side by side wherever the source allows. A melanoma slide that shows only light skin is worse than no slide.</li><li>Attribute every image on its slide or on a sources slide, as the license requires.</li><li>Images stay in the deck. Chapters do not post deck images to social media or print them on flyers.</li></ol>
+<p><strong>Sources we use</strong> (verified November 2026; re-check the terms before reusing anything):</p>
+<ul><li><strong>The Full Spectrum of Dermatology: A Diverse and Inclusive Dermatology Atlas</strong>, from the Journal of Drugs in Dermatology. Its free online gallery at <a href="https://jddonline.com/project-atlas/">https://jddonline.com/project-atlas/</a> offers side-by-side images across skin tones and states that they may be used free of charge for non-commercial educational purposes, subject to the site's Image Use Policy. Read that policy and attribute as it requires. The print and digital editions of the atlas are paid products.</li><li><strong>The AAD's public skin cancer pages</strong>, including "Finding skin cancer in darker skin tones" and the per-cancer image galleries. These are for reading and linking. The images are copyrighted; link to the page from the handout rather than copying images unless you have written permission from the AAD.</li><li><strong>The Skin Cancer Foundation's "Skin Cancer and Skin of Color" brochure</strong> (PDF on skincancer.org). Hand it out as-is and link to it. Do not extract its images.</li><li><strong>Vaseline's See My Skin</strong>, launched in 2022 with VisualDx and HUED as a searchable set of skin conditions on skin of color, is often recommended. As of November 2026, seemyskin.com redirects to the HUED provider directory (directory.huedco.com), which no longer offers the condition image search. Do not plan on it as an image source. VisualDx itself is a paid clinical tool; do not screenshot it.</li></ul>
+<p>To add an image from any other source, send the image, the source URL, and the license text to everyshadescreening@gmail.com. If it clears, it goes into the master deck.</p>
+<h3 id="s07-translation-quality">Translation quality</h3>
+<p>Every translated handout in languages/ must be reviewed by a native speaker with a medical or health background (physician, nurse, pharmacist, certified medical interpreter, or a medical, nursing, pharmacy, or public health student who grew up speaking the language) before any chapter gives it out. The reviewer checks that the medical meaning is preserved (especially "melanoma," "under the nail," "new or changing," and the disclaimer), that the reading level is plain, and that the terms are the ones people in that community use. The reviewer's name, credential, and date go in the file header. A machine translation that has not been reviewed is a draft, marked DRAFT in the file name, and is never given to an audience. Section 08 explains how to find reviewers.</p>
+<h3 id="s07-if-you-find-an-error">If you find an error</h3>
+<p>Email everyshadescreening@gmail.com the same day with the slide or handout line, what you think is wrong, and the source. If it could lead someone to delay care, skip that slide until you hear back. We fix the master, bump the version, and tell every chapter. Nobody gets in trouble for finding an error. Chapters get in trouble for presenting one they knew about.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s08" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 08 of 10 · <a href="08-languages.md">08-languages.md</a></span>
+        <h2>Languages</h2>
+        <ul class="subnav"><li><a href="#s08-using-the-translated-handouts">Using the translated handouts</a></li><li><a href="#s08-when-to-bring-an-interpreter">When to bring an interpreter</a></li><li><a href="#s08-recruiting-native-speaker-reviewers">Recruiting native-speaker reviewers</a></li><li><a href="#s08-adding-a-new-language">Adding a new language</a></li><li><a href="#s08-plain-language-is-a-translation-too">Plain language is a translation too</a></li></ul>
+      </div>
+      <div class="prose">
+<p>The handout exists in English, Spanish, Hindi, Urdu, Gujarati, Haitian Creole, and Korean, in languages/ in the repo. These are the languages most spoken at home, after English, in the New Jersey communities the Rutgers chapter serves. Your community will differ. This section covers how to use what exists, when to bring an interpreter, and how to add a language properly.</p>
+<h3 id="s08-using-the-translated-handouts">Using the translated handouts</h3>
+<p>Each language folder contains the two-sided large-print handout as a PDF, the editable source, and a header listing the translator, the reviewer (name, credential, date), and the version of the English handout it matches. Check that version against the current English handout before printing; if the English has moved on, email us before using the translation.</p>
+<p>When you book, ask the coordinator: "Do any of your members prefer to read in a language other than English? Which ones?" Print each named language in roughly the proportion they estimate, plus extras, and set the stacks out with labels in that language and in English. Do not assume: a Haitian senior center may have members who prefer French, and an Indian community center may have more Gujarati than Hindi readers, or Punjabi, Tamil, or Telugu readers for whom you have nothing yet.</p>
+<p>The slides are in English. For a mostly non-English-speaking audience, the plan is the handout in their language plus an interpreter. There are no translated decks, and a presenter should not improvise a translation of the slides.</p>
+<h3 id="s08-when-to-bring-an-interpreter">When to bring an interpreter</h3>
+<p>Bring one when the coordinator says more than a handful of members would follow better in another language, or when the organization itself runs mainly in that language (a Spanish-language congregation, a Korean senior center). Do not rely on a bilingual audience member; it is unfair to them and the medical terms get lost.</p>
+<p>Where to find one:</p>
+<ul><li><strong>Your own chapter.</strong> A trained presenter who is a native speaker can present with the English slides while speaking the other language, with the handout in that language. This is the best option.</li><li><strong>Your campus.</strong> Medical interpreter training programs, language departments, international student associations, and medical school interest groups for Latino, South Asian, Haitian, or Korean health. Ask for a student with medical interpreting experience or a native speaker in a health major, and brief them with the deck a week ahead.</li><li><strong>The organization.</strong> Many congregations and community organizations have someone who interprets for health events. Ask when you book.</li><li><strong>Paid interpreters.</strong> Hospital-affiliated or county-funded sites may have an interpreter contract you can use.</li></ul>
+<p>Presenting with an interpreter: send the deck and the translated handout a week ahead. Use consecutive interpretation (two or three sentences, then pause). Cut content by about a third, from the "why" section, because interpreted talks run 50% longer. Keep the quiz, read by the interpreter from the translated quiz sheet. Keep the disclaimer and the Q&amp;A rules, interpreted exactly. Give the interpreter the written redirect script beforehand so "I'm a student, not a doctor" does not soften in translation.</p>
+<h3 id="s08-recruiting-native-speaker-reviewers">Recruiting native-speaker reviewers</h3>
+<p>A reviewer must be a native or heritage speaker with a medical or health background: physician, nurse, pharmacist, physician assistant, certified medical interpreter, or a medical, nursing, pharmacy, or public health student who grew up speaking the language. Fluency alone is not enough, because the question is whether "a new or changing spot," "under the nail," and "see a doctor" land for a 70-year-old reader in that community.</p>
+<p>Where to find them, in order of what works:</p>
+<ol><li>Medical school student interest groups (Latino Medical Student Association, South Asian Medical Student Association, and equivalents). Email the group. Ask for one reviewer per language, 90 minutes of work, credited on the handout.</li><li>Nursing, pharmacy, and public health schools, through their community engagement offices.</li><li>Residents and attendings your advisor knows; the advisor can forward a one-paragraph request.</li><li>Hospital interpreter services departments. Certified medical interpreters are ideal reviewers.</li><li>Nurses and physicians in the congregations you present to. After a talk at a Korean church, ask whether a nurse in the congregation would review the Korean handout.</li></ol>
+<p>The ask, one paragraph: who you are, the site link, "we have a two-page large-print skin cancer handout in [language], translated from this English version, and we need a native speaker with a health background to review it for medical accuracy and plain language before we give it to seniors. About 90 minutes. We'll credit you on the handout." Send both PDFs with this checklist:</p>
+<ul><li>Is every medical term correct, and the one people in this community actually use?</li><li>Is anything ambiguous, especially "new," "changing," "bleeding," "under the nail," and "see a doctor"?</li><li>Is the reading level plain enough for someone with limited schooling?</li><li>Is the disclaimer exact?</li><li>Would you hand this to your own grandmother? What would she not understand?</li></ul>
+<p>Put the reviewer's name, credential, and date in the file header and send the reviewed file to everyshadescreening@gmail.com so it replaces the version in the repo for everyone.</p>
+<h3 id="s08-adding-a-new-language">Adding a new language</h3>
+<p>If your community needs a language we do not have (Portuguese, Polish, Arabic, Tagalog, Vietnamese, Chinese, Punjabi, Bengali, Tamil, Telugu, French, and others will come up):</p>
+<ol><li>Email us first, so two chapters do not translate the same thing.</li><li>Find a translator: a native speaker with a health background if possible, otherwise a native speaker with strong written skills. Machine translation is a first draft only, labeled DRAFT.</li><li>Find a separate reviewer who meets the standard above. Translator and reviewer are different people.</li><li>Keep the layout identical to the English handout: same two sides, same order, same large print. If the language runs long, reduce margins before font size, and never go below 14 point.</li><li>Send the reviewed file with the header filled in. We add it to languages/ and tell the other chapters.</li></ol>
+<p>Do not translate the slides or the website. The translated quiz sheet that accompanies a handout language is the one exception, and the reviewer checks it too. The handout is what people take home and read again; that is where translation effort goes.</p>
+<h3 id="s08-plain-language-is-a-translation-too">Plain language is a translation too</h3>
+<p>Even in English, the talk is written for a reader with limited schooling and tired eyes. Short sentences. One idea per sentence. "Spot," not "lesion." If a reviewer in any language says "people here wouldn't say it that way," they are right, and the handout changes.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s09">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 09 of 10 · <a href="09-brand-and-communications.md">09-brand-and-communications.md</a></span>
+        <h2>Brand and communications</h2>
+        <ul class="subnav"><li><a href="#s09-the-name">The name</a></li><li><a href="#s09-the-logo">The logo</a></li><li><a href="#s09-colors">Colors</a></li><li><a href="#s09-fonts">Fonts</a></li><li><a href="#s09-flyer">Flyer</a></li><li><a href="#s09-social-posts">Social posts</a></li><li><a href="#s09-press-one-liner">Press one-liner</a></li><li><a href="#s09-what-not-to-claim">What not to claim</a></li></ul>
+      </div>
+      <div class="prose">
+<p>The brand is simple so it is easy to keep consistent: five swatches, two fonts, warm neutrals, large type. Follow this page and a flyer from your chapter will look like it came from the same group as one from Rutgers, which is the point.</p>
+<h3 id="s09-the-name">The name</h3>
+<p>Your chapter is "Every Shade at [School]": "Every Shade at the University of Maryland," "Every Shade at Howard University." In the wordmark and social handles it is lowercase, "every shade," matching the site. In conversation, "Every Shade."</p>
+<p>Do not write "Every Shade [School]," "[School] Every Shade," "Every Shade Club," or "Every Shade Society." Do not add a tagline to the name or invent a separate chapter name. The Rutgers group is "Every Shade" or, when the distinction matters, "Every Shade (Rutgers)."</p>
+<h3 id="s09-the-logo">The logo</h3>
+<p>Five rounded swatches fanned from a single rivet, in the five mid tones of the palette. It is an inline SVG on the site and should be inline wherever you can manage it, because it then picks up the palette in light and dark mode. Do not rotate it, recolor it, add a sixth swatch, put text inside it, or place it on a busy photo.</p>
+<pre><code>&lt;svg viewBox=&quot;-12 8 224 140&quot; role=&quot;img&quot; aria-label=&quot;Every Shade logo: five skin-tone swatches fanned out&quot;&gt;
+  &lt;rect x=&quot;82&quot; y=&quot;20&quot; width=&quot;36&quot; height=&quot;130&quot; rx=&quot;18&quot; fill=&quot;#EFCBB0&quot; transform=&quot;rotate(-44 100 132)&quot;/&gt;
+  &lt;rect x=&quot;82&quot; y=&quot;20&quot; width=&quot;36&quot; height=&quot;130&quot; rx=&quot;18&quot; fill=&quot;#DDAA84&quot; transform=&quot;rotate(-22 100 132)&quot;/&gt;
+  &lt;rect x=&quot;82&quot; y=&quot;20&quot; width=&quot;36&quot; height=&quot;130&quot; rx=&quot;18&quot; fill=&quot;#C28559&quot;/&gt;
+  &lt;rect x=&quot;82&quot; y=&quot;20&quot; width=&quot;36&quot; height=&quot;130&quot; rx=&quot;18&quot; fill=&quot;#9C623A&quot; transform=&quot;rotate(22 100 132)&quot;/&gt;
+  &lt;rect x=&quot;82&quot; y=&quot;20&quot; width=&quot;36&quot; height=&quot;130&quot; rx=&quot;18&quot; fill=&quot;#6B4127&quot; transform=&quot;rotate(44 100 132)&quot;/&gt;
+  &lt;circle cx=&quot;100&quot; cy=&quot;132&quot; r=&quot;6&quot; fill=&quot;#FFFFFF&quot;/&gt;
+&lt;/svg&gt;</code></pre>
+<p>On the site the fills are CSS variables (var(--t1) through var(--t5), and var(--rivet) for the center dot) so the rivet flips to the dark background in dark mode. In print, use the hex values above with a white rivet on a light background, or #1A110C for the rivet on a dark background. For one-color use (a stamp, a patch), set all five swatches in the ink color #2B1A12 with a white rivet.</p>
+<p>Minimum size: 24 pixels tall on screen, 10 millimeters in print. Clear space around it of about a fifth of its height. Next to the wordmark, the mark is 30 pixels tall and "every shade" is set in Manrope ExtraBold at about 1.35rem with a 10 pixel gap, as in the site header.</p>
+<h3 id="s09-colors">Colors</h3>
+<div class="tablewrap"><table><thead><tr><th>Role</th><th>Light mode</th><th>Dark mode</th></tr></thead><tbody><tr><td>Ground (page background)</td><td>#FFFFFF</td><td>#1A110C</td></tr><tr><td>Band (tinted sections)</td><td>#F7F1EC</td><td>#24180F</td></tr><tr><td>Ink (text)</td><td>#2B1A12</td><td>#F6ECE4</td></tr><tr><td>Muted (secondary text)</td><td>#6B5446</td><td>#CDB8A8</td></tr><tr><td>Rule (borders)</td><td>#E6D9CF</td><td>#3B2A1F</td></tr><tr><td>Accent (links, hover)</td><td>#8E5632</td><td>#E3A877</td></tr></tbody></table></div>
+<p>The tone palette, used in the logo, the tone strip, and small accents, is the same in both modes:</p>
+<div class="tablewrap"><table><thead><tr><th>Token</th><th>Hex</th></tr></thead><tbody><tr><td>t1</td><td>#EFCBB0</td></tr><tr><td>t2</td><td>#DDAA84</td></tr><tr><td>t3</td><td>#C28559</td></tr><tr><td>t4</td><td>#9C623A</td></tr><tr><td>t5</td><td>#6B4127</td></tr><tr><td>t6</td><td>#3D2416</td></tr></tbody></table></div>
+<p>The tone strip is the six tones in order as equal-width horizontal bands, 10 pixels tall on screen or 4 millimeters in print, used as a divider once or twice per page. Body text is always ink on ground or ink on band, never on a tone swatch. Accent is for links and small highlights, never paragraphs. No red, blue, or green anywhere.</p>
+<h3 id="s09-fonts">Fonts</h3>
+<p>Headings: Manrope, weights 600 and 800. Body: Atkinson Hyperlegible, weights 400 and 700, plus italic 400. Both are free on Google Fonts. Atkinson Hyperlegible was designed for low-vision readers, which is why it is the body font and why you should not substitute it in anything an audience reads. If you cannot load web fonts (a Word document, a borrowed laptop), use Arial for both. No serifs, scripts, or condensed fonts.</p>
+<p>Sizes: body 18 pixels on screen, 12 point minimum in print, 16 point for the handout. The brand is big type. If a flyer looks like it has too much white space, it is probably right.</p>
+<h3 id="s09-flyer">Flyer</h3>
+<p>Use the flyer template in talk-kit/ (Every-Shade-Senior-Talk-Flyer.pdf in the repo shows the layout). Change only your chapter name, the date, time, and place, your chapter email and phone, and the language line if you are bringing an interpreter or translated handouts.</p>
+<p>Structure, top to bottom: logo and wordmark; the headline "Skin cancer doesn't look the same on everyone."; three short lines on what the talk covers (how it looks on every skin tone, the monthly skin check, where to get checked for free); date, time, place, and "Free. Everyone welcome."; chapter name and contact; the tone strip; the full disclaimer at no less than 10 point. Print on white or the band color, letter size for bulletin boards, half-letter for handouts. Give the coordinator the PDF two weeks before the talk.</p>
+<p>Calendar blurb for a library or center newsletter:</p>
+<blockquote><p>Free talk: Skin Cancer on Every Skin Tone. Students from Every Shade at [School] show what skin cancer can look like on light, medium, and dark skin, teach a simple monthly skin check, and share where to get a spot checked for free or low cost. Large-print handout included. [Date, time, place.]</p></blockquote>
+<h3 id="s09-social-posts">Social posts</h3>
+<p>Social media is optional and does not book talks. If you run an account, it exists so partners can find you and so you can thank them. Handle: everyshade.[school], lowercase. Profile picture: the logo on the band color. Bio: "Free skin cancer talks for every skin tone. Students at [School], not doctors. Book a talk: [chapter email]." Pin a post with the disclaimer.</p>
+<p>Posts that work: a thank-you after each talk with a photo of the room (only with the organization's permission and never showing attendees' faces without written agreement); the flyer for an upcoming public talk; a one-fact post using one of the three cited facts with the source in the caption; a "we're looking for a reviewer who speaks [language]" ask.</p>
+<p>Do not post: deck images, any skin photo, quiz numbers smaller than a semester's pooled numbers, anything that answers a medical question, or anything naming a clinic as "recommended." Reply to every DM about a spot with the redirect script and the resource link. Do not look at the photo.</p>
+<h3 id="s09-press-one-liner">Press one-liner</h3>
+<p>For a campus paper or local outlet, say this and send the site link:</p>
+<blockquote><p>Every Shade at [School] is a student group that gives free 45-minute talks at senior centers, libraries, and community organizations on how skin cancer looks on every skin tone, teaches a simple monthly skin check, and connects people to free and low-cost care. Our members are students, not doctors; our materials are reviewed by a physician advisor.</p></blockquote>
+<p>If asked for numbers, give the pooled semester numbers from your last report, with the n. If asked for a story about someone whose cancer was found because of a talk, say you do not collect that information. Refer anything bigger than a campus paper to everyshadescreening@gmail.com.</p>
+<h3 id="s09-what-not-to-claim">What not to claim</h3>
+<ul><li>Not "screening," "exam," "clinic," or "check-up." We give talks.</li><li>Not "doctors," "medical team," "clinicians," or "dermatology students." We are students.</li><li>Not "saves lives," "catches cancer early," or "detects melanoma." We teach what to look for.</li><li>Not "partnered with," "endorsed by," or "affiliated with" the AAD or anyone else we are not formally affiliated with. We cite them. That is not a partnership.</li><li>Not "the first," "the only," or "the largest." SOCS Serves and the AAD's free checks are bigger.</li><li>Not "evidence-based" without pointing to the evidence. Say "our materials cite the AAD, the Skin Cancer Foundation, the CDC, and peer-reviewed research."</li><li>Not "certified" or "trained by dermatologists," or any credential the presenters do not hold.</li><li>Not any statistic beyond the three in section 01 or your own quiz data with the n attached.</li></ul>
+<p>When in doubt, describe what you actually did last Tuesday. That is always allowed.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+  <section id="s10" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section 10 of 10 · <a href="10-chapter-agreement-and-faq.md">10-chapter-agreement-and-faq.md</a></span>
+        <h2>Chapter agreement and FAQ</h2>
+        <ul class="subnav"><li><a href="#s10-chapter-agreement">Chapter agreement</a></li><li><a href="#s10-faq">FAQ</a></li></ul>
+      </div>
+      <div class="prose">
+<p>This is the agreement between Every Shade (Rutgers University–New Brunswick) and a new chapter. It is written in plain English on purpose: a promise between student groups about how a shared name and shared materials will be used, not a contract between corporations. Both sides sign by email. It renews each year with the fall report.</p>
+<h3 id="s10-chapter-agreement">Chapter agreement</h3>
+<pre><code>EVERY SHADE CHAPTER AGREEMENT
+
+Between: Every Shade, a student organization at Rutgers University–New
+Brunswick (&quot;Every Shade&quot;), everyshadescreening@gmail.com
+And: Every Shade at [School] (&quot;the Chapter&quot;), represented by
+[President] and [second founder]
+Effective: [date]. Renewed each year with the fall semester report.
+
+1. Name and materials. The Chapter may use the name &quot;Every Shade at
+   [School]&quot;, the logo, the talk kit, the handouts and translations,
+   the quiz, the flyer template, and this toolkit, free, to give free
+   health-education talks in its community. Every Shade keeps
+   ownership of the name and materials. The Chapter changes only the
+   title slide, the local resources slide, and the flyer&#x27;s event
+   details, and uses the most recent version in the repository.
+
+2. Content standards. The Chapter gives the talk as written. It adds
+   no medical claims that are not traceable to the American Academy
+   of Dermatology, the Skin Cancer Foundation, the CDC, or a
+   peer-reviewed source. It uses the disclaimer wording exactly. It
+   has a physician or faculty advisor who reviews the deck each year
+   and agrees to be named. It uses only licensed images and never
+   scrapes images. It gives out only translations reviewed by a
+   qualified native speaker.
+
+3. Never diagnose. Chapter members never diagnose, examine, or give
+   individual medical advice, in person, on Zoom, by email, or on
+   social media. They follow the redirect script and the
+   urgent-symptom procedure in the toolkit.
+
+4. Measurement and reporting. The Chapter runs the pre/post quiz at
+   every talk, keeps the attendance log, sends the 30-day follow-up
+   where the host allows, and sends Every Shade a semester report by
+   January 31 and June 30 using the toolkit template. Every number has
+   an n, and no talk is left out.
+
+5. Money. The Chapter does not fundraise, apply for grants, accept
+   sponsorship, or sell anything in Every Shade&#x27;s name without written
+   approval from Every Shade. It may accept its own school&#x27;s student
+   organization funding for printing, travel, and interpreters, and
+   says so in the report. Nobody is paid. Every Shade charges the
+   Chapter nothing and does not fund it.
+
+6. Communications. The Chapter follows the brand and communications
+   guide, including the list of claims not to make. Media requests
+   beyond the campus paper are shared with Every Shade before the
+   Chapter responds.
+
+7. Serving the community. Talks are for the public, with priority for
+   senior centers, libraries, faith communities, and organizations
+   serving people with brown and Black skin and people with limited
+   access to dermatology. Campus talks are fine but do not replace
+   community talks.
+
+8. If standards are not met. If Every Shade learns that a Chapter has
+   made a diagnosis, added unsupported medical claims, used unlicensed
+   images, fundraised in Every Shade&#x27;s name, or missed two consecutive
+   reports, Every Shade emails the Chapter&#x27;s president and advisor
+   describing the issue. The Chapter has 30 days to respond and fix
+   it. If it is not fixed, or if the issue is a safety issue (a
+   diagnosis, or a claim that could lead someone to delay care), the
+   Chapter is paused: it stops giving talks under the Every Shade name
+   until the issue is resolved and both sides agree to resume. A
+   Chapter paused twice, or one that does not respond within 30 days,
+   loses the right to use the name and materials, in writing, and is
+   removed from the site.
+
+9. Leaving. The Chapter may end this agreement at any time by email,
+   then stops using the name and materials and sends a final report.
+   Every Shade may end it under clause 8. Past reports stay in the
+   pooled record either way.
+
+10. Changes. Every Shade may update the toolkit, the kit, and this
+    agreement, will email every Chapter when it does, and the Chapter
+    has one semester to adopt the changes. The Chapter may propose
+    changes by email; Every Shade replies within two weeks.
+
+Signed by email:
+For Every Shade (Rutgers): [name], [role], [date]
+For Every Shade at [School]: [president], [date]; [second founder], [date]
+Advisor acknowledged: [name], [title], [date]</code></pre>
+<h3 id="s10-faq">FAQ</h3>
+<p><strong>Do we have to be pre-med?</strong> No. You have to be willing to learn a 30-slide deck, say "I'm not a doctor" without embarrassment, and call strangers on the phone. Public health, nursing, social work, communications, and language majors are often better at this than pre-meds.</p>
+<p><strong>Can graduate or medical students start a chapter?</strong> Yes, under the same rules, including "never diagnose." A medical student in a white coat gets asked to look at spots more often, not less, so the redirect script matters more.</p>
+<p><strong>Can a high school start a chapter?</strong> Not on its own. A high school group can partner with a nearby college chapter and co-present, with the college chapter responsible for the agreement.</p>
+<p><strong>Do we need our own advisor if the Rutgers advisor already reviewed the deck?</strong> Yes. Your advisor is the person a partner in your area can call, and the one who knows when a local resource has changed. It is the same deck, so the review is a light lift.</p>
+<p><strong>Can we change the talk for our community?</strong> The title slide and the local resources slide. For anything else, send us the proposed change and the source. If it is good, every chapter gets it.</p>
+<p><strong>Can we add a section on sun safety, eczema, hair loss, or acne?</strong> Not inside the Every Shade talk. That is a separate talk under your own student organization's name, with its own review.</p>
+<p><strong>Can we charge a fee or ask for donations?</strong> No. Talks are free and there is no donation ask. Your school's student organization funding can cover printing and travel.</p>
+<p><strong>Can we apply for a grant to cover an interpreter?</strong> Ask us first (clause 5). Usually yes if it is from your school in your student organization's name, and no if it is an outside grant in Every Shade's name.</p>
+<p><strong>What if our school requires a different constitution clause?</strong> Use what your school requires and send us a copy. The agreement above is what matters to us.</p>
+<p><strong>What if a partner wants us to do a screening?</strong> Say no and give them the AAD free skin cancer check finder. If a dermatologist wants to run a screening after your talk, introduce them to the partner and step back.</p>
+<p><strong>What if someone cries, or tells us about a relative who died of melanoma?</strong> Thank them, let the room be quiet for a moment, and continue. Afterward, speak with them one-on-one and listen. No medical opinions.</p>
+<p><strong>What if we only get one talk a semester?</strong> That is a chapter. Report it. One room of 20 people who now check their feet is the program working.</p>
+<p><strong>What if nobody answers our emails?</strong> See section 04. It is almost always "you have not called" or "you are emailing a generic inbox."</p>
+<p><strong>Who owns the data?</strong> The chapter keeps its data sheets; Every Shade keeps the pooled record. Nothing is collected about any individual attendee.</p>
+<p><strong>Can we publish our results?</strong> Talk to your advisor about IRB first, then to us. Anonymous program evaluation data can usually go on a campus poster without IRB review; a journal is different, and we want all chapters' data handled the same way.</p>
+<p><strong>How do we reach you?</strong> everyshadescreening@gmail.com, with "[School] chapter" in the subject line. We reply within a week during the semester.</p>
+      </div>
+      <p class="totop"><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+</main>
+
+<div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="wrap">
+    <p>Every Shade provides general health education only. Nothing on this site or in our talks is medical advice or a diagnosis. Our members are students, not medical professionals. If a spot is new, changing, or bleeding, please see a doctor.</p>
+    <p>© 2026 Every Shade · New Brunswick, New Jersey · <a href="../">everyshade home</a></p>
+  </div>
+</footer>
+</body>
+</html>

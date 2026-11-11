@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monthly Skin Check | Every Shade</title>
+<meta name="description" content="A free, private monthly skin self-exam guide from Every Shade. Learn what to look for on every skin tone, including palms, soles, and nails. Nothing you enter leaves your device.">
+<meta name="theme-color" content="#8E5632">
+<meta property="og:title" content="Every Shade | Monthly Skin Check">
+<meta property="og:description" content="A free, private monthly skin self-exam guide for every skin tone. Nothing you enter or photograph leaves your device.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Skin check">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+/* Apply saved appearance before paint. Wrapped: storage may be blocked. */
+try{var t=localStorage.getItem('es-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);
+var s=localStorage.getItem('es-text');if(s==='large')document.documentElement.setAttribute('data-text','large')}catch(e){}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Every Shade home">
+      <svg width="40" height="30" viewBox="-12 8 224 140" aria-hidden="true">
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t1)" transform="rotate(-44 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t2)" transform="rotate(-22 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t3)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t4)" transform="rotate(22 100 132)"/>
+        <rect x="82" y="20" width="36" height="130" rx="18" fill="var(--t5)" transform="rotate(44 100 132)"/>
+        <circle cx="100" cy="132" r="7" fill="var(--rivet)"/>
+      </svg>
+      <span>every shade</span><small>Monthly skin check</small>
+    </a>
+    <a class="home-link" href="../">Every Shade home</a>
+  </div>
+</header>
+
+<div id="storageBanner" class="banner" role="status">
+  <div class="wrap"><p id="storageMsg"></p></div>
+</div>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#home" data-view="home">Home</a></li>
+      <li><a href="#check" data-view="check">This month's check</a></li>
+      <li><a href="#spots" data-view="spots">My spots</a></li>
+      <li><a href="#history" data-view="history">History</a></li>
+      <li><a href="#settings" data-view="settings">Reminders &amp; data</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section id="view-home" class="view" aria-labelledby="h-home">
+    <div class="wrap">
+      <div class="stack">
+        <span class="eyebrow">Free · Private · For every skin tone</span>
+        <h1 id="h-home" tabindex="-1">Check your skin once a month.</h1>
+        <p>A short, step-by-step guide to looking at your own skin, with extra care for the places most often missed on brown and Black skin: palms, soles, between the toes, and under the nails.</p>
+      </div>
+
+      <div class="card tint" id="homeStatus">
+        <h2>This month</h2>
+        <p id="homeStatusText">Loading…</p>
+        <div class="row">
+          <a class="btn" id="homeStartBtn" href="#check">Start this month's check</a>
+          <button class="btn-outline" type="button" data-action="print">Print a paper checklist</button>
+        </div>
+        <p class="note" id="homeStreak"></p>
+      </div>
+
+      <div class="notice">
+        <h3>Your privacy</h3>
+        <p>Nothing you type or photograph here ever leaves your device. There are no accounts, no tracking, and no uploads. Photos and notes are saved only on this phone or computer, in the browser's own storage. You can export or delete all of it at any time under <a href="#settings">Reminders &amp; data</a>.</p>
+      </div>
+
+      <div class="notice warn">
+        <h3>This is education, not a diagnosis</h3>
+        <p>This tool does not score spots, rate your risk, or analyze photos. It only teaches what to look for and when to see a doctor. Every Shade's members are students, not medical professionals. Please see a doctor about any spot that is new, changing, bleeding, not healing, or a new dark line in a nail.</p>
+      </div>
+
+      <div class="tiles">
+        <div class="card">
+          <span class="sw" style="background:var(--t2)"></span>
+          <h3>What to look for</h3>
+          <p>A spot that is new, changing, or different from the rest. On brown and Black skin, melanoma may be dark brown, black, or even pink or purple.</p>
+          <a href="#check">Learn the signs in the check</a>
+        </div>
+        <div class="card">
+          <span class="sw" style="background:var(--t4)"></span>
+          <h3>Track a spot</h3>
+          <p>Tap where a spot is on the body map, add a note and an optional photo, and compare it month to month.</p>
+          <a href="#spots">Open my spots</a>
+        </div>
+        <div class="card">
+          <span class="sw" style="background:var(--t6)"></span>
+          <h3>Remember each month</h3>
+          <p>Add a repeating reminder to your calendar, or turn on a browser reminder.</p>
+          <a href="#settings">Set a reminder</a>
+        </div>
+      </div>
+
+      <div id="careHome"></div>
+    </div>
+  </section>
+
+  <!-- CHECK -->
+  <section id="view-check" class="view" aria-labelledby="h-check">
+    <div class="wrap">
+      <h2 id="h-check" class="sr-only">This month's check</h2>
+      <div id="checkArea"></div>
+    </div>
+  </section>
+
+  <!-- SPOTS -->
+  <section id="view-spots" class="view" aria-labelledby="h-spots">
+    <div class="wrap">
+      <div class="stack">
+        <span class="eyebrow">Spot log</span>
+        <h2 id="h-spots" tabindex="-1">My spots</h2>
+        <p>Tap the place on the body where a spot is. Add a short note and, if you like, a photo. Come back each month to add an update, so you can see whether anything has changed. Nothing here is a verdict; it is a diary you can show a doctor.</p>
+      </div>
+      <div class="grid-2">
+        <div class="stack">
+          <div class="seg" role="group" aria-label="Which map" id="spotMapPicker">
+            <button type="button" data-map="front" aria-pressed="true">Front</button>
+            <button type="button" data-map="back" aria-pressed="false">Back</button>
+            <button type="button" data-map="palm" aria-pressed="false">Palm</button>
+            <button type="button" data-map="sole" aria-pressed="false">Sole</button>
+            <button type="button" data-map="nail" aria-pressed="false">Nail</button>
+          </div>
+          <div class="radio-row" id="spotSideRow" role="radiogroup" aria-label="Which side" hidden>
+            <label><input type="radio" name="spotSide" value="left" checked> Left</label>
+            <label><input type="radio" name="spotSide" value="right"> Right</label>
+          </div>
+          <div class="bodymap big" id="spotMap"></div>
+          <p class="map-caption" id="spotMapCaption">Tap the map, or use Tab and Enter to pick an area.</p>
+        </div>
+        <div id="spotForm" class="stack"></div>
+      </div>
+      <div class="stack" id="spotListWrap">
+        <h3>Spots you are watching</h3>
+        <div id="spotList" class="stack"></div>
+      </div>
+      <div class="card tint">
+        <h3>What would make a spot worth a doctor visit</h3>
+        <ul>
+          <li>It is new, or you do not remember it being there.</li>
+          <li>It has changed in size, shape, color, or how it feels since last month.</li>
+          <li>It bleeds, itches, hurts, crusts, or does not heal in about three weeks.</li>
+          <li>It looks different from all your other spots.</li>
+          <li>It is a new dark line in a nail, or a dark line that is getting wider.</li>
+          <li>You are worried about it. That is reason enough to ask.</li>
+        </ul>
+        <p class="note">This tool cannot tell you whether a spot is harmful. Only a doctor who examines you can.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="view-history" class="view" aria-labelledby="h-history">
+    <div class="wrap">
+      <div class="stack">
+        <span class="eyebrow">Your record</span>
+        <h2 id="h-history" tabindex="-1">History</h2>
+        <p id="historyStreak"></p>
+      </div>
+      <ul class="history" id="historyList"></ul>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="view-settings" class="view" aria-labelledby="h-settings">
+    <div class="wrap">
+      <div class="stack">
+        <span class="eyebrow">Reminders, data, and display</span>
+        <h2 id="h-settings" tabindex="-1">Reminders &amp; data</h2>
+      </div>
+
+      <div class="card">
+        <h3>Monthly reminder</h3>
+        <p>Download a repeating calendar event and open it with your phone's or computer's calendar. It repeats every month on the day you choose and links back to this page.</p>
+        <label class="field" for="icsDay">Day of the month
+          <select id="icsDay"></select>
+        </label>
+        <div class="row">
+          <button class="btn" type="button" data-action="ics">Download calendar reminder (.ics)</button>
+        </div>
+        <p class="note" id="icsNote" aria-live="polite"></p>
+      </div>
+
+      <div class="card">
+        <h3>Reminder in this browser (optional)</h3>
+        <p>If you allow it, this page can show a reminder on the day you chose above. It only works while this browser is open, and only on this device. No messages are sent from anywhere else.</p>
+        <div class="row">
+          <button class="btn-outline" type="button" data-action="notify-on" id="notifyOnBtn">Turn on browser reminder</button>
+          <button class="btn-outline" type="button" data-action="notify-off" id="notifyOffBtn" hidden>Turn off browser reminder</button>
+        </div>
+        <p class="note" id="notifyNote" aria-live="polite"></p>
+      </div>
+
+      <div class="card">
+        <h3>Display</h3>
+        <div class="grid-2">
+          <label class="field" for="themeSel">Appearance
+            <select id="themeSel">
+              <option value="auto">Match my device</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </label>
+          <label class="field" for="textSel">Text size
+            <select id="textSel">
+              <option value="normal">Standard (large)</option>
+              <option value="large">Larger</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Your data</h3>
+        <p>Everything is saved only on this device. Export a copy to keep, move to another device, or bring to a doctor. The export includes your check history, spot notes, and photos.</p>
+        <div class="row">
+          <button class="btn-outline" type="button" data-action="export-zip">Export my data (zip)</button>
+          <button class="btn-outline" type="button" data-action="export-json">Export my data (JSON)</button>
+        </div>
+        <p class="note" id="exportNote" aria-live="polite"></p>
+        <p class="note" id="usageNote"></p>
+      </div>
+
+      <div class="card">
+        <h3>Delete everything</h3>
+        <p>Removes all checks, spots, notes, and photos from this device. This cannot be undone. Export first if you want a copy.</p>
+        <div class="row" id="deleteRow">
+          <button class="btn-outline" type="button" data-action="delete-ask">Delete everything</button>
+        </div>
+        <div class="stack" id="deleteConfirm" hidden>
+          <p><strong>Are you sure? All your checks, spots, and photos will be removed from this device.</strong></p>
+          <div class="row">
+            <button class="btn" type="button" data-action="delete-yes">Yes, delete everything</button>
+            <button class="btn-outline" type="button" data-action="delete-no">No, keep my data</button>
+          </div>
+        </div>
+        <p class="note" id="deleteNote" aria-live="polite"></p>
+      </div>
+
+      <div class="card">
+        <h3>Paper version</h3>
+        <p>Prefer paper? Print a one-page, large-print checklist to keep in the bathroom.</p>
+        <div class="row"><button class="btn-outline" type="button" data-action="print">Print a paper checklist</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="wrap">
+    <p>Every Shade provides general health education only. Nothing on this site or in our talks is medical advice or a diagnosis. Our members are students, not medical professionals. If a spot is new, changing, bleeding, or not healing, or if you notice a new dark line in a nail, please see a doctor.</p>
+    <p>This tool does not collect, send, or analyze any data. Photos and notes stay on your device. Sources for facts on this page: Perlman et al., Int J Womens Dermatol, 2021. Culp and Lunsford, Preventing Chronic Disease (CDC), 2019. Guidance follows public education from the American Academy of Dermatology and the Skin Cancer Foundation.</p>
+    <p>© 2026 Every Shade · New Brunswick, New Jersey · <a href="../">Every Shade home</a></p>
+  </div>
+</footer>
+
+<!-- Printed checklist only -->
+<div id="print-sheet" aria-hidden="true">
+  <h1>Every Shade · Monthly skin check</h1>
+  <div class="pstrip"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p>Once a month, in good light, with a full-length mirror and a hand mirror. Ask someone to help with your back and scalp. Tick each area as you go.</p>
+  <div class="lines"><p>Name: ______________________</p><p>Date: ______________</p></div>
+  <div class="cols">
+    <div>
+      <h2>Areas to check</h2>
+      <ul class="box">
+        <li>Face, ears, and neck</li>
+        <li>Scalp (part the hair in rows)</li>
+        <li>Chest, belly, and skin folds</li>
+        <li>Arms, armpits, tops of hands</li>
+        <li><strong>Palms and between fingers</strong></li>
+        <li><strong>Fingernails</strong></li>
+        <li>Back, shoulders, buttocks</li>
+        <li>Legs, front and back, groin</li>
+        <li><strong>Soles and between toes</strong></li>
+        <li><strong>Toenails</strong></li>
+      </ul>
+      <p><strong>Bold</strong> = often missed on brown and Black skin.</p>
+    </div>
+    <div>
+      <h2>Look for</h2>
+      <ul>
+        <li>• A spot that is new, or that you do not remember.</li>
+        <li>• A spot that changed in size, shape, or color.</li>
+        <li>• A sore that bleeds, crusts, or does not heal in about 3 weeks.</li>
+        <li>• A spot that looks different from all the others.</li>
+        <li>• A shiny bump, whether pink, brown, or black.</li>
+        <li>• A new dark line in a nail, especially one that widens, bleeds, or darkens the skin beside the nail.</li>
+      </ul>
+      <h2>ABCDE of melanoma</h2>
+      <p>Asymmetry · Border uneven · Color mixed · Diameter over a pencil eraser · Evolving (changing)</p>
+    </div>
+  </div>
+  <h2>If you find something</h2>
+  <p>See a dermatologist or your primary care doctor about any spot that is new, changing, bleeding, not healing, or a new dark line in a nail. Medicare covers a visit to check a spot when it is medically necessary. NJ community health centers see patients regardless of insurance: findahealthcenter.hrsa.gov. Free AAD SPOTme screenings: aad.org/public/public-health/skin-cancer-screenings</p>
+  <p class="small">Every Shade provides general health education only. Nothing here is medical advice or a diagnosis. Our members are students, not medical professionals. zainjaffar06.github.io/everyshade/check · © 2026 Every Shade, New Brunswick, NJ</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

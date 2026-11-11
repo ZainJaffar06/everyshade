@@ -1,0 +1,36 @@
+{
+  "title": "Every Shade skin check quiz",
+  "instructions": "Circle one answer for each question. There are no wrong answers for you, only for us: this tells us whether our talk works. Do not write your name.",
+  "scored": [
+    {"id": 1, "q": "Who can get skin cancer?",
+     "options": ["Only people with light skin", "People of every skin tone", "Only people who sunbathe"], "answer": 1},
+    {"id": 2, "q": "On Black and brown skin, where is melanoma often found?",
+     "options": ["Only on the face", "Palms, soles of the feet, and under the nails", "Only on the back"], "answer": 1},
+    {"id": 3, "q": "A new dark line or band in a fingernail or toenail that is getting wider:",
+     "options": ["Is normal and can be ignored", "Should be checked by a doctor", "Means you need more vitamins"], "answer": 1},
+    {"id": 4, "q": "On darker skin, a melanoma may look:",
+     "options": ["Only bright red", "Dark brown, black, or sometimes purple or pink", "Always white"], "answer": 1},
+    {"id": 5, "q": "How often should you check your own skin at home?",
+     "options": ["Once a year", "Once a month", "Only when something hurts"], "answer": 1},
+    {"id": 6, "q": "Which spot is a warning sign?",
+     "options": ["A freckle that has looked the same for 20 years", "A spot that is changing in size, shape, or color", "A small spot that never changes"], "answer": 1},
+    {"id": 7, "q": "Which of these raises your risk of skin cancer?",
+     "options": ["Bad sunburns in the past", "A family member who had melanoma", "Being over 50", "All of the above"], "answer": 3},
+    {"id": 8, "q": "True or false: a spot that does not hurt cannot be skin cancer.",
+     "options": ["True", "False"], "answer": 1},
+    {"id": 9, "q": "Which of these should be seen by a doctor?",
+     "options": ["A sore that has not healed in 3 to 4 weeks", "A mole you have had since childhood that has not changed", "Dry skin in winter"], "answer": 0},
+    {"id": 10, "q": "If you have no insurance, where can you get a spot looked at in New Jersey?",
+     "options": ["Nowhere", "A community health center, which sees people regardless of ability to pay", "Only the emergency room"], "answer": 1}
+  ],
+  "unscored": [
+    {"id": "C1", "q": "How confident are you that you could check your own skin at home?",
+     "options": ["Not at all", "A little", "Somewhat", "Very"], "both": true},
+    {"id": "C2", "q": "In the last year, have you checked your own skin for new or changing spots?",
+     "options": ["Yes", "No", "Not sure"], "pre_only": true},
+    {"id": "C3", "q": "Do you plan to do a skin check in the next month?",
+     "options": ["Yes", "No", "Not sure"], "post_only": true},
+    {"id": "C4", "q": "Would you recommend this talk to a friend?",
+     "options": ["Yes", "No", "Not sure"], "post_only": true}
+  ]
+}
