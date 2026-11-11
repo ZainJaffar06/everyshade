@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" font-family="Arial, Helvetica, sans-serif">
+  <defs><clipPath id="nailR"><rect x="368" y="52" width="94" height="150" rx="36"/></clipPath></defs>
+  <rect width="560" height="470" fill="#F7F1EC"/>
+  <!-- left fingertip: thin even band -->
+  <rect x="70" y="28" width="150" height="300" rx="70" fill="#8C5A3C"/>
+  <rect x="98" y="52" width="94" height="150" rx="36" fill="#E3C3AE" stroke="#6B4127" stroke-width="2"/>
+  <path d="M98 196 Q145 214 192 196" fill="none" stroke="#6B4127" stroke-width="3"/>
+  <rect x="142" y="52" width="7" height="150" fill="#6E4630"/>
+  <!-- right fingertip: wide uneven band + pigment on the skin fold (Hutchinson sign) -->
+  <rect x="340" y="28" width="150" height="300" rx="70" fill="#8C5A3C"/>
+  <rect x="368" y="52" width="94" height="150" rx="36" fill="#E3C3AE" stroke="#6B4127" stroke-width="2"/>
+  <g clip-path="url(#nailR)"><path d="M398 52 L436 52 L440 120 L434 202 L396 202 L400 130 Z" fill="#3A1F12"/>
+  <path d="M406 52 L420 52 L422 140 L418 202 L404 202 L408 120 Z" fill="#1E0F07"/>
+  <path d="M428 60 L436 60 L436 150 L430 200 L426 200 L430 140 Z" fill="#5A3420"/></g>
+  <path d="M386 200 C388 216 396 230 410 234 C424 238 440 228 448 212 C450 206 448 200 448 200 Z" fill="#2A160C"/>
+  <path d="M368 196 Q415 214 462 196" fill="none" stroke="#6B4127" stroke-width="3"/>
+  <text x="145" y="364" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Often harmless</text>
+  <text x="145" y="390" text-anchor="middle" font-size="16" fill="#6B5446">Thin, even, there for years</text>
+  <text x="415" y="364" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Get it checked</text>
+  <text x="415" y="390" text-anchor="middle" font-size="16" fill="#6B5446">New, wide, uneven, or dark</text>
+  <text x="415" y="410" text-anchor="middle" font-size="16" fill="#6B5446">skin next to the nail</text>
+  <text x="280" y="456" text-anchor="middle" font-size="13" fill="#6B5446">Drawing for teaching. Not to scale.</text>
+</svg>

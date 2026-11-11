@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" font-family="Arial, Helvetica, sans-serif">
+  <rect width="560" height="470" fill="#F7F1EC"/>
+  <rect x="24" y="30" width="244" height="300" rx="22" fill="#F2D6C2"/>
+  <rect x="292" y="30" width="244" height="300" rx="22" fill="#F2D6C2"/>
+  <!-- harmless mole: round, even, one color -->
+  <circle cx="146" cy="180" r="38" fill="#8A5A3B"/>
+  <circle cx="146" cy="180" r="38" fill="none" stroke="#7A4C30" stroke-width="2"/>
+  <!-- warning spot: asymmetric, ragged border, several colors -->
+  <path d="M362 132 C384 104 420 112 438 118 C458 106 482 128 474 150 C496 168 488 196 470 206 C478 232 450 252 428 240 C410 262 378 252 372 232 C346 230 334 206 348 188 C330 170 344 144 362 132 Z" fill="#5A3420"/>
+  <path d="M392 140 C410 130 432 142 436 160 C446 176 432 196 414 194 C398 206 378 192 382 176 C368 166 376 146 392 140 Z" fill="#24120A"/>
+  <path d="M440 196 C452 192 466 200 462 214 C458 226 444 230 436 220 C430 212 432 200 440 196 Z" fill="#9C4A3E"/>
+  <path d="M360 196 C368 190 380 196 378 206 C376 216 364 218 358 210 C354 204 356 199 360 196 Z" fill="#A87A5A"/>
+  <text x="146" y="290" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Usually harmless</text>
+  <text x="146" y="314" text-anchor="middle" font-size="16" fill="#6B5446">Round, even, one color</text>
+  <text x="414" y="290" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Warning signs</text>
+  <text x="414" y="314" text-anchor="middle" font-size="16" fill="#6B5446">Uneven, ragged, many colors</text>
+  <text x="280" y="380" text-anchor="middle" font-size="19" fill="#2B1A12">A spot that is changing is the one to show a doctor.</text>
+  <text x="280" y="440" text-anchor="middle" font-size="13" fill="#6B5446">Drawing for teaching. Not to scale.</text>
+</svg>

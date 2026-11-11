@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" font-family="Arial, Helvetica, sans-serif">
+  <rect width="560" height="470" fill="#F7F1EC"/>
+  <!-- palm (brown skin; palms are lighter) -->
+  <g transform="translate(28 34) scale(1.18)" fill="#D6A27C" stroke="#6B4127" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="44" y="114" width="26" height="96" rx="13" transform="rotate(40 57 114)"/>
+    <rect x="60" y="30" width="22" height="110" rx="11"/>
+    <rect x="88" y="18" width="22" height="122" rx="11"/>
+    <rect x="116" y="28" width="22" height="112" rx="11"/>
+    <rect x="142" y="52" width="20" height="88" rx="10"/>
+    <polygon points="56,116 164,116 166,200 142,244 76,244 52,200"/>
+  </g>
+  <!-- small irregular dark spot on palm -->
+  <path d="M152 218 C160 208 176 212 180 222 C188 230 182 244 170 244 C160 250 146 242 148 232 C142 226 146 220 152 218 Z" fill="#2A160C"/>
+  <path d="M176 238 C182 236 186 242 182 246 C178 250 172 246 176 238 Z" fill="#5A3420"/>
+  <!-- sole (brown skin) -->
+  <g transform="translate(300 26) scale(1.12)" fill="#D6A27C" stroke="#6B4127" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M48 78 C30 95 40 150 56 185 C64 215 46 250 70 278 C95 300 150 292 160 255 C168 220 152 190 158 150 C163 118 172 90 168 72 C150 62 120 70 100 70 C80 70 62 66 48 78 Z"/>
+    <ellipse cx="146" cy="42" rx="22" ry="24"/>
+    <ellipse cx="112" cy="34" rx="13" ry="16"/>
+    <ellipse cx="86" cy="40" rx="12" ry="15"/>
+    <ellipse cx="64" cy="50" rx="11" ry="14"/>
+    <ellipse cx="46" cy="64" rx="10" ry="13"/>
+  </g>
+  <!-- irregular dark spot on heel -->
+  <path d="M410 292 C418 282 434 284 440 292 C452 292 456 306 448 314 C450 326 436 332 426 326 C416 334 402 326 404 316 C394 310 398 296 410 292 Z" fill="#2A160C"/>
+  <path d="M434 294 C442 292 448 300 444 306 C440 312 432 308 430 302 C428 298 430 295 434 294 Z" fill="#5A3420"/>
+  <text x="140" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Palm</text>
+  <text x="420" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#2B1A12">Sole</text>
+  <text x="280" y="434" text-anchor="middle" font-size="18" fill="#2B1A12">A new dark, uneven spot here is worth a doctor visit.</text>
+  <text x="280" y="458" text-anchor="middle" font-size="13" fill="#6B5446">Drawing for teaching. Not to scale.</text>
+</svg>

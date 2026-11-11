@@ -1,12 +1,12 @@
 # DermaSensor got cleared. Adoption is the harder exam.
 
-*Derm × AI, issue 1 · by Zain Jaffar · draft for the week of November 16, 2026*
+*Derm × AI, issue 1 · by Zain Jaffar · ready to publish the week of November 16, 2026 (facts checked Nov 10)*
 
 **My take: the first FDA-cleared AI skin cancer device proved it can raise a primary care doctor's sensitivity. It has not yet proved anyone will pay for that, and its darker-skin evidence is thinner than the marketing.**
 
 ## What it is
 
-DermaSensor is a handheld wand that shines light on a mole, reads how the light scatters back (elastic scattering spectroscopy), and runs a classifier that returns "Investigate Further" or "Monitor." The FDA granted it De Novo authorization in January 2024 [verify date against the FDA decision summary], the first AI-enabled device for skin cancer evaluation in the US. The indication is narrow and worth reading: patients 40 and over, lesions a clinician already finds suspicious, used by physicians who are not dermatologists. It is a second opinion for the family doctor, not a screening tool and not a dermatologist's tool. The company sells it as a monthly subscription to primary care practices and, in September 2026, announced four partnerships to push distribution.
+DermaSensor is a handheld wand that shines light on a mole, reads how the light scatters back (elastic scattering spectroscopy), and runs a classifier that returns "Investigate Further" or "Monitor." The FDA granted it De Novo authorization on January 12, 2024 (DEN230008), the first AI-enabled device for skin cancer evaluation in the US. The indication is narrow and worth reading: patients 40 and over, lesions a clinician already finds suspicious, used by physicians who are not dermatologists. It is a second opinion for the family doctor, not a screening tool and not a dermatologist's tool. The company sells it as a monthly subscription to primary care practices and, in September 2026, announced four partnerships to push distribution.
 
 ## Why it matters
 
@@ -24,12 +24,12 @@ Three things a careful buyer would push on.
 
 **Specificity is low everywhere.** In DERM-ASSESS III (311 patients, 440 biopsied lesions), melanoma sensitivity was 96% but specificity was 33%. The device is built to say "investigate" a lot. That is defensible for a rule-out tool, but it means the clinical value depends entirely on what the downstream clinic does with the extra referrals.
 
-**The skin-of-color evidence is a subgroup, not a study.** The company says the device is cleared for Fitzpatrick types I through VI and that performance was "consistent regardless of pigmentation." The numbers behind that: in DERM-SUCCESS, 72% of patients were Fitzpatrick I to III. The IV to VI subgroup had 276 patients and 48 skin cancers, with sensitivity of 92.2% (95% CI 82.1 to 96.8) versus 96.5% in lighter skin, and specificity of 25.1% versus 18.7%. Forty-eight cancers is enough to say "not obviously worse." It is not enough to say "validated," and the sub-analysis appears to exist as a 2023 conference supplement and press release rather than a full peer-reviewed paper [verify on PubMed before publishing]. The acral sites where melanoma hides on darker skin (palms, soles, nails) are exactly the lesions a light-scattering wand is least likely to have seen in volume.
+**The skin-of-color evidence is a subgroup, not a study.** The company says the device is cleared for Fitzpatrick types I through VI and that performance was "consistent regardless of pigmentation." The numbers behind that: in DERM-SUCCESS, 72% of patients were Fitzpatrick I to III. The IV to VI subgroup had 276 patients and 48 skin cancers, with sensitivity of 92.2% (95% CI 82.1 to 96.8) versus 96.5% in lighter skin, and specificity of 25.1% versus 18.7%. Forty-eight cancers is enough to say "not obviously worse." It is not enough to say "validated," and I could not find the sub-analysis as a full peer-reviewed paper: it appears as a 2023 conference abstract and a press release, while the 2025 peer-reviewed reader study does not break results out by skin tone. The FDA seems to agree the data are thin. Its authorization order requires DermaSensor to run post-market validation in patients "to include populations who had limited representation of melanomas in the premarket studies (e.g., Fitzpatrick skin phototypes IV, V, and VI)." The acral sites where melanoma hides on darker skin (palms, soles, nails) are exactly the lesions a light-scattering wand is least likely to have seen in volume.
 
 ## What I'd watch
 
 - A CPT category III code application or a Medicare contractor coverage decision. Either one changes the economics overnight.
-- A published, pre-registered study of the device on Fitzpatrick V and VI patients with acral lesions, run by someone the company does not fund.
+- Results from the FDA-required post-market study in Fitzpatrick IV to VI patients, and whether anyone the company does not fund replicates them on acral lesions.
 - Referral volume data from a health system that deployed it. If dermatology wait times at a deploying system go up with no change in melanoma stage at diagnosis, the device is adding noise, not signal.
 
 ## From the clinic
@@ -47,7 +47,8 @@ I do research on teledermatology image quality with Stanford Dermatology and on 
 - DermaSensor FAQ on reimbursement and billing codes: https://www.dermasensor.com/faq/
 - MassDevice on the September 2026 partnerships: https://www.massdevice.com/dermasensor-forges-partnerships-to-advance-its-skin-cancer-detection-tech/
 - OncLive on the FDA authorization (Feb 2024): https://www.onclive.com/view/fda-approves-ai-powered-detection-device-for-skin-cancers
-- FDA De Novo decision summary [verify: locate DEN number and link before publishing]
+- FDA De Novo authorization order, DEN230008 (Jan 12, 2024), including the post-market study requirement: https://www.accessdata.fda.gov/cdrh_docs/pdf23/DEN230008.pdf
+- Reader study, J Prim Care Community Health 2025 (PMID 40448353): https://pubmed.ncbi.nlm.nih.gov/40448353/
 
 ---
 

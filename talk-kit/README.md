@@ -4,7 +4,7 @@ Everything needed to give the 45-minute senior talk and measure whether it worke
 
 | File | What it is | Status |
 |---|---|---|
-| `slides/Every-Shade-Senior-Talk-2026-11-20.pptx` | 20-slide deck, 16:9, large type, speaker notes on every slide | Built. **Four photo placeholders (slides 7, 8, 10) need licensed images** before the talk; see below |
+| `slides/Every-Shade-Senior-Talk-2026-11-20.pptx` | 20-slide deck, 16:9, large type, speaker notes on every slide | Built and visually checked. Slides 7, 8, and 10 use teaching drawings (`slides/illustrations/`); licensed clinical photos are optional, see `IMAGE-SOURCES.md` |
 | `slides/build_deck.js` | Generator (pptxgenjs). Edit text here and rebuild rather than hand-editing the deck | |
 | `handout/handout-en.pdf` | Two-page large-print handout (print at 100%, letter) | Done |
 | `handout/handout-en.html` | Source; `../render_pdf.sh handout-en.html handout-en.pdf` rebuilds | |
@@ -17,8 +17,8 @@ Everything needed to give the 45-minute senior talk and measure whether it worke
 
 ## Before November 20
 
-1. **Images.** Replace the four dashed placeholders with licensed photos: melanoma on lighter skin (slide 7), acral melanoma on a palm or sole on brown/Black skin (slide 8), a worrying nail band (slide 10). Sources that permit educational use: the AAD public image library, the Skin Cancer Foundation, and the Full Spectrum of Dermatology atlas (jddonline.com/project-atlas, free for non-commercial education). Vaseline's See My Skin site now redirects to a provider directory and is not an image source. Do not use images scraped from the web or from clinic.
-2. **Physician review.** Send the deck and handout to a dermatologist or the Every Shade advisor for a 15-minute content review. Every claim is drawn from AAD / Skin Cancer Foundation public guidance and the two cited papers, but a clinician must sign off before it is shown.
+1. **Images (optional).** Slides 7, 8, and 10 now use simple teaching drawings, so the deck is usable as is. To use clinical photos instead, pick from `IMAGE-SOURCES.md` (openly licensed, authoritative sources, with the exact credit line) and swap them in with `imageBox` in `build_deck.js`. Never use images scraped from the web or from clinic.
+2. **Physician review.** Send `MEDICAL-REVIEW-PACKET.md` (a claim-by-claim checklist with sources), the deck, and the handout to a dermatologist or the Every Shade advisor for a 15-minute review. Every claim is drawn from AAD / Skin Cancer Foundation public guidance and the two cited papers, but a clinician must sign off before it is shown.
 3. **Zoom.** Create the two polls from `quiz/zoom-polls.md` (Anonymous on). Turn on live captions. Set "share screen" so slides fill the window. Have a co-host watch chat.
 4. **Send the handout** to each registered attendee or center two days ahead (email the PDF; centers that print should use letter paper, single-sided, 100%).
 5. **Run-through.** Rehearse once with the notes. Target 30 minutes of slides, 10 of questions, 5 of quiz.

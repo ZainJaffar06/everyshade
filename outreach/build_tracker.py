@@ -17,7 +17,7 @@ TIER1 = {"Essex", "Union", "Morris", "Middlesex", "Somerset"}
 TIER2 = {"Bergen", "Hudson", "Passaic", "Mercer", "Monmouth"}
 TYPE_W = {"senior_center": 3, "aging_office": 3, "nonprofit_senior_program": 2, "community_center": 2, "library": 2,
           "church": 2, "mosque": 2, "temple": 2, "gurdwara": 2, "faith_network": 3, "other_faith": 1}
-STATUSES = ["new", "emailed", "followed_up", "called", "replied", "booked", "done", "declined", "parked"]
+STATUSES = ["new", "drafted", "emailed", "followed_up", "called", "replied", "booked", "done", "declined", "parked"]
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:40]
 

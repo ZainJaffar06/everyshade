@@ -392,7 +392,7 @@ function renderStep() {
   h += '<h3>Where to look</h3><p>' + esc(s.where) + '</p>';
   h += '<h3>How</h3><ul>' + s.how.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
   h += '<h3>What to look for</h3><p>' + esc(s.look) + '</p>';
-  if (s.id === 'palms' || s.id === 'feet') h += '<p class="note">Nearly half of melanomas in Black patients (46%) are on the palms, soles, or under the nails. Source: Culp and Lunsford, Preventing Chronic Disease, 2019.</p>';
+  if (s.id === 'palms' || s.id === 'feet') h += '<p class="note">Among melanomas of a known type in Black patients, nearly half (46%) were the kind that grows on the palms, soles, or under the nails. Source: Culp and Lunsford, Preventing Chronic Disease, 2019.</p>';
   if (!s.info) h += signsHTML();
   h += '</div></div>';
 

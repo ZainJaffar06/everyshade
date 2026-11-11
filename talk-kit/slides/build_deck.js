@@ -87,8 +87,12 @@ function bullets(slide, items, o) {
 function card(slide, x, y, w, h, head, body, tone, o = {}) {
   slide.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.18, fill: { color: o.fill || THEME.colors.lt2 }, line: { color: o.fill || THEME.colors.lt2, width: 0 }, objectName: `card ${head}` });
   if (tone) slide.addShape(pres.ShapeType.roundRect, { x: x + 0.3, y: y + 0.3, w: 0.7, h: 0.2, rectRadius: 0.1, fill: { color: tone }, line: { color: tone, width: 0 }, objectName: `swatch ${head}` });
-  slide.addText(head, { x: x + 0.3, y: y + (tone ? 0.6 : 0.3), w: w - 0.6, h: 0.95, fontSize: o.headSize || 24, bold: true, color: C.text1, margin: 0, isTextBox: true, valign: "top", objectName: `card head ${head}` });
-  slide.addText(body, { x: x + 0.3, y: y + (tone ? 1.6 : 1.3), w: w - 0.6, h: h - (tone ? 1.8 : 1.5), fontSize: o.bodySize || 20, color: C.text1, margin: 0, isTextBox: true, valign: "top", objectName: `card body ${head}` });
+  slide.addText(head, { x: x + 0.3, y: y + (tone ? 0.6 : 0.3), w: w - 0.6, h: 0.95, fontSize: o.headSize || 25, bold: true, color: C.text1, margin: 0, isTextBox: true, valign: "top", objectName: `card head ${head}` });
+  slide.addText(body, { x: x + 0.3, y: y + (tone ? 1.6 : 1.3), w: w - 0.6, h: h - (tone ? 1.8 : 1.5), fontSize: o.bodySize || 21, color: C.text1, margin: 0, isTextBox: true, valign: "top", objectName: `card body ${head}` });
+}
+function illustration(slide, x, y, w, h, file, alt) {
+  slide.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.18, fill: { color: THEME.colors.lt2 }, line: { color: THEME.colors.lt2, width: 0 }, objectName: `illustration card ${alt}` });
+  slide.addImage({ path: path.join(__dirname, "illustrations", file), x: x + 0.05, y: y + 0.05, w: w - 0.1, h: (w - 0.1) * 470 / 560, altText: alt, objectName: `illustration ${alt}` });
 }
 function imageBox(slide, x, y, w, h, caption, source) {
   slide.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.18, fill: { color: THEME.colors.lt2 }, line: { color: THEME.colors.accent3, width: 2, dashType: "dash" }, objectName: `image placeholder ${caption}` });
@@ -114,7 +118,7 @@ pres.addSection({ title: "Opening" });
 S = pres.addSlide({ masterName: "DARK", sectionTitle: "Opening" });
 strip(S, 0, 0.18);
 logo(S, 1.3, 0.7, 1.1, THEME.colors.dk1);
-S.addText("every shade", { x: 2.1, y: 0.95, w: 4, h: 0.6, fontSize: 26, bold: true, color: C.background1, margin: 0, isTextBox: true, objectName: "wordmark" });
+S.addText("every shade", { x: 2.45, y: 0.95, w: 4, h: 0.6, fontSize: 26, bold: true, color: C.background1, margin: 0, isTextBox: true, objectName: "wordmark" });
 S.addText("Skin cancer doesn't look the same on everyone.", { placeholder: "title" });
 S.addText("A free talk for seniors · Friday, November 20, 2026 · Every Shade, Rutgers University–New Brunswick", { placeholder: "body" });
 S.addNotes("Welcome everyone as they join. Keep this slide up for 2-3 minutes while people settle in. Say: 'Thank you for joining us. My name is Zain, I am a student at Rutgers, and I'm part of a group called Every Shade. Tonight we'll talk about how to find skin cancer early, on every skin tone, and how to check your own skin at home. We'll finish with time for your questions.' Ask people to turn on captions if they want them (Zoom: 'Show captions').");
@@ -133,7 +137,7 @@ S = pres.addSlide({ masterName: "TINT", sectionTitle: "Why it matters" });
 S.addText("Why we started Every Shade", { placeholder: "title" });
 stat(S, M, 1.9, 3.8, "15%", "of pictures in common medical textbooks show darker skin. Doctors learn mostly from light skin.");
 stat(S, 4.75, 1.9, 3.8, "66% vs 90%", "five-year survival for Black patients with melanoma compared with white patients, mostly because it is found later.", 44);
-stat(S, 8.9, 1.9, 3.8, "46%", "of melanomas in Black patients were on the palms, soles, or under the nails. Few people think to look there.");
+stat(S, 8.9, 1.9, 3.8, "46%", "of melanomas of a known type in Black patients were on the palms, soles, or under the nails (2% in white patients).");
 S.addText("Sources: Perlman et al., Int J Womens Dermatol, 2021. Culp and Lunsford, Preventing Chronic Disease (CDC), 2019.", { x: M, y: 6.3, w: W - 2 * M, h: 0.4, fontSize: 12, color: C.text2, margin: 0, isTextBox: true, objectName: "sources" });
 S.addNotes("Keep it simple: 'Skin cancer is not rarer on darker skin because it is harmless. It is found later, because people and even doctors are not trained to look for it in the right places. Tonight we fix that for you.' The survival numbers are from a CDC journal. The textbook figure is from a 2021 study of six common medical student resources.");
 
@@ -163,16 +167,16 @@ S.addNotes("Go through the list quickly. Emphasize age: 'Just being over 50 is a
 pres.addSection({ title: "What to look for" });
 S = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to look for" });
 S.addText("Melanoma on lighter skin: the ABCDEs", { placeholder: "title" });
-imageBox(S, M, 1.8, 5.6, 4.7, "Melanoma on lighter skin: an uneven brown/black spot", "Use a licensed image: AAD public gallery, Skin Cancer Foundation, or the Full Spectrum of Dermatology atlas");
+illustration(S, M, 1.8, 5.6, 4.7, "abcde.png", "Drawing: a round, even, one-color mole next to an uneven, ragged, many-colored warning spot");
 bullets(S, ["A: Asymmetry. One half does not match the other", "B: Border. Edges are ragged or blurred", "C: Color. More than one color, or changing", "D: Diameter. Bigger than a pencil eraser", "E: Evolving. Changing in size, shape, color, or feel"], { x: 6.6, y: 1.8, w: 6.1, h: 4.8, fontSize: 22, gap: 10 });
-S.addNotes("Explain ABCDE slowly. Then say: 'E, evolving, is the most important letter. A spot that is changing is a spot to show a doctor, whatever it looks like.' IMAGE: replace the placeholder with a licensed photo before the talk.");
+S.addNotes("Explain ABCDE slowly. Then say: 'E, evolving, is the most important letter. A spot that is changing is a spot to show a doctor, whatever it looks like.' IMAGE: this is a teaching drawing. If a licensed clinical photo is approved (see talk-kit/IMAGE-SOURCES.md), swap it in with imageBox.");
 
 // =============== 8. Melanoma: darker skin ===============
 S = pres.addSlide({ masterName: "TINT", sectionTitle: "What to look for" });
 S.addText("Melanoma on darker skin looks different", { placeholder: "title" });
-imageBox(S, M, 1.8, 5.6, 4.7, "Melanoma on a palm or sole (acral melanoma) on brown or Black skin", "Use a licensed image: Full Spectrum of Dermatology atlas (jddonline.com/project-atlas) or AAD skin-of-color gallery");
+illustration(S, M, 1.8, 5.6, 4.7, "acral.png", "Drawing: a palm and a sole on brown skin, each with a dark uneven spot");
 bullets(S, ["Often very dark brown or black, but can be purple, gray, or even pink", "Most often on the palms, the soles, between the toes, or under a nail", "Can look like a bruise or a stain that does not fade", "Usually does not hurt", "Any new dark spot in these places is worth a doctor visit"], { x: 6.6, y: 1.8, w: 6.1, h: 4.8, fontSize: 22, gap: 10 });
-S.addNotes("This is the heart of the talk. Say: 'If you remember one thing tonight, remember this: on darker skin, melanoma likes the palms, the soles, and the nails. A dark spot there that you did not have before, or a bruise that never fades, should be looked at.' IMAGE: replace placeholder with a licensed photo.");
+S.addNotes("This is the heart of the talk. Say: 'If you remember one thing tonight, remember this: on darker skin, melanoma likes the palms, the soles, and the nails. A dark spot there that you did not have before, or a bruise that never fades, should be looked at.' IMAGE: teaching drawing; swap in a licensed clinical photo if approved (see talk-kit/IMAGE-SOURCES.md).");
 
 // =============== 9. The spots people miss ===============
 S = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to look for" });
@@ -185,9 +189,9 @@ S.addNotes("Have everyone look at their palms right now. Say: 'Go ahead, look at
 // =============== 10. Nails ===============
 S = pres.addSlide({ masterName: "TINT", sectionTitle: "What to look for" });
 S.addText("A dark line in a nail", { placeholder: "title" });
-imageBox(S, M, 1.8, 5.6, 4.7, "A dark band running the length of a fingernail or toenail", "Use a licensed image; many people with darker skin have harmless nail bands, so choose one showing a worrying band (wide, uneven, nail-fold darkening)");
+illustration(S, M, 1.8, 5.6, 4.7, "nail.png", "Drawing: a thin even nail line that is often harmless next to a wide uneven band with dark skin beside the nail");
 bullets(S, ["Many people with darker skin have harmless thin lines in their nails", "See a doctor if a line is new, getting wider, darker, or uneven", "Or if the skin next to the nail turns dark", "Or if the nail splits, lifts, or bleeds near the line", "A new line in only one nail, after age 50, deserves a look"], { x: 6.6, y: 1.8, w: 6.1, h: 4.8, fontSize: 22, gap: 10 });
-S.addNotes("Balance this carefully: many people in the room will have harmless nail bands and may worry. Say: 'Thin, even lines that have been there for years are usually fine. What we care about is a NEW line, a WIDENING line, or dark color spreading onto the skin around the nail.' IMAGE: replace placeholder.");
+S.addNotes("Balance this carefully: many people in the room will have harmless nail bands and may worry. Say: 'Thin, even lines that have been there for years are usually fine. What we care about is a NEW line, a WIDENING line, or dark color spreading onto the skin around the nail.' IMAGE: teaching drawing; swap in a licensed clinical photo if approved.");
 
 // =============== 11. Other skin cancers on every tone ===============
 S = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to look for" });
@@ -268,7 +272,7 @@ S.addNotes("Read the three points slowly. Then: 'Now the same ten quiz questions
 S = pres.addSlide({ masterName: "DARK", sectionTitle: "Closing" });
 strip(S, H - 0.18, 0.18);
 logo(S, 1.3, 0.7, 1.1, THEME.colors.dk1);
-S.addText("every shade", { x: 2.1, y: 0.95, w: 4, h: 0.6, fontSize: 26, bold: true, color: C.background1, margin: 0, isTextBox: true, objectName: "wordmark" });
+S.addText("every shade", { x: 2.45, y: 0.95, w: 4, h: 0.6, fontSize: 26, bold: true, color: C.background1, margin: 0, isTextBox: true, objectName: "wordmark" });
 S.addText("Your questions", { placeholder: "title" });
 S.addText("everyshadescreening@gmail.com · (915) 400-7072\nWe can help you find a free or low-cost place to get a spot looked at.", { placeholder: "body" });
 S.addNotes("Q&A rules: never say what a spot is, even if someone holds it up to the camera. Say: 'I can't tell you what that is, and I would not want to guess wrong. It is exactly the kind of spot to show a doctor, and we will help you find one.' If someone describes bleeding, rapid growth, or a sore that has not healed for months, encourage a visit this month. Thank the center. Ask them to tell friends. Mention we will send the handout and the free guide link.");

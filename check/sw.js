@@ -1,6 +1,6 @@
 /* Every Shade monthly skin check: offline cache.
    Cache-first for this app's own files only. Never touches cross-origin requests (fonts are left to the browser). */
-var CACHE = 'everyshade-check-v1';
+var CACHE = 'everyshade-check-v2';
 var OWN = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', function (e) {

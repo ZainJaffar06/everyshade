@@ -49,7 +49,7 @@ def fill(r):
     short = re.split(r" \(| - | / ", r["name"])[0].strip()
     vals = {"{name}": short, "{town}": r.get("town") or "your area", "{contact_first}": greet, "{county}": r.get("county") or "your",
             "{language}": lang, "{month}": next_month(), "{sender}": SENDER,
-            "{language_clause}": f", available in {lang}," if lang else ""}
+            "{language_clause}": f" (we are also preparing it in {lang})" if lang else ""}
     for k, v in vals.items(): subj = subj.replace(k, v); body = body.replace(k, v)
     body = body.replace(" ,", ",").replace("handout,, ", "handout, ")
     return subj, body
