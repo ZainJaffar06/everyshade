@@ -35,6 +35,15 @@ def kind(t):
     if t in ("church", "mosque", "temple", "gurdwara", "faith_network", "other_faith"): return "faith"
     return "community"
 
+ARTICLE_WORDS = ("library", "center", "centre", "office", "division", "department", "parish", "cathedral", "basilica", "society", "association", "commission", "board", "institute", "senior services")
+def with_article(n):
+    low = n.lower()
+    if low.startswith(("the ", "st ", "st. ", "saint ", "our ", "aarp")): return n
+    return ("the " + n) if any(w in low for w in ARTICLE_WORDS) else n
+
+WEBFORM = re.search(r'## Web-form version.*?\n\n"(.+?)"', TPL, re.S).group(1)
+PHONE = re.search(r'## Follow-up 2.*?\n\n"(.+?)"', TPL, re.S).group(1)
+
 def next_month():
     d = datetime.date.today().replace(day=1) + datetime.timedelta(days=32)
     return d.strftime("%B")
@@ -46,7 +55,7 @@ def fill(r):
         if k in (r.get("languages_served") or "").lower(): lang = v; break
     first = (r.get("contact_name") or "").split(" ")[0]
     greet = f"Dear {first}" if first else "Hello"
-    short = re.split(r" \(| - | / ", r["name"])[0].strip()
+    short = with_article(re.split(r" \(| - | / ", r["name"])[0].strip())
     vals = {"{name}": short, "{town}": r.get("town") or "your area", "{contact_first}": greet, "{county}": r.get("county") or "your",
             "{language}": lang, "{month}": next_month(), "{sender}": SENDER,
             "{language_clause}": f" (we are also preparing it in {lang})" if lang else ""}
@@ -57,11 +66,30 @@ def fill(r):
 ap = argparse.ArgumentParser()
 ap.add_argument("--priority", action="append"); ap.add_argument("--county", action="append"); ap.add_argument("--type", action="append")
 ap.add_argument("--ids"); ap.add_argument("--limit", type=int, default=0); ap.add_argument("--include-no-email", action="store_true")
+ap.add_argument("--all-sheet", action="store_true", help="write pitches_all.csv: one personalized pitch for EVERY organization, any status")
 a = ap.parse_args()
 
 ws = load_workbook(HERE / "tracker.xlsx", data_only=True)["Pipeline"]
 hdr = [c.value for c in ws[1]]
 rows = [dict(zip(hdr, r)) for r in ws.iter_rows(min_row=2, values_only=True)]
+if a.all_sheet:
+    out = HERE / "pitches_all.csv"
+    with out.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["id", "priority", "status", "name", "type", "county", "town", "channel", "email", "phone", "website", "subject", "email_body", "web_form_text", "phone_script"])
+        for r in rows:
+            if not r.get("id"): continue
+            subj, body = fill(r)
+            nm = with_article(re.split(r" \(| - | / ", r["name"])[0].strip())
+            web = WEBFORM.replace("{name}", nm).replace("{month}", next_month())
+            ph = PHONE.replace("{sender}", SENDER)
+            channel = "email" if r.get("email") else ("web_form" if (r.get("best_channel") == "web_form" or (r.get("website") and not r.get("phone"))) else "phone")
+            if channel != "email":
+                ph = ph.replace(", and I emailed last week", "")
+            w.writerow([r["id"], r.get("priority"), r.get("status"), r["name"], r.get("type"), r.get("county"), r.get("town"), channel,
+                        r.get("email") or "", r.get("phone") or "", r.get("website") or "", subj, body, web, ph])
+    print(f"wrote one pitch per organization ({sum(1 for r in rows if r.get('id'))}) to {out.name}")
+    raise SystemExit
 ids = set(a.ids.split(",")) if a.ids else None
 sel = []
 for r in rows:

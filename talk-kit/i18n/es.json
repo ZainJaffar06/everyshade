@@ -1,0 +1,346 @@
+{
+ "_readme": "machine translation draft 2026-11-10; needs native-speaker review",
+ "slide_text": {
+  "t003": "Solo educación general sobre salud. No es consejo médico. Nuestros miembros son estudiantes, no profesionales de la salud.",
+  "t004": "El cáncer de piel no se ve igual en todos.",
+  "t005": "Charla gratis para mayores · viernes, 20 de noviembre de 2026 · Every Shade, Rutgers University–New Brunswick",
+  "t006": "Esta noche, en 45 minutos",
+  "t007": "Por qué en la piel oscura el cáncer suele hallarse tarde",
+  "t008": "Cómo se ven las señales de alarma en piel clara, media y oscura",
+  "t009": "Lugares que no se revisan: palmas, plantas y uñas",
+  "t010": "Cómo revisar su piel en casa en 10 minutos",
+  "t011": "Cuándo ir al médico y adónde ir sin seguro",
+  "t012": "Sus preguntas",
+  "t013": "Antes, unas preguntas",
+  "t014": "10 preguntas cortas, sin nombres. Nos ayuda a ver si la charla funciona. Haremos las mismas preguntas al final.",
+  "t015": "En Zoom: la encuesta aparecerá ahora en su pantalla.",
+  "t016": "Por qué creamos Every Shade",
+  "t017": "de las fotos en libros de medicina comunes muestran piel oscura. Los médicos aprenden sobre todo con piel clara.",
+  "t018": "66% vs. 90%",
+  "t019": "supervivencia a cinco años con melanoma en pacientes negros frente a blancos, sobre todo porque se encuentra más tarde.",
+  "t020": "de los melanomas de tipo conocido en pacientes negros estaban en palmas, plantas o bajo las uñas (2% en pacientes blancos).",
+  "t021": "Sources: Perlman et al., Int J Womens Dermatol, 2021. Culp and Lunsford, Preventing Chronic Disease (CDC), 2019.",
+  "t022": "Tres tipos de cáncer de piel",
+  "t023": "Células basales",
+  "t024": "El más común. Crece despacio. Un bultito brillante o una llaga que vuelve y vuelve. En piel oscura suele ser café o negro, no rosado.",
+  "t025": "Células escamosas",
+  "t026": "Una zona áspera y escamosa o una llaga que no sana. En piel oscura suele salir en una cicatriz, quemadura o llaga de hace tiempo.",
+  "t027": "Melanoma",
+  "t028": "El más grave. Puede extenderse si no se encuentra a tiempo. Una mancha oscura nueva o que cambia. En piel oscura: palmas, plantas, bajo las uñas.",
+  "t029": "Todos pueden tener cáncer de piel",
+  "t030": "Mito",
+  "t031": "“En la piel oscura no hay cáncer de piel.”",
+  "t032": "“Si no duele, no es nada.”",
+  "t033": "“Solo sale donde pega el sol.”",
+  "t034": "Verdad",
+  "t035": "La melanina protege un poco, pero todo tono de piel puede tener cáncer de piel.",
+  "t036": "La mayoría de cánceres de piel no duelen al inicio.",
+  "t037": "En piel oscura, el melanoma suele salir donde nunca llega el sol.",
+  "t038": "Qué aumenta su riesgo",
+  "t039": "Quemaduras de sol pasadas, muchos años afuera o camas de bronceado",
+  "t040": "Mayor de 50",
+  "t041": "Padre, madre, hermanos o hijos que tuvieron melanoma",
+  "t042": "Muchos lunares, o una mancha que ya le trataron",
+  "t043": "Defensas bajas (por ejemplo, después de un trasplante)",
+  "t044": "Una cicatriz vieja, quemadura o llaga de mucho tiempo",
+  "t045": "Aun sin factores de riesgo",
+  "t046": "Revise su piel una vez al mes. La mayoría de los melanomas en piel oscura aparecen en personas sin ninguno de estos.",
+  "t047": "Melanoma en piel clara: el ABCDE",
+  "t048": "A: Asimetría. Una mitad no se parece a la otra",
+  "t049": "B: Borde. Bordes irregulares o borrosos",
+  "t050": "C: Color. Más de un color, o cambia de color",
+  "t051": "D: Diámetro. Más grande que la goma de un lápiz",
+  "t052": "E: Evolución. Cambia de tamaño, forma, color o textura",
+  "t053": "En piel oscura, el melanoma se ve distinto",
+  "t054": "Suele ser café muy oscuro o negro, pero puede ser morado, gris o hasta rosado",
+  "t055": "Más a menudo en palmas, plantas, entre los dedos de los pies o bajo una uña",
+  "t056": "Puede parecer un moretón o una mancha que no se quita",
+  "t057": "Por lo general no duele",
+  "t058": "Cualquier mancha oscura nueva en estos lugares merece ir al médico",
+  "t059": "Lugares que no se revisan",
+  "t060": "Palmas",
+  "t061": "Las dos manos y entre los dedos",
+  "t062": "Plantas",
+  "t063": "La planta de cada pie y los talones",
+  "t064": "Entre los dedos del pie",
+  "t065": "Sepárelos con buena luz",
+  "t066": "Bajo las uñas",
+  "t067": "Uñas de manos y pies, sin esmalte",
+  "t068": "También: cuero cabelludo, orejas, boca por dentro y donde alguien deba mirar por usted.",
+  "t069": "Línea oscura en una uña",
+  "t070": "Muchas personas de piel oscura tienen líneas finas e inofensivas en las uñas",
+  "t071": "Vaya al médico si la línea es nueva, se ensancha, oscurece o es desigual",
+  "t072": "O si la piel junto a la uña se oscurece",
+  "t073": "O si la uña se parte, se levanta o sangra cerca de la línea",
+  "t074": "Una línea nueva en una sola uña, después de los 50, merece revisión",
+  "t075": "Los otros cánceres de piel, en todo tono",
+  "t076": "Piel clara",
+  "t077": "Un bultito rosado, perlado o brillante. Una zona áspera y escamosa. Una llaga que sangra, hace costra y vuelve.",
+  "t078": "Piel media",
+  "t079": "Un bultito café, canela o brillante. Una zona escamosa más oscura que la piel de alrededor.",
+  "t080": "Piel oscura",
+  "t081": "Un bultito oscuro y brillante que parece un lunar. Una llaga que no sana en una cicatriz o quemadura vieja.",
+  "t082": "Busque el patito feo",
+  "t083": "Uno de estos no es como los demás.",
+  "t084": "La mayoría de sus lunares se parecen entre sí. La mancha que se ve distinta a las demás es la que debe ver un médico.",
+  "t085": "Por lo general, el cáncer de piel no duele, pica ni sangra al inicio.",
+  "t086": "No espere el dolor. Fíjese en el cambio.",
+  "t087": "Revise su piel en 10 minutos, cada mes",
+  "t088": "Buena luz, un espejo de cuerpo entero, un espejo de mano y ayuda si puede",
+  "t089": "Cara, orejas, labios, boca por dentro. Separe el cabello y mire el cuero cabelludo",
+  "t090": "Cuello, pecho, vientre. Levante los senos y revise debajo",
+  "t091": "Brazos, axilas, los dos lados de las manos. Palmas y entre los dedos",
+  "t092": "Uñas de manos y pies: busque una línea oscura nueva",
+  "t093": "Espalda, nalgas, parte de atrás de las piernas, con el espejo de mano o ayuda",
+  "t094": "Frente de las piernas, luego los pies: plantas, talones, entre los dedos",
+  "t095": "Anote lo nuevo. Tome una foto con el teléfono para comparar el próximo mes",
+  "t096": "Que sea fácil de recordar",
+  "t097": "Elija un día",
+  "t098": "El primero del mes, o el día que llega su pensión o el Seguro Social. Anótelo en el calendario.",
+  "t099": "Use su teléfono",
+  "t100": "Tome una foto de la mancha que está vigilando. El próximo mes, compare. Lo que importa es el cambio.",
+  "t101": "Guía gratis en línea",
+  "t102": "Nuestro autoexamen paso a paso, con recordatorios cada mes. Las fotos quedan en su teléfono.",
+  "t103": "zainjaffar06.github.io/everyshade/check",
+  "t104": "Vaya al médico por una mancha",
+  "t105": "Nueva",
+  "t106": "No la había visto antes",
+  "t107": "Que cambia",
+  "t108": "Tamaño, forma, color o textura",
+  "t109": "Que sangra",
+  "t110": "O pica, hace costra o duele al tocar",
+  "t111": "Que no sana",
+  "t112": "Tras 3 o 4 semanas",
+  "t113": "Línea oscura en uña",
+  "t114": "Nueva, más ancha o que pasa a la piel",
+  "t115": "Diferente",
+  "t116": "El patito feo",
+  "t117": "Qué pasa en el consultorio",
+  "t118": "El médico mira la mancha, muchas veces con una lupa con luz llamada dermatoscopio. No duele.",
+  "t119": "La mayoría de las manchas resultan inofensivas y usted se va tranquilo.",
+  "t120": "Si el médico no está seguro, adormece la piel y toma una muestra pequeñita (biopsia). Toma unos minutos y sana en una semana más o menos.",
+  "t121": "A tiempo, la mayoría de los cánceres de piel se quitan en consulta y se curan.",
+  "t122": "Adónde ir en Nueva Jersey",
+  "t123": "Con Medicare o seguro",
+  "t124": "Llame a su médico o a un dermatólogo (médico de la piel). La consulta por una mancha que le preocupa se cubre si es médicamente necesaria.",
+  "t125": "Sin seguro",
+  "t126": "Los centros de salud comunitarios atienden a todos y cobran según sus ingresos.",
+  "t127": "findahealthcenter.hrsa.gov",
+  "t128": "o llame al 1-877-464-4772",
+  "t129": "Revisiones gratis",
+  "t130": "La Academia Americana de Dermatología anuncia revisiones gratis.",
+  "t131": "aad.org/spotme",
+  "t132": "O escríbanos y le ayudamos a encontrar una.",
+  "t133": "Proteja su piel, en todo tono",
+  "t134": "Sombra de 10 a. m. a 4 p. m., sobre todo en verano",
+  "t135": "Sombrero de ala y lentes de sol",
+  "t136": "Protector solar SPF 30 o más en la piel que toca el sol, en todo tono",
+  "t137": "Evite camas de bronceado",
+  "t138": "Proteja del sol cicatrices y llagas ya sanas",
+  "t139": "Recuerde",
+  "t140": "La protección solar ayuda, pero no llega a sus palmas, plantas ni uñas. Solo mirar sí.",
+  "t141": "Tres cosas para llevar a casa",
+  "t142": "El cáncer de piel ocurre en todos los tonos de piel. En piel oscura se esconde en las palmas, las plantas y bajo las uñas.",
+  "t143": "Revise su piel una vez al mes, de pies a cabeza, con buena luz. Diez minutos.",
+  "t144": "Una mancha nueva, que cambia, sangra o no sana, o una línea oscura nueva en una uña: vaya al médico. No tiene que doler.",
+  "t145": "everyshadescreening@gmail.com · (915) 400-7072",
+  "t146": "Podemos ayudarle a encontrar un lugar gratis o barato para revisar una mancha."
+ },
+ "notes": {
+  "n01": "Dé la bienvenida a todos mientras se conectan. Deje esta diapositiva 2 o 3 minutos mientras la gente se acomoda. Diga: 'Gracias por acompañarnos. Me llamo Zain, soy estudiante de Rutgers y formo parte de un grupo que se llama Every Shade. Esta noche vamos a hablar de cómo encontrar el cáncer de piel a tiempo, en todos los tonos de piel, y de cómo revisar su propia piel en casa. Al final habrá tiempo para sus preguntas.' Pida a la gente que active los subtítulos si los quiere (en Zoom: 'Mostrar subtítulos').",
+  "n02": "Diga: 'Somos estudiantes, no médicos. Nada de lo que digamos esta noche es consejo médico, y no podemos mirar una mancha y decirle qué es. Lo que sí podemos hacer es ayudarle a saber qué buscar y adónde ir.' Luego LANCE LA ENCUESTA DE ZOOM 'ANTES DE LA CHARLA'. Dé 3 minutos. Si es una sala donde ven la charla juntos, reparta el cuestionario en papel. No diga todavía las respuestas.",
+  "n03": "Dígalo sencillo: 'El cáncer de piel no es menos común en la piel oscura porque sea inofensivo. Se encuentra más tarde, porque la gente, y hasta los médicos, no aprenden a buscarlo en los lugares correctos. Esta noche vamos a cambiar eso para ustedes.' Los números de supervivencia vienen de una revista de los CDC. El dato de los libros de texto viene de un estudio de 2021 sobre seis materiales comunes para estudiantes de medicina.",
+  "n04": "Diga los nombres una vez y siga adelante. La idea es: 'Hay tres tipos principales. Dos son comunes y se tratan muy bien. El tercero, el melanoma, es el que más queremos encontrar a tiempo, y es el que se esconde en las palmas, las plantas de los pies y debajo de las uñas.'",
+  "n05": "Pregunte al grupo: '¿Quién ha oído que la piel oscura no puede tener cáncer de piel?' Deje que la gente conteste. Luego: 'La melanina sí ayuda contra el sol, pero no contra todos los tipos. Y el tipo que se esconde en las palmas y las plantas no tiene nada que ver con el sol.'",
+  "n06": "Repase la lista rápido. Haga énfasis en la edad: 'Solo tener más de 50 años ya es razón para revisarse una vez al mes.' Haga énfasis en lo de la cicatriz para la piel oscura: en la piel oscura, el cáncer de células escamosas muchas veces empieza en una cicatriz o en una llaga que nunca sanó.",
+  "n07": "Explique el ABCDE despacio. Luego diga: 'La E, de evolución, es la letra más importante. Una mancha que está cambiando es una mancha para enseñarle al médico, se vea como se vea.' IMAGEN: este es un dibujo para enseñar. Si se aprueba una foto clínica con licencia (vea talk-kit/IMAGE-SOURCES.md), cámbiela con imageBox.",
+  "n08": "Este es el corazón de la charla. Diga: 'Si se acuerdan de una sola cosa esta noche, que sea esta: en la piel oscura, el melanoma prefiere las palmas, las plantas de los pies y las uñas. Una mancha oscura ahí que antes no tenía, o un moretón que nunca se quita, se debe revisar.' IMAGEN: dibujo para enseñar; cámbielo por una foto clínica con licencia si se aprueba (vea talk-kit/IMAGE-SOURCES.md).",
+  "n09": "Pida a todos que se miren las palmas ahora mismo. Diga: 'Adelante, mírense las palmas. Ya hicieron parte de una revisión de la piel.' La gente se ríe y así se empieza a formar el hábito.",
+  "n10": "Equilibre esto con cuidado: muchas personas del grupo tendrán bandas inofensivas en las uñas y pueden preocuparse. Diga: 'Las líneas finas y parejas que están ahí desde hace años casi siempre están bien. Lo que nos importa es una línea NUEVA, una línea que SE ENSANCHA, o un color oscuro que pasa a la piel alrededor de la uña.' IMAGEN: dibujo para enseñar; cámbielo por una foto clínica con licencia si se aprueba.",
+  "n11": "Diga: 'Estos dos tipos son comunes y se tratan muy bien. Lo que hay que notar es una llaga que no sana después de tres o cuatro semanas, o un bultito brillante que sigue creciendo.'",
+  "n12": "Para mucha gente, la idea del patito feo es más fácil que el ABCDE. Diga: 'No tienen que aprenderse letras de memoria. Busquen la mancha que es diferente de todas las demás.'",
+  "n13": "Repáselo en orden. Diga: 'Esto viene en el folleto que le mandamos a su centro, así que no tienen que memorizarlo. El mismo día cada mes, por ejemplo el primero del mes. Diez minutos.'",
+  "n14": "Mencione la guía gratis en línea una vez, sin presionar: 'Si les gusta usar el teléfono, hicimos una guía gratis que los lleva paso a paso por la revisión y les recuerda cada mes. Nada de lo que pongan ahí sale de su teléfono. La dirección está en su folleto.'",
+  "n15": "Lea las seis palabras en voz alta: nueva, que cambia, que sangra, que no sana, una línea oscura en la uña, diferente. Diga: 'Ustedes no tienen que decidir qué es. Ese es el trabajo del médico. Su trabajo es darse cuenta e ir.'",
+  "n16": "Muchas personas mayores evitan la consulta porque les da miedo lo que pasa ahí. Quíteles el miedo: 'Es una mirada, quizás una muestra pequeñita, hecha en el consultorio. Si se encuentra a tiempo, por lo general se cura ahí mismo.' No prometa resultados para ninguna persona en particular.",
+  "n17": "Diga el número de teléfono de HRSA despacio, dos veces. La dirección y el número están en el folleto. Ofrezca: 'Si no saben adónde ir, escríbannos o llámennos y les buscamos el lugar más cercano.' (Every Shade: everyshadescreening@gmail.com, 915-400-7072.)",
+  "n18": "Que sea breve. El mensaje principal de la noche es revisarse, no el protector solar. Nota para la piel oscura: el SPF igual importa, y los protectores solares con color evitan que la piel se vea blanca.",
+  "n19": "Lea los tres puntos despacio. Luego: 'Ahora las mismas diez preguntas de antes, para ver si hicimos bien nuestro trabajo.' LANCE LA ENCUESTA DE ZOOM 'DESPUÉS DE LA CHARLA'. Dé 3 minutos. Versión en papel para las salas donde ven la charla juntos.",
+  "n20": "Reglas para las preguntas: nunca diga qué es una mancha, aunque alguien la acerque a la cámara. Diga: 'No le puedo decir qué es, y no quisiera adivinar mal. Es justo el tipo de mancha que hay que enseñarle a un médico, y le ayudamos a encontrar uno.' Si alguien describe sangrado, crecimiento rápido o una llaga que no ha sanado en meses, anímelo a ir al médico este mismo mes. Dé las gracias al centro. Pídales que les cuenten a sus amistades. Mencione que les mandaremos el folleto y el enlace a la guía gratis."
+ },
+ "illustrations": {
+  "abcde_1": "Suele ser benigno",
+  "abcde_2": "Redondo, parejo, 1 color",
+  "abcde_3": "Señales de alarma",
+  "abcde_4": "Desigual, irregular, multicolor",
+  "abcde_5": "La mancha que cambia es la que debe ver un médico.",
+  "abcde_6": "Dibujo educativo. No a escala.",
+  "acral_1": "Palma",
+  "acral_2": "Planta",
+  "acral_3": "Una mancha nueva, oscura y desigual aquí merece consulta.",
+  "acral_4": "Dibujo educativo. No a escala.",
+  "nail_1": "A menudo benigna",
+  "nail_2": "Fina, pareja, de hace años",
+  "nail_3": "Que la revisen",
+  "nail_4": "Nueva, ancha, desigual, oscura",
+  "nail_5": "piel junto a la uña",
+  "nail_6": "Dibujo educativo. No a escala."
+ },
+ "quiz": {
+  "title": "Cuestionario de Every Shade sobre la piel",
+  "instructions": "Encierre en un círculo una respuesta para cada pregunta. Para usted no hay respuestas malas, solo para nosotros: esto nos dice si nuestra charla funciona. No escriba su nombre.",
+  "scored": [
+   {
+    "id": 1,
+    "q": "¿Quién puede tener cáncer de piel?",
+    "options": [
+     "Solo las personas de piel clara",
+     "Personas de todos los tonos de piel",
+     "Solo las personas que toman el sol"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 2,
+    "q": "En la piel negra y morena, ¿dónde se encuentra a menudo el melanoma?",
+    "options": [
+     "Solo en la cara",
+     "En las palmas, las plantas de los pies y debajo de las uñas",
+     "Solo en la espalda"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 3,
+    "q": "Una línea o banda oscura nueva en una uña de la mano o del pie que se está ensanchando:",
+    "options": [
+     "Es normal y se puede ignorar",
+     "La debe revisar un médico",
+     "Quiere decir que necesita más vitaminas"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 4,
+    "q": "En la piel oscura, un melanoma puede verse:",
+    "options": [
+     "Solo rojo brillante",
+     "Café oscuro, negro, o a veces morado o rosado",
+     "Siempre blanco"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 5,
+    "q": "¿Cada cuánto debe revisar su propia piel en casa?",
+    "options": [
+     "Una vez al año",
+     "Una vez al mes",
+     "Solo cuando algo duele"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 6,
+    "q": "¿Qué mancha es una señal de alarma?",
+    "options": [
+     "Una peca que se ve igual desde hace 20 años",
+     "Una mancha que está cambiando de tamaño, forma o color",
+     "Una mancha pequeña que nunca cambia"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 7,
+    "q": "¿Cuál de estos aumenta su riesgo de cáncer de piel?",
+    "options": [
+     "Quemaduras de sol fuertes en el pasado",
+     "Un familiar que tuvo melanoma",
+     "Tener más de 50 años",
+     "Todas las anteriores"
+    ],
+    "answer": 3
+   },
+   {
+    "id": 8,
+    "q": "Verdadero o falso: una mancha que no duele no puede ser cáncer de piel.",
+    "options": [
+     "Verdadero",
+     "Falso"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 9,
+    "q": "¿Cuál de estos debe verlo un médico?",
+    "options": [
+     "Una llaga que no ha sanado en 3 a 4 semanas",
+     "Un lunar que tiene desde niño y que no ha cambiado",
+     "Piel reseca en el invierno"
+    ],
+    "answer": 0
+   },
+   {
+    "id": 10,
+    "q": "Si no tiene seguro, ¿dónde le pueden revisar una mancha en Nueva Jersey?",
+    "options": [
+     "En ningún lugar",
+     "En un centro de salud comunitario, que atiende a las personas aunque no puedan pagar",
+     "Solo en la sala de emergencias"
+    ],
+    "answer": 1
+   }
+  ],
+  "unscored": [
+   {
+    "id": "C1",
+    "q": "¿Qué tan seguro(a) se siente de poder revisar su propia piel en casa?",
+    "options": [
+     "Nada",
+     "Un poco",
+     "Algo",
+     "Muy seguro(a)"
+    ],
+    "both": true
+   },
+   {
+    "id": "C2",
+    "q": "En el último año, ¿ha revisado su propia piel buscando manchas nuevas o que cambian?",
+    "options": [
+     "Sí",
+     "No",
+     "No estoy seguro(a)"
+    ],
+    "pre_only": true
+   },
+   {
+    "id": "C3",
+    "q": "¿Piensa revisarse la piel en el próximo mes?",
+    "options": [
+     "Sí",
+     "No",
+     "No estoy seguro(a)"
+    ],
+    "post_only": true
+   },
+   {
+    "id": "C4",
+    "q": "¿Le recomendaría esta charla a un amigo o amiga?",
+    "options": [
+     "Sí",
+     "No",
+     "No estoy seguro(a)"
+    ],
+    "post_only": true
+   }
+  ]
+ },
+ "quiz_ui": {
+  "tag_pre": "Antes de la charla",
+  "tag_post": "Después de la charla",
+  "heading": "Cuestionario sobre la piel",
+  "more": "Unas preguntas más (sin puntaje)",
+  "code": "Elija un número de 4 dígitos que vaya a recordar (por ejemplo, los últimos 4 dígitos de su teléfono) y escríbalo aquí para poder unir sus dos cuestionarios:",
+  "foot": "Every Shade · Rutgers University–New Brunswick · everyshadescreening@gmail.com · Anónimo. Solo se usa para mejorar nuestras charlas."
+ }
+}

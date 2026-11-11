@@ -2,8 +2,8 @@
 
 Research-only contact dataset for Every Shade outreach (free skin-cancer talks for NJ seniors). Built 2026-11-10. **Nobody has been contacted.**
 
-- **Rows:** 166 (target was 100–160; a 239-row draft was trimmed by dropping phone-only small-borough centers in oversupplied counties — the dropped names are listed at the bottom so they can be restored).
-- **Rows with an email:** 70 (42.2%). Rows with a phone: 163 (98%).
+- **Rows:** 350 (166 from pass 1 + 184 appended in coverage pass 2). Coverage pass 2 (2026-11-10): appended 0 libraries and 184 senior centers (169 `senior_center` + 15 `nonprofit_senior_program`; libraries went to `libraries_and_faith.csv`). The pass-1 row cap no longer applies; the trimmed names listed at the bottom were restored except where noted.
+- **Rows with an email:** 76 (21.7%) — pass 2 added mostly phone-only directory listings (6 of 184 new rows have an email, all the Morris County nutrition inbox). Rows with a phone: 346 (98.9%). best_channel: phone 270, email 76, web_form 3, mail 1 (Fanwood Seniors, "by mail" only).
 - **Columns:** `name,type,county,town,address,phone,email,website,contact_name,contact_title,best_channel,languages_served,source_url,notes` (UTF-8, comma-quoted).
 - **Rule followed:** emails, phones and contact names were only recorded when they appeared on a fetched page or in a search-result excerpt that quoted a specific page (that page is the `source_url`). Nothing was constructed from a domain pattern. Rows whose email came from a search excerpt rather than a direct fetch say "verify" or "search result" in `notes`. Obfuscated/JavaScript-protected emails (Perth Amboy, Bridgewater, Interfaith Neighbors, JCC MetroWest decode) were either left blank or flagged.
 - `languages_served` is only filled when a source stated it (e.g., Bergen County publishes Korean/Spanish brochures; West Windsor lists Cantonese/Mandarin). Entries like "Spanish likely (town) - not stated" are my inference from the town's demographics, not a source claim.
@@ -31,31 +31,63 @@ Research-only contact dataset for Every Shade outreach (free skin-cancer talks f
 
 | County | Rows | With email | senior_center | community_center | aging_office | nonprofit_senior_program |
 |---|---|---|---|---|---|---|
-| Atlantic | 3 | 1 | 2 | 0 | 1 | 0 |
-| Bergen | 20 | 15 | 15 | 0 | 1 | 4 |
-| Burlington | 4 | 1 | 3 | 0 | 1 | 0 |
-| Camden | 8 | 3 | 4 | 0 | 2 | 2 |
-| Cape May | 3 | 1 | 2 | 0 | 1 | 0 |
-| Cumberland | 4 | 1 | 3 | 0 | 1 | 0 |
-| Essex | 20 | 4 | 8 | 4 | 3 | 5 |
-| Gloucester | 4 | 2 | 3 | 0 | 1 | 0 |
-| Hudson | 14 | 5 | 7 | 0 | 3 | 4 |
+| Atlantic | 11 | 1 | 10 | 0 | 1 | 0 |
+| Bergen | 63 | 15 | 53 | 0 | 1 | 9 |
+| Burlington | 8 | 1 | 7 | 0 | 1 | 0 |
+| Camden | 24 | 3 | 19 | 0 | 2 | 3 |
+| Cape May | 4 | 1 | 3 | 0 | 1 | 0 |
+| Cumberland | 14 | 1 | 13 | 0 | 1 | 0 |
+| Essex | 29 | 4 | 17 | 4 | 3 | 5 |
+| Gloucester | 9 | 2 | 8 | 0 | 1 | 0 |
+| Hudson | 20 | 5 | 12 | 0 | 3 | 5 |
 | Hunterdon | 2 | 2 | 1 | 0 | 1 | 0 |
-| Mercer | 9 | 5 | 6 | 0 | 2 | 1 |
-| Middlesex | 17 | 4 | 12 | 0 | 2 | 3 |
-| Monmouth | 6 | 2 | 4 | 0 | 1 | 1 |
-| Morris | 7 | 3 | 6 | 0 | 1 | 0 |
-| Ocean | 4 | 2 | 3 | 0 | 1 | 0 |
-| Passaic | 8 | 1 | 6 | 0 | 1 | 1 |
+| Mercer | 21 | 5 | 14 | 0 | 2 | 5 |
+| Middlesex | 34 | 4 | 29 | 0 | 2 | 3 |
+| Monmouth | 17 | 2 | 15 | 0 | 1 | 1 |
+| Morris | 24 | 9 | 23 | 0 | 1 | 0 |
+| Ocean | 7 | 2 | 6 | 0 | 1 | 0 |
+| Passaic | 9 | 1 | 7 | 0 | 1 | 1 |
 | Salem | 1 | 1 | 0 | 0 | 1 | 0 |
 | Somerset | 9 | 7 | 7 | 1 | 1 | 0 |
 | Statewide | 1 | 0 | 0 | 0 | 1 | 0 |
-| Sussex | 3 | 1 | 2 | 0 | 1 | 0 |
-| Union | 16 | 6 | 6 | 3 | 2 | 5 |
-| Warren | 3 | 3 | 2 | 0 | 1 | 0 |
-| **Total** | **166** | **70 (42.2%)** | 102 | 8 | 30 | 26 |
+| Sussex | 5 | 1 | 4 | 0 | 1 | 0 |
+| Union | 33 | 6 | 19 | 3 | 2 | 9 |
+| Warren | 5 | 3 | 4 | 0 | 1 | 0 |
+| **Total** | **350** | **76 (21.7%)** | 271 | 8 | 30 | 41 |
+
+(Pass-1 table of 166 rows superseded.)
+
+## Coverage pass 2 (2026-11-10)
+
+Appended 184 rows (append-only; no existing row changed). Every row's `notes` ends with "Added in coverage pass 2 (2026-11-10)."
+
+**What was added, by source (`source_url`):**
+
+| Source | Rows | Notes |
+|---|---|---|
+| UHC NJ Senior Centers Directory PDF (re-fetched, 222 entries parsed column-by-column) | 77 | Every UHC entry not already a row. Atlantic, Burlington, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Warren entries cite UHC. |
+| Bergen County Division of Senior Services Key Services Guide 2024 (oldtappan.net PDF, pp.50-51, 55, 24) | 43 | 38 municipal senior centers + AWCA, JCC on the Palisades, YJCC (nonprofit) + Urban League of Bergen County and Catholic Charities Older Adult Services (restored from trim). Excluded building-residents-only sites (Garfield Golden Towers, Belmont Gardens) and Senior Source (retail). |
+| Union County Resource Directory for Older Adults (3/2026), p.23-24 | 17 | UHC Union entries re-cited to the newer county directory, plus Fanwood Seniors (mail only) and Urban League of Union County. |
+| Camden County Seniors Directory 2024, pp.13-20 | 16 | UHC Camden centers re-cited to county directory, plus county-run **Carol Norcross Senior Social Wellness Center** and congregate sites Katz JCC, Wayne Bryant CC (Lawnside), Lindenwold (address blank — directory repeats the Lawnside address). The three congregate sites share the county meal line 856-374-6325 (also on the existing PRUP row). |
+| Essex County "Essex County Senior Centers" page | 9 | Same list as UHC Essex; all 7 trimmed Essex names plus Watsessing Park Club and Branch Brook Visitors Center. |
+| Cumberland County Nutrition Program 2026 PDF | 7 | Lawrence Twp, Maurice River, Louise Moore, Charlotte Brago (with site-manager names) + county Sharing Centers Tarkiln Acres (Vineland), High Rise East (Millville), Nanticoke Lenni-Lenape Tribe (Fairton). Holly City, Downe, West Cumberland cite UHC. |
+| Morris County Midday Friendship Centers 2026 flyer | 6 | County-run nutrition sites: Butler Firehouse, Cook's Pond (Denville), St. John's Episcopal (Dover), Dean Gallo/Morris Mews (Morris Twp), Rexford S. Tucker Apts (Madison), Pleasant View Village (Rockaway); email = MorrisNutrition@co.morris.nj.us (county inbox printed on the flyer). |
+| Gloucester County Nutrition Program page | 5 | County-run lunch sites: Mantua Twp CC, Greenfields VFC (West Deptford), Pfeiffer CC (Williamstown), First Baptist Jericho (Deptford), Second Baptist (Paulsboro). |
+| Sussex County Congregate Nutrition page | 2 | Franklin Senior Center (new) and Hopatcong Civic Center (= UHC Hopatcong; county phone used, UHC phone in notes). |
+| Cape May County Senior Centers page | 1 | Upper Township Senior Center (county-run; the other two were already rows). |
+| Morris County Human Services Directory (senior centers pp.27-29) | 1 | Mt. Olive Senior Center (restored from trim). The 10 trimmed Morris UHC centers cite UHC with a note that the county directory also lists them. |
+
+**De-duplication:** new rows were matched against all 166 existing rows by every phone number in `phone` and `notes`, by normalized name, and by town + street number. Kept despite a phone overlap, with an explanatory note: Bayonne Senior Center and Downtown Senior Center (phones appear in the Bayonne Office on Aging row's notes); Woodbridge's Maple Tree, Hickory, Sycamore and Five Branches centers (listed only in the Woodbridge department row's notes); South Ward Community Center, Trenton (UHC gives it 609-989-3466, which the existing Stubblefield row uses — verify); North Arlington borough Senior Center at 10 Beaver Ave (separate from the county center at 11 York Rd). Not re-added because already rows: Princeton Senior Resource Center, Hopewell Valley, Willingboro (Reva Foster), Passaic (Shimkowitz), North Bergen, Brick, Monroe, the Bergen county centers, Tenafly, Teaneck, Fort Lee, Paramus, MLK Hackensack, KCC, Bergen Family Center/SECIL.
+
+**Types:** directory entries listed as senior centers are `senior_center`, county nutrition sites included (same convention as the existing Wetmore Towers row). Church-, synagogue- or nonprofit-run programs are `nonprofit_senior_program` (15): Grace Van Vorst Episcopal, St. Anthony of Padua Anthonians, St. Paul's Golden Agers, Jewish Center of Princeton, E.C.H.O. Inc., Elizabethport Presbyterian Center, JCC of Central NJ, YM-YWHA Union, Katz JCC, AWCA Teaneck, JCC on the Palisades, YJCC Washington Twp, the two Urban Leagues, Catholic Charities Bergen.
+
+**Trimmed names still not restored:** Morris Twp Senior Club (not in the Morris directory, the 2026 Midday flyer or UHC; Dean Gallo/Morris Mews Midday site added instead), Hawthorne (Passaic County documents return HTTP 403; Hawthorne/Totowa nutrition centers seen only in search snippets, so not recorded), Interfaith Caregivers (Mercer; nonprofit, no page fetched), Elmwood Park Borough office (no page fetched; the county Elmwood Park center is already a row).
+
+**Blocked in pass 2:** passaiccountynj.org (403 to curl and fetch tools), warrencountynj.gov senior-centers page (403), mercercounty.org, aclink.org (Atlantic), Ocean County centers page (404). Morris County PDFs fail from curl (Akamai) but were read through a fetch tool.
 
 ## Thin counties and why
+
+_Written for pass 1 (166 rows); county counts below are pass-1 numbers. See the table above for current counts. Salem (1 row: the county office, which is also the only UHC Salem listing) and Hunterdon (2) are still thin._
 
 - **Salem (1), Hunterdon (2), Warren (3), Sussex (3), Cape May (3), Atlantic (3):** these counties run most senior programming through the county office itself (one county senior center or county-run nutrition sites), so there are few distinct municipal centers to list. Warren and Hunterdon rows carry the county inbox as their email because the county operates the centers.
 - **Cumberland (4), Gloucester (4), Burlington (4), Ocean (4):** more centers exist (UHC lists 9 for Cumberland, 7 for Burlington) but I kept only 3–4 per county to stay in the row target; the dropped names are in the UHC PDF.

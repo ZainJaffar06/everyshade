@@ -1,0 +1,346 @@
+{
+ "_readme": "Translate every string value. Keep keys, URLs, emails, phone numbers, the brand 'every shade'/'Every Shade', and the letters A-E in the ABCDE lines unchanged.",
+ "slide_text": {
+  "t003": "General health education only. Not medical advice. Our members are students, not medical professionals.",
+  "t004": "Skin cancer doesn't look the same on everyone.",
+  "t005": "A free talk for seniors · Friday, November 20, 2026 · Every Shade, Rutgers University–New Brunswick",
+  "t006": "Tonight, in 45 minutes",
+  "t007": "Why skin cancer is often found late on darker skin",
+  "t008": "What warning signs look like on light, medium, and dark skin",
+  "t009": "The spots people miss: palms, soles, and nails",
+  "t010": "How to check your skin at home in 10 minutes",
+  "t011": "When to see a doctor, and where to go without insurance",
+  "t012": "Your questions",
+  "t013": "First, a quick quiz",
+  "t014": "10 short questions, no names. It helps us see if the talk works. We'll ask the same questions at the end.",
+  "t015": "On Zoom: the poll will pop up on your screen now.",
+  "t016": "Why we started Every Shade",
+  "t017": "of pictures in common medical textbooks show darker skin. Doctors learn mostly from light skin.",
+  "t018": "66% vs 90%",
+  "t019": "five-year survival for Black patients with melanoma compared with white patients, mostly because it is found later.",
+  "t020": "of melanomas of a known type in Black patients were on the palms, soles, or under the nails (2% in white patients).",
+  "t021": "Sources: Perlman et al., Int J Womens Dermatol, 2021. Culp and Lunsford, Preventing Chronic Disease (CDC), 2019.",
+  "t022": "Three kinds of skin cancer",
+  "t023": "Basal cell",
+  "t024": "The most common. Grows slowly. A shiny bump or a sore that keeps coming back. On darker skin it is often brown or black, not pink.",
+  "t025": "Squamous cell",
+  "t026": "A rough, scaly patch or a sore that will not heal. On darker skin it often shows up in an old scar, burn, or long-lasting sore.",
+  "t027": "Melanoma",
+  "t028": "The most serious. Can spread if not caught early. A dark spot that is new or changing. On darker skin: palms, soles, under nails.",
+  "t029": "Everyone can get skin cancer",
+  "t030": "Myth",
+  "t031": "\"Dark skin doesn't get skin cancer.\"",
+  "t032": "\"If it doesn't hurt, it's nothing.\"",
+  "t033": "\"It only happens where the sun hits.\"",
+  "t034": "Fact",
+  "t035": "Melanin gives some protection, but every skin tone can get skin cancer.",
+  "t036": "Most skin cancers do not hurt at first.",
+  "t037": "On darker skin, melanoma often appears where the sun never reaches.",
+  "t038": "What raises your risk",
+  "t039": "Sunburns in the past, or many years outdoors or in tanning beds",
+  "t040": "Age over 50",
+  "t041": "A parent, brother, sister, or child who had melanoma",
+  "t042": "Many moles, or a spot that has already been treated",
+  "t043": "A weak immune system (for example after a transplant)",
+  "t044": "An old scar, burn, or sore that has lasted a long time",
+  "t045": "Even with no risk factors",
+  "t046": "Check your skin once a month. Most melanomas on darker skin are found on people with none of these.",
+  "t047": "Melanoma on lighter skin: the ABCDEs",
+  "t048": "A: Asymmetry. One half does not match the other",
+  "t049": "B: Border. Edges are ragged or blurred",
+  "t050": "C: Color. More than one color, or changing",
+  "t051": "D: Diameter. Bigger than a pencil eraser",
+  "t052": "E: Evolving. Changing in size, shape, color, or feel",
+  "t053": "Melanoma on darker skin looks different",
+  "t054": "Often very dark brown or black, but can be purple, gray, or even pink",
+  "t055": "Most often on the palms, the soles, between the toes, or under a nail",
+  "t056": "Can look like a bruise or a stain that does not fade",
+  "t057": "Usually does not hurt",
+  "t058": "Any new dark spot in these places is worth a doctor visit",
+  "t059": "The spots people miss",
+  "t060": "Palms",
+  "t061": "Both hands, and between the fingers",
+  "t062": "Soles",
+  "t063": "The bottom of each foot and the heels",
+  "t064": "Between the toes",
+  "t065": "Spread them apart in good light",
+  "t066": "Under the nails",
+  "t067": "Fingernails and toenails, with polish off",
+  "t068": "Also: scalp, ears, inside the mouth, and anywhere a helper has to look for you.",
+  "t069": "A dark line in a nail",
+  "t070": "Many people with darker skin have harmless thin lines in their nails",
+  "t071": "See a doctor if a line is new, getting wider, darker, or uneven",
+  "t072": "Or if the skin next to the nail turns dark",
+  "t073": "Or if the nail splits, lifts, or bleeds near the line",
+  "t074": "A new line in only one nail, after age 50, deserves a look",
+  "t075": "The other skin cancers, on every tone",
+  "t076": "Lighter skin",
+  "t077": "A pink, pearly, or shiny bump. A rough, scaly patch. A sore that bleeds, scabs, and comes back.",
+  "t078": "Medium skin",
+  "t079": "A brown, tan, or shiny bump. A scaly patch that is darker than the skin around it.",
+  "t080": "Darker skin",
+  "t081": "A dark, shiny bump that looks like a mole. A sore inside an old scar or burn that will not heal.",
+  "t082": "Look for the ugly duckling",
+  "t083": "One of these is not like the others.",
+  "t084": "Most of your moles look like each other. A spot that stands out from the rest is the one to show a doctor.",
+  "t085": "Skin cancer usually does not hurt, itch, or bleed at first.",
+  "t086": "Do not wait for pain. Wait for change.",
+  "t087": "The 10-minute skin check, once a month",
+  "t088": "Good light, a full-length mirror, a hand mirror, and a helper if you can",
+  "t089": "Face, ears, lips, inside the mouth. Part your hair and check the scalp",
+  "t090": "Neck, chest, belly. Lift the breasts and check underneath",
+  "t091": "Arms, underarms, both sides of the hands. Palms and between the fingers",
+  "t092": "Fingernails and toenails: look for a new dark line",
+  "t093": "Back, buttocks, backs of the legs, with the hand mirror or a helper",
+  "t094": "Front of the legs, then the feet: soles, heels, between the toes",
+  "t095": "Write down anything new. Take a phone photo to compare next month",
+  "t096": "Make it easy to remember",
+  "t097": "Pick a day",
+  "t098": "The first of the month, or the day your pension or Social Security comes. Put it on the calendar.",
+  "t099": "Use your phone",
+  "t100": "Take a photo of any spot you are watching. Next month, compare. Change is what matters.",
+  "t101": "Free guide online",
+  "t102": "Our step-by-step self-check with monthly reminders. Photos stay on your phone.",
+  "t103": "zainjaffar06.github.io/everyshade/check",
+  "t104": "See a doctor about a spot that is",
+  "t105": "New",
+  "t106": "You have not seen it before",
+  "t107": "Changing",
+  "t108": "Size, shape, color, or feel",
+  "t109": "Bleeding",
+  "t110": "Or itching, crusting, or tender",
+  "t111": "Not healing",
+  "t112": "After 3 to 4 weeks",
+  "t113": "A dark nail line",
+  "t114": "New, widening, or spreading to the skin",
+  "t115": "Different",
+  "t116": "The ugly duckling",
+  "t117": "What happens at the doctor's office",
+  "t118": "The doctor looks at the spot, often with a small magnifying light called a dermatoscope. It does not hurt.",
+  "t119": "Most spots turn out to be harmless, and you go home reassured.",
+  "t120": "If the doctor is not sure, they numb the skin and take a tiny sample (a biopsy). It takes a few minutes and heals in about a week.",
+  "t121": "Found early, most skin cancers are removed in the office and cured.",
+  "t122": "Where to go in New Jersey",
+  "t123": "Have Medicare or insurance",
+  "t124": "Call your regular doctor or a dermatologist. A visit for a spot that worries you is covered when it is medically needed.",
+  "t125": "No insurance",
+  "t126": "Community health centers see everyone and charge by what you can pay.",
+  "t127": "findahealthcenter.hrsa.gov",
+  "t128": "or call 1-877-464-4772",
+  "t129": "Free skin checks",
+  "t130": "The American Academy of Dermatology lists free screening events.",
+  "t131": "aad.org/spotme",
+  "t132": "Or email us and we will help you find one.",
+  "t133": "Protecting your skin, at every tone",
+  "t134": "Shade between 10 am and 4 pm, especially in summer",
+  "t135": "A hat with a brim, and sunglasses",
+  "t136": "Sunscreen SPF 30 or higher on skin the sun reaches, every tone included",
+  "t137": "Skip tanning beds",
+  "t138": "Protect scars and healed sores from the sun",
+  "t139": "Remember",
+  "t140": "Sun protection helps, but it does not reach your palms, soles, or nails. Only looking does.",
+  "t141": "Three things to take home",
+  "t142": "Skin cancer happens on every skin tone. On darker skin it hides on the palms, soles, and under the nails.",
+  "t143": "Check your skin once a month, head to toe, in good light. Ten minutes.",
+  "t144": "A spot that is new, changing, bleeding, not healing, or a new dark nail line: see a doctor. It does not have to hurt.",
+  "t145": "everyshadescreening@gmail.com · (915) 400-7072",
+  "t146": "We can help you find a free or low-cost place to get a spot looked at."
+ },
+ "notes": {
+  "n01": "Welcome everyone as they join. Keep this slide up for 2-3 minutes while people settle in. Say: 'Thank you for joining us. My name is Zain, I am a student at Rutgers, and I'm part of a group called Every Shade. Tonight we'll talk about how to find skin cancer early, on every skin tone, and how to check your own skin at home. We'll finish with time for your questions.' Ask people to turn on captions if they want them (Zoom: 'Show captions').",
+  "n02": "Say: 'We are students, not doctors. Nothing tonight is medical advice, and we cannot look at a spot and tell you what it is. What we can do is help you know what to look for and where to go.' Then LAUNCH THE 'BEFORE THE TALK' ZOOM POLL. Give 3 minutes. For a watch-together room, hand out the paper quiz instead. Do not reveal answers yet.",
+  "n03": "Keep it simple: 'Skin cancer is not rarer on darker skin because it is harmless. It is found later, because people and even doctors are not trained to look for it in the right places. Tonight we fix that for you.' The survival numbers are from a CDC journal. The textbook figure is from a 2021 study of six common medical student resources.",
+  "n04": "Say the names once, then move on. The point is: 'There are three main kinds. Two are common and very treatable. The third, melanoma, is the one we most want to catch early, and it is the one that hides on palms, soles, and under nails.'",
+  "n05": "Ask the room: 'Who has heard that darker skin cannot get skin cancer?' Let people answer. Then: 'Melanin does help against the sun, but not against every kind. And the kind that hides on palms and soles has nothing to do with sun.'",
+  "n06": "Go through the list quickly. Emphasize age: 'Just being over 50 is a reason to look once a month.' Emphasize the scar point for darker skin: squamous cell cancers on darker skin often start in a scar or a sore that never healed.",
+  "n07": "Explain ABCDE slowly. Then say: 'E, evolving, is the most important letter. A spot that is changing is a spot to show a doctor, whatever it looks like.' IMAGE: this is a teaching drawing. If a licensed clinical photo is approved (see talk-kit/IMAGE-SOURCES.md), swap it in with imageBox.",
+  "n08": "This is the heart of the talk. Say: 'If you remember one thing tonight, remember this: on darker skin, melanoma likes the palms, the soles, and the nails. A dark spot there that you did not have before, or a bruise that never fades, should be looked at.' IMAGE: teaching drawing; swap in a licensed clinical photo if approved (see talk-kit/IMAGE-SOURCES.md).",
+  "n09": "Have everyone look at their palms right now. Say: 'Go ahead, look at your palms. Now you have done part of a skin check.' It gets a laugh and it builds the habit.",
+  "n10": "Balance this carefully: many people in the room will have harmless nail bands and may worry. Say: 'Thin, even lines that have been there for years are usually fine. What we care about is a NEW line, a WIDENING line, or dark color spreading onto the skin around the nail.' IMAGE: teaching drawing; swap in a licensed clinical photo if approved.",
+  "n11": "Say: 'These two kinds are common and very treatable. The thing to catch is a sore that will not heal after three or four weeks, or a shiny bump that keeps growing.'",
+  "n12": "The ugly duckling idea is easier than ABCDE for many people. Say: 'You do not need to memorize letters. Look for the one spot that is different from all the rest.'",
+  "n13": "Walk through it in order. Say: 'This is on the handout we sent your center, so you do not have to memorize it. Same day every month, for example the first of the month. Ten minutes.'",
+  "n14": "Mention the free online guide once, without pressure: 'If you like using your phone, we built a free guide that walks you through the check and reminds you every month. Nothing you put in it leaves your phone. The address is on your handout.'",
+  "n15": "Read the six words out loud: new, changing, bleeding, not healing, a dark nail line, different. Say: 'You do not have to decide what it is. That is the doctor's job. Your job is to notice and to go.'",
+  "n16": "Many seniors avoid the visit because they fear what happens there. Take the fear out: 'It is a look, maybe a tiny sample, done in the office. Found early, it is usually cured right there.' Do not promise outcomes for any individual.",
+  "n17": "Say the HRSA phone number slowly, twice. The address and number are on the handout. Offer: 'If you are not sure where to go, email or call us and we will find the closest place for you.' (Every Shade: everyshadescreening@gmail.com, 915-400-7072.)",
+  "n18": "Keep this short. The main message of the night is checking, not sunscreen. Note for darker skin: SPF still matters, and tinted sunscreens avoid the white cast.",
+  "n19": "Read the three points slowly. Then: 'Now the same ten quiz questions as before, so we can see if we did our job.' LAUNCH THE 'AFTER THE TALK' ZOOM POLL. Give 3 minutes. Paper version for watch-together rooms.",
+  "n20": "Q&A rules: never say what a spot is, even if someone holds it up to the camera. Say: 'I can't tell you what that is, and I would not want to guess wrong. It is exactly the kind of spot to show a doctor, and we will help you find one.' If someone describes bleeding, rapid growth, or a sore that has not healed for months, encourage a visit this month. Thank the center. Ask them to tell friends. Mention we will send the handout and the free guide link."
+ },
+ "illustrations": {
+  "abcde_1": "Usually harmless",
+  "abcde_2": "Round, even, one color",
+  "abcde_3": "Warning signs",
+  "abcde_4": "Uneven, ragged, many colors",
+  "abcde_5": "A spot that is changing is the one to show a doctor.",
+  "abcde_6": "Drawing for teaching. Not to scale.",
+  "acral_1": "Palm",
+  "acral_2": "Sole",
+  "acral_3": "A new dark, uneven spot here is worth a doctor visit.",
+  "acral_4": "Drawing for teaching. Not to scale.",
+  "nail_1": "Often harmless",
+  "nail_2": "Thin, even, there for years",
+  "nail_3": "Get it checked",
+  "nail_4": "New, wide, uneven, or dark",
+  "nail_5": "skin next to the nail",
+  "nail_6": "Drawing for teaching. Not to scale."
+ },
+ "quiz": {
+  "title": "Every Shade skin check quiz",
+  "instructions": "Circle one answer for each question. There are no wrong answers for you, only for us: this tells us whether our talk works. Do not write your name.",
+  "scored": [
+   {
+    "id": 1,
+    "q": "Who can get skin cancer?",
+    "options": [
+     "Only people with light skin",
+     "People of every skin tone",
+     "Only people who sunbathe"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 2,
+    "q": "On Black and brown skin, where is melanoma often found?",
+    "options": [
+     "Only on the face",
+     "Palms, soles of the feet, and under the nails",
+     "Only on the back"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 3,
+    "q": "A new dark line or band in a fingernail or toenail that is getting wider:",
+    "options": [
+     "Is normal and can be ignored",
+     "Should be checked by a doctor",
+     "Means you need more vitamins"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 4,
+    "q": "On darker skin, a melanoma may look:",
+    "options": [
+     "Only bright red",
+     "Dark brown, black, or sometimes purple or pink",
+     "Always white"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 5,
+    "q": "How often should you check your own skin at home?",
+    "options": [
+     "Once a year",
+     "Once a month",
+     "Only when something hurts"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 6,
+    "q": "Which spot is a warning sign?",
+    "options": [
+     "A freckle that has looked the same for 20 years",
+     "A spot that is changing in size, shape, or color",
+     "A small spot that never changes"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 7,
+    "q": "Which of these raises your risk of skin cancer?",
+    "options": [
+     "Bad sunburns in the past",
+     "A family member who had melanoma",
+     "Being over 50",
+     "All of the above"
+    ],
+    "answer": 3
+   },
+   {
+    "id": 8,
+    "q": "True or false: a spot that does not hurt cannot be skin cancer.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer": 1
+   },
+   {
+    "id": 9,
+    "q": "Which of these should be seen by a doctor?",
+    "options": [
+     "A sore that has not healed in 3 to 4 weeks",
+     "A mole you have had since childhood that has not changed",
+     "Dry skin in winter"
+    ],
+    "answer": 0
+   },
+   {
+    "id": 10,
+    "q": "If you have no insurance, where can you get a spot looked at in New Jersey?",
+    "options": [
+     "Nowhere",
+     "A community health center, which sees people regardless of ability to pay",
+     "Only the emergency room"
+    ],
+    "answer": 1
+   }
+  ],
+  "unscored": [
+   {
+    "id": "C1",
+    "q": "How confident are you that you could check your own skin at home?",
+    "options": [
+     "Not at all",
+     "A little",
+     "Somewhat",
+     "Very"
+    ],
+    "both": true
+   },
+   {
+    "id": "C2",
+    "q": "In the last year, have you checked your own skin for new or changing spots?",
+    "options": [
+     "Yes",
+     "No",
+     "Not sure"
+    ],
+    "pre_only": true
+   },
+   {
+    "id": "C3",
+    "q": "Do you plan to do a skin check in the next month?",
+    "options": [
+     "Yes",
+     "No",
+     "Not sure"
+    ],
+    "post_only": true
+   },
+   {
+    "id": "C4",
+    "q": "Would you recommend this talk to a friend?",
+    "options": [
+     "Yes",
+     "No",
+     "Not sure"
+    ],
+    "post_only": true
+   }
+  ]
+ },
+ "quiz_ui": {
+  "tag_pre": "Before the talk",
+  "tag_post": "After the talk",
+  "heading": "Skin check quiz",
+  "more": "A few more questions (not scored)",
+  "code": "Pick any 4-digit number you will remember (for example the last 4 digits of your phone) and write it here so we can match your two quizzes:",
+  "foot": "Every Shade · Rutgers University–New Brunswick · everyshadescreening@gmail.com · Anonymous. Used only to improve our talks."
+ }
+}

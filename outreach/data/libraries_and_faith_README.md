@@ -6,45 +6,58 @@ File: `libraries_and_faith.csv` (UTF-8, RFC-4180 quoting). Columns: `name,type,c
 
 ## Totals
 
-- **251 rows**: 112 libraries, 139 faith rows (94 church, 14 mosque, 8 temple, 9 gurdwara, 14 faith_network).
-- **Email coverage**: all rows 195/251 (78%); libraries 110/112 (98%); faith rows 85/139 (61%).
-- Phone coverage: 233/251. Rows with neither email nor phone: 9 (all flagged in `notes`; `best_channel` = web_form).
-- best_channel: {'email': 195, 'phone': 48, 'web_form': 8}.
+Coverage pass 2 (2026-11-10): appended 182 libraries and 0 senior centers (senior centers went to `senior_and_community_centers.csv`; see its README).
+
+- **433 rows**: 294 libraries, 139 faith rows (94 church, 14 mosque, 8 temple, 9 gurdwara, 14 faith_network).
+- **Libraries now cover every entry on the NJ State Library "NJ Public Libraries Arranged by County" page as fetched 2026-11-10 (294 entries; 112 from pass 1 + 182 appended).** Branches are included only where that page lists them separately (4 Gloucester County Library branches; Mercer HQ branch was already a row). County-system branches the page does not list (Ocean, Monmouth, Somerset, Burlington, Camden, Atlantic, Morris, Sussex, Hunterdon, Cumberland, Warren county library branches) are not rows.
+- **Email coverage**: all rows 370/433 (85%); libraries 285/294 (97%); faith rows 85/139 (61%). Pass-2 library rows: 175/182 with a director email.
+- Libraries with no email in the directory (9): Somerville, Manville (pass 1), Mount Holly Library and Lyceum, Stratford, Oxford, and the 4 Gloucester County Library branches (Glassboro, Greenwich Twp, Logan Twp, Swedesboro) — `best_channel` = phone.
+- Phone coverage: 415/433. Rows with neither email nor phone: 9 (all faith rows, flagged in `notes`; `best_channel` = web_form).
+- best_channel: {'email': 370, 'phone': 55, 'web_form': 8}.
 
 ## Rows by county and type
 
 | County | library | church | mosque | temple | gurdwara | faith_network | total |
 |---|---|---|---|---|---|---|---|
-| Essex | 16 | 23 | 2 | 0 | 0 | 5 | 46 |
-| Union | 13 | 12 | 1 | 0 | 0 | 0 | 26 |
-| Morris | 8 | 3 | 1 | 1 | 0 | 1 | 14 |
-| Middlesex | 12 | 9 | 3 | 3 | 2 | 1 | 30 |
-| Somerset | 6 | 1 | 1 | 1 | 1 | 0 | 10 |
-| Bergen | 14 | 17 | 2 | 2 | 1 | 0 | 36 |
+| Atlantic | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
+| Bergen | 62 | 17 | 2 | 2 | 1 | 0 | 84 |
+| Burlington | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
+| Camden | 13 | 1 | 0 | 0 | 0 | 3 | 17 |
+| Cape May | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| Cumberland | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| Essex | 20 | 23 | 2 | 0 | 0 | 5 | 50 |
+| Gloucester | 16 | 0 | 0 | 0 | 1 | 0 | 17 |
 | Hudson | 10 | 16 | 0 | 0 | 1 | 0 | 27 |
-| Passaic | 10 | 9 | 2 | 0 | 0 | 0 | 21 |
+| Hunterdon | 7 | 0 | 0 | 0 | 0 | 0 | 7 |
 | Mercer | 6 | 3 | 1 | 1 | 3 | 3 | 17 |
-| Atlantic | 2 | 0 | 0 | 0 | 0 | 0 | 2 |
-| Burlington | 2 | 0 | 0 | 0 | 0 | 0 | 2 |
-| Camden | 2 | 1 | 0 | 0 | 0 | 3 | 6 |
-| Cape May | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| Cumberland | 2 | 0 | 0 | 0 | 0 | 0 | 2 |
-| Gloucester | 1 | 0 | 0 | 0 | 1 | 0 | 2 |
-| Hunterdon | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| Monmouth | 2 | 0 | 1 | 0 | 0 | 1 | 4 |
-| Ocean | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| Salem | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| Sussex | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| Warren | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-| **All** | 112 | 94 | 14 | 8 | 9 | 14 | 251 |
+| Middlesex | 24 | 9 | 3 | 3 | 2 | 1 | 42 |
+| Monmouth | 23 | 0 | 1 | 0 | 0 | 1 | 25 |
+| Morris | 33 | 3 | 1 | 1 | 0 | 1 | 39 |
+| Ocean | 2 | 0 | 0 | 0 | 0 | 0 | 2 |
+| Passaic | 15 | 9 | 2 | 0 | 0 | 0 | 26 |
+| Salem | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| Somerset | 8 | 1 | 1 | 1 | 1 | 0 | 12 |
+| Sussex | 2 | 0 | 0 | 0 | 0 | 0 | 2 |
+| Union | 20 | 12 | 1 | 0 | 0 | 0 | 33 |
+| Warren | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
+| **All** | 294 | 94 | 14 | 8 | 9 | 14 | 433 |
 
-Priority counties (Essex, Union, Morris, Middlesex, Somerset, Bergen, Hudson, Passaic, Mercer) hold 227 of 251 rows. Every NJ county has at least one library row.
+Pass-1 table (251 rows) superseded by the table above.
+
+Priority counties (Essex, Union, Morris, Middlesex, Somerset, Bergen, Hudson, Passaic, Mercer) hold 330 of 433 rows. Every NJ county has at least one library row; Ocean (2) and Sussex (2) are low because each is served by a county library system whose branches are not separate directory entries.
 
 ## Faith rows by community served (languages_served tag counts)
 
 Spanish: 46, Korean: 14, Haitian Creole: 14, Punjabi: 9, Tagalog: 8, Hindi: 6, French: 6, Gujarati: 5, Arabic: 3, Mandarin: 3, Telugu: 2, Portuguese: 2, Urdu: 1, Tamil: 1, Kannada: 1, Polish: 1, Taiwanese: 1, Cantonese: 1. Rows with no language tag are English-language Black churches, mosques with no language shown, or networks.
 
 Breakdown of faith rows by community: Black churches (Baptist/AME/non-denominational) ~22; Haitian congregations + Creole-Mass parishes 13; Hispanic/Latino (Spanish-Mass Catholic parishes + evangelical/Pentecostal/SDA) ~40; mosques/Islamic centers 14; Hindu temples 8; Sikh gurdwaras 9; Korean churches/parishes 13; Filipino and Chinese churches 7; interfaith/diocesan/health-ministry networks 14.
+
+## Coverage pass 2 (2026-11-10) — library details
+
+- Source for all 182 appended rows: NJ State Library directory page (same URL as pass 1), re-fetched 2026-11-10 and parsed in full (294 library entries, 285 with a director email). Each appended row: `type`=library, `contact_name`=director as printed (", acting"/", interim" kept when printed), `contact_title`="Director", `best_channel`=email when an email is printed, else phone. Notes end with "Added in coverage pass 2 (2026-11-10)."
+- De-duplication: every directory entry was matched to existing rows by phone, email and normalized name; all 112 pass-1 library rows matched exactly one entry and none were changed. West Caldwell Public Library shares Verona's director and email (pascale@veronalibrary.org) in the directory; it was added as its own row with a note.
+- Flags in `notes`: Milford Public Library (Hunterdon) is printed with director@newmilford.bccls.org, which looks like a New Milford (Bergen) address — verify before emailing. Phone numbers were normalized to (xxx) xxx-xxxx; 4-digit ZIPs printed without the leading zero were padded (e.g., NJ 8096 -> NJ 08096).
+- Not done: county-system branch rows (directory does not list them), and no library staff pages were fetched for adult-services contacts in pass 2 (director is the contact on all 182 new rows).
 
 ## Directories mined (best sources first)
 
