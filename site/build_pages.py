@@ -34,6 +34,7 @@ table.dir th{font-family:var(--display);font-size:.9rem;color:var(--muted);text-
 .filters{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
 .filters select,.filters input{min-height:48px;font:inherit;padding:0 12px;border:1px solid var(--rule);border-radius:10px;background:var(--ground);color:var(--ink)}
 .dir-wrap{overflow-x:auto}
+table.dir td:nth-child(4) a[href^='tel']{white-space:nowrap}
 @media (max-width:820px){.grid2,.grid3{grid-template-columns:minmax(0,1fr)} table.dir thead{display:none} table.dir tr{display:block;border-bottom:1px solid var(--rule);padding:10px 0} table.dir td{display:block;border:0;padding:3px 0}}
 """
 
@@ -215,11 +216,13 @@ def care_page(rows, verified):
         tel = re.sub(r"[^\d+]", "", r.get("phone", ""))[:15]
         phone_html = f'<a href="tel:{tel}">{phone}</a>' if tel else ""
         tags = []
-        if r.get("sliding_fee") == "yes": tags.append("Sliding fee")
+        sf = (r.get("sliding_fee") or "").lower()
+        if sf.startswith("yes"): tags.append("Sliding fee")
+        elif "free" in sf: tags.append("Free")
         if r.get("accepts_uninsured") == "yes": tags.append("Sees uninsured")
-        if r.get("dermatology_onsite") == "yes": tags.append("Dermatology on site")
-        if r.get("languages"): tags.append(html.escape(r["languages"]))
-        trs.append(f'<tr data-county="{html.escape(r["county"])}"><td>{html.escape(r["county"])}</td><td><b>{html.escape(r["name"])}</b><br><span class="note">{html.escape(r.get("type", ""))}</span></td>'
+        if (r.get("dermatology_onsite") or "").startswith("yes"): tags.append("Dermatology on site")
+        if r.get("languages") and r["languages"].lower() not in ("not listed", "unknown"): tags.append(html.escape(r["languages"]))
+        trs.append(f'<tr data-county="{html.escape(r["county"])}"><td>{html.escape(r["county"])}</td><td><b>{html.escape(r["name"])}</b><br><span class="note">{html.escape(r.get("type", ""))}{(" · " + html.escape(r.get("notes", ""))) if r["county"] == "Statewide" else ""}</span></td>'
                    f'<td>{html.escape(r.get("address", ""))}{", " if r.get("address") and r.get("town") else ""}{html.escape(r.get("town", ""))}</td><td>{phone_html}<br>{web}</td><td>{" · ".join(tags)}</td></tr>')
     body = CARE_INTRO + STRIP + f"""
 <section class="tint"><div class="wrap">
@@ -253,7 +256,9 @@ if __name__ == "__main__":
     care_csv = ROOT / "site" / "care.csv"
     if care_csv.exists():
         rows = list(csv.DictReader(care_csv.open(encoding="utf-8")))
-        rows.sort(key=lambda r: (r["county"], r["type"] != "FQHC", r["name"]))
+        # NJCEED covers breast, cervical, colorectal, prostate only: not useful for a skin spot
+        rows = [r for r in rows if "njceed" not in (r["name"] + " " + r.get("notes", "")).lower()]
+        rows.sort(key=lambda r: (r["county"] != "Statewide", r["county"], r["type"] != "FQHC", r["name"]))
         verified = max((r.get("verified_date", "") for r in rows), default="")
         PAGES["care"] = care_page(rows, verified)
     for slug, h in PAGES.items():
