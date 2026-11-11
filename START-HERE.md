@@ -27,14 +27,16 @@ Every Shade is a Rutgers University–New Brunswick student group that gives fre
 |---|---|
 | 01 November 20 Talk | 20-slide deck with speaker notes, two-page large-print handout, before and after quizzes, scoring sheet, run of show, Zoom poll setup, answer key, medical review packet, image sources |
 | 02 Outreach | Live outreach tracker (417 NJ organizations with status, dates, and talk results), pitch templates, how-to guide, and the raw research lists |
-| 03 Translated Handouts | The handout in Spanish, Hindi, Urdu, Gujarati, Haitian Creole, and Korean, plus the reviewer guide. All six signed off by native-speaker reviewers (Nov 10) |
+| 03 Translations | Handouts in six languages (signed off by native speakers), plus the talk deck and quizzes in the same six languages (new, need native review) |
 | 04 Self-Check Tool | What the free web tool does, how its privacy works, and a test checklist |
 | 05 Chapter Toolkit | The full toolkit for students at other schools to start "Every Shade at [School]" |
 | 06 Derm x AI Newsletter | Style guide, topic backlog, weekly drafting prompt, and issue 1 (fact-checked, ready to publish) |
+| 07 Growth | Growth plan to May 2027, growth tracker (325 partners, officials, clinicians, funders, media, chapters), drafted emails, funding calendar, press release, research protocol, care directory, social media kit, volunteer flyer |
 
 ## Outreach status (November 10, 2026)
 
-- 24 personalized pitches are saved as Gmail drafts in the Rutgers account, not sent: 12 senior centers and county aging offices (Essex, Middlesex, Morris, Somerset) and 12 Essex libraries and churches.
+- 36 Gmail drafts are saved in the Rutgers account, none sent: 24 talk pitches (senior centers, aging offices, Essex libraries and churches) and 12 growth emails (faculty advisor, Student Involvement, NJMS dermatology interest group, ScreenNJ, two cancer coalitions, residency programs, a health center, two dermatologists, the Skin Cancer Foundation).
+- The outreach tracker now covers all 783 mapped organizations (every NJ public library and 350 senior and community centers), with a personalized pitch for each in "Pitches for every organization".
 - Those 24 rows are marked "drafted" in the tracker. After sending, change each to "emailed", fill in the first-contact date, and set the next action five days out.
 - Weekly routine: send 15 new pitches, work the "Due for follow-up today" count on the tracker's Dashboard tab, and reply to every response the same day.
 
