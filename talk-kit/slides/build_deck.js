@@ -129,7 +129,7 @@ S.addText("Tonight, in 45 minutes", { placeholder: "title" });
 logo(S, 0.6, 6.85, 0.45, THEME.colors.lt1);
 bullets(S, ["Why skin cancer is often found late on darker skin", "What warning signs look like on light, medium, and dark skin", "The spots people miss: palms, soles, and nails", "How to check your skin at home in 10 minutes", "When to see a doctor, and where to go without insurance", "Your questions"], { x: M, y: 1.8, w: 7.2, h: 4.9, fontSize: 22, gap: 8 });
 card(S, 8.3, 1.8, 4.4, 4.6, "First, a quick quiz", "10 short questions, no names. It helps us see if the talk works. We'll ask the same questions at the end.\n\nOn Zoom: the poll will pop up on your screen now.", null, { headSize: 24, bodySize: 20 });
-S.addNotes("Say: 'We are students, not doctors. Nothing tonight is medical advice, and we cannot look at a spot and tell you what it is. What we can do is help you know what to look for and where to go.' Then LAUNCH THE 'BEFORE THE TALK' ZOOM POLL. Give 3 minutes. For a watch-together room, hand out the paper quiz instead. Do not reveal answers yet.");
+S.addNotes("Say: 'We are students, not doctors. Nothing tonight is medical advice, and we cannot look at a spot and tell you what it is. What we can do is help you know what to look for and where to go.' Then say: \'The quiz is anonymous and voluntary. Please do not put your name. Skipping it changes nothing about tonight. We may share the combined results in a report or presentation.\' Then LAUNCH THE 'BEFORE THE TALK' ZOOM POLL. Give 3 minutes. For a watch-together room, hand out the paper quiz instead. Do not reveal answers yet.");
 
 // =============== 3. Why we started ===============
 pres.addSection({ title: "Why it matters" });

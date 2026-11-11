@@ -105,7 +105,10 @@ def parse_xlsx(path, date):
             v = (d.get(f"Q{q['id']}") or "").strip().upper()
             if v and v in "ABCD":
                 ans[f"Q{q['id']}"] = "ABCD".index(v)
-        if ans:
+        if len(ans) >= 5:
+            code = str(d.get("Attendee code") or "").strip()
+            if code:
+                ans["_code"] = code
             out.append((str(d["Phase (pre/post)"]).strip().lower(), ans))
     return out
 
@@ -193,6 +196,18 @@ def main():
     p_mw = mannwhitneyu(s_post, s_pre, alternative="two-sided").pvalue
     lo, hi = boot_ci(s_pre, s_post)
 
+    # Paper quizzes may carry an optional self-chosen 4-digit code: pair those for a signed-rank test
+    pre_c = {d["_code"]: score(d) for d in pre if d.get("_code")}
+    post_c = {d["_code"]: score(d) for d in post if d.get("_code")}
+    paired = [(pre_c[c], post_c[c]) for c in pre_c if c in post_c and pre_c[c] is not None and post_c[c] is not None]
+    paired_txt = ""
+    if len(paired) >= 5:
+        from scipy.stats import wilcoxon
+        diffs = [b - a for a, b in paired]
+        pw = wilcoxon(diffs).pvalue if any(diffs) else 1.0
+        paired_txt = (f"Matched by attendee code: {len(paired)} people; average {statistics.mean(a for a, _ in paired):.0f}% to "
+                      f"{statistics.mean(b for _, b in paired):.0f}% (Wilcoxon signed-rank p = {pw:.3g}).")
+
     rows, ps = [], []
     for q in SCORED:
         k = f"Q{q['id']}"
@@ -228,7 +243,7 @@ def main():
           f"| Average score | {m_pre:.0f}% | {m_post:.0f}% |",
           f"| Confident they can self-check (somewhat or very) | {confident(conf_pre, n_cp) if n_cp else 'n/a'}% | {confident(conf_post, n_cq) if n_cq else 'n/a'}% |",
           "", f"Score change: {m_post - m_pre:+.0f} points (bootstrap 95% CI {lo:+.0f} to {hi:+.0f}); Mann-Whitney U p = {p_mw:.3g}.",
-          "Before and after groups are anonymous and unpaired, so they are compared as independent samples.", ""]
+          "Before and after groups are anonymous and unpaired, so they are compared as independent samples.", paired_txt, ""]
     if n_prior:
         md.append(f"Checked own skin in the past year (before the talk): {pct(prior.get(0, 0), n_prior)}% yes (n = {n_prior}).")
     if n_plan:
